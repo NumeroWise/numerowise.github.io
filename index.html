@@ -52,8 +52,21 @@ while(sum > 9){
 sum = sum.toString().split('').reduce((a,b)=>a+parseInt(b),0);
 }
 
+let meanings = {
+1: "Leader, Independent, Ambitious",
+2: "Diplomatic, Cooperative, Sensitive",
+3: "Creative, Expressive, Optimistic",
+4: "Practical, Disciplined, Hardworking",
+5: "Adventurous, Freedom-loving, Dynamic",
+6: "Caring, Responsible, Nurturing",
+7: "Analytical, Spiritual, Thoughtful",
+8: "Ambitious, Powerful, Success-oriented",
+9: "Compassionate, Humanitarian, Generous"
+};
+
 document.getElementById("result").innerHTML =
-"Your Life Path Number is: " + sum;
+"<h2>Your Life Path Number is: " + sum + "</h2>" +
+"<p><strong>Meaning:</strong> " + meanings[sum] + "</p>";
 }
 </script>
 
