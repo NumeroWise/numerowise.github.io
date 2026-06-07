@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | NumeroWise</title>
+
+<meta name="description" content="Learn more about NumeroWise and our mission to make numerology simple, accessible, and useful for everyone.">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+margin:0;
+padding:20px;
+color:#333;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+color:#2c3e50;
+}
+
+.nav{
+text-align:center;
+margin-bottom:20px;
+}
+
+.nav a{
+text-decoration:none;
+color:#4f46e5;
+font-weight:bold;
+margin:0 10px;
+}
+
+.language-box{
+text-align:center;
+margin-bottom:20px;
+}
+
+select{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.content{
+line-height:1.9;
+font-size:17px;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+font-size:14px;
+color:#777;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy-policy.html">Privacy Policy</a>
+</div>
+
+<div class="language-box">
+<select id="language">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
+
+<h1 id="pageTitle">About NumeroWise</h1>
+
+<div class="content" id="content">
+
+<p>
+NumeroWise is a modern numerology platform designed to help people understand themselves through the power of numbers.
+</p>
+
+<p>
+Our mission is to make numerology simple, accessible, and easy to understand for everyone.
+</p>
+
+<p>
+Through calculators, guides, insights, and personalized reports, we help users explore their personality, strengths, opportunities, and life purpose.
+</p>
+
+<p>
+Whether you are new to numerology or already familiar with it, NumeroWise provides practical tools and resources to support your journey of self-discovery.
+</p>
+
+<p>
+Thank you for visiting NumeroWise and being part of our growing community.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 NumeroWise. All Rights Reserved.
+</footer>
+
+<script>
+
+const englishContent = `
+<p>
+NumeroWise is a modern numerology platform designed to help people understand themselves through the power of numbers.
+</p>
+
+<p>
+Our mission is to make numerology simple, accessible, and easy to understand for everyone.
+</p>
+
+<p>
+Through calculators, guides, insights, and personalized reports, we help users explore their personality, strengths, opportunities, and life purpose.
+</p>
+
+<p>
+Whether you are new to numerology or already familiar with it, NumeroWise provides practical tools and resources to support your journey of self-discovery.
+</p>
+
+<p>
+Thank you for visiting NumeroWise and being part of our growing community.
+</p>
+`;
+
+const hindiContent = `
+<p>
+NumeroWise एक आधुनिक अंक ज्योतिष मंच है, जिसका उद्देश्य लोगों को अंकों की शक्ति के माध्यम से स्वयं को बेहतर ढंग से समझने में सहायता करना है।
+</p>
+
+<p>
+हमारा लक्ष्य अंक ज्योतिष को सरल, सुलभ और सभी के लिए उपयोगी बनाना है।
+</p>
+
+<p>
+कैलकुलेटर, मार्गदर्शिकाओं, विश्लेषणों और व्यक्तिगत रिपोर्टों के माध्यम से हम उपयोगकर्ताओं को उनके व्यक्तित्व, क्षमताओं, अवसरों और जीवन उद्देश्य को समझने में सहायता करते हैं।
+</p>
+
+<p>
+चाहे आप अंक ज्योतिष में नए हों या पहले से परिचित हों, NumeroWise आपकी आत्म-खोज की यात्रा में उपयोगी संसाधन और व्यावहारिक उपकरण प्रदान करता है।
+</p>
+
+<p>
+NumeroWise पर आने और हमारे बढ़ते समुदाय का हिस्सा बनने के लिए आपका धन्यवाद।
+</p>
+`;
+
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("pageTitle").innerText =
+"NumeroWise के बारे में";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
+}else{
+
+document.getElementById("pageTitle").innerText =
+"About NumeroWise";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
