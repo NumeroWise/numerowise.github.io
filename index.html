@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NumeroWise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:700px;
+margin:auto;
+padding:20px;
+text-align:center;
+}
+input,button{
+padding:10px;
+margin:10px;
+font-size:16px;
+}
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<h1>NumeroWise</h1>
+<p>Discover Your Life Path Number</p>
+
+<input type="date" id="dob">
+<br>
+
+<button onclick="calculate()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+<script>
+function calculate() {
+let dob = document.getElementById("dob").value;
+
+if(!dob){
+alert("Please select your date of birth");
+return;
+}
+
+let digits = dob.replace(/-/g,'');
+
+let sum = digits.split('').reduce((a,b)=>a+parseInt(b),0);
+
+while(sum > 9){
+sum = sum.toString().split('').reduce((a,b)=>a+parseInt(b),0);
+}
+
+document.getElementById("result").innerHTML =
+"Your Life Path Number is: " + sum;
+}
+</script>
+
+</body>
+</html>
