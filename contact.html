@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | NumeroWise</title>
+
+<meta name="description" content="Contact NumeroWise for feedback, support, business inquiries, and partnership opportunities.">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+margin:0;
+padding:20px;
+color:#333;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+color:#2c3e50;
+}
+
+.nav{
+text-align:center;
+margin-bottom:20px;
+}
+
+.nav a{
+text-decoration:none;
+color:#4f46e5;
+font-weight:bold;
+margin:0 10px;
+}
+
+.language-box{
+text-align:center;
+margin-bottom:20px;
+}
+
+select{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.content{
+line-height:1.9;
+font-size:17px;
+}
+
+.email-box{
+background:#eef2ff;
+padding:15px;
+border-radius:10px;
+margin-top:20px;
+text-align:center;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+font-size:14px;
+color:#777;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy-policy.html">Privacy Policy</a>
+</div>
+
+<div class="language-box">
+<select id="language">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
+
+<h1 id="pageTitle">Contact Us</h1>
+
+<div class="content" id="content">
+
+<p>
+We welcome your feedback, questions, business inquiries, and partnership opportunities.
+</p>
+
+<p>
+If you would like to get in touch with NumeroWise, please contact us via email.
+</p>
+
+<div class="email-box">
+businessquery2024@gmail.com
+</div>
+
+<p>
+We aim to respond as soon as possible.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 NumeroWise. All Rights Reserved.
+</footer>
+
+<script>
+
+const englishContent = `
+<p>
+We welcome your feedback, questions, business inquiries, and partnership opportunities.
+</p>
+
+<p>
+If you would like to get in touch with NumeroWise, please contact us via email.
+</p>
+
+<div class="email-box">
+businessquery2024@gmail.com
+</div>
+
+<p>
+We aim to respond as soon as possible.
+</p>
+`;
+
+const hindiContent = `
+<p>
+हम आपके सुझावों, प्रश्नों, व्यावसायिक पूछताछ और साझेदारी प्रस्तावों का स्वागत करते हैं।
+</p>
+
+<p>
+यदि आप NumeroWise से संपर्क करना चाहते हैं, तो कृपया हमें ईमेल करें।
+</p>
+
+<div class="email-box">
+businessquery2024@gmail.com
+</div>
+
+<p>
+हम यथाशीघ्र उत्तर देने का प्रयास करेंगे।
+</p>
+`;
+
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("pageTitle").innerText =
+"संपर्क करें";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
+}else{
+
+document.getElementById("pageTitle").innerText =
+"Contact Us";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
