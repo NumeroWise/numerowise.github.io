@@ -70,15 +70,28 @@ font-size:14px;
 </head>
 <body>
 
-<h1>NumeroWise</h1>
-<p>Discover Your Life Path Number</p>
+<div class="container">
+
+<h1>🔢 NumeroWise</h1>
+
+<p class="tagline">
+Unlock your personality, strengths, and life purpose through numerology.
+</p>
 
 <input type="date" id="dob">
-<br>
+<br><br>
 
-<button onclick="calculate()">Calculate</button>
+<button onclick="calculate()">
+Calculate Life Path Number
+</button>
 
 <div class="result" id="result"></div>
+
+</div>
+
+<footer>
+© 2026 NumeroWise. All Rights Reserved.
+</footer>
 
 <script>
 function calculate() {
