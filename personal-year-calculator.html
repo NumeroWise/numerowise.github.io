@@ -112,16 +112,16 @@ color:#777;
 
 <div class="container">
 
-<h1>📅 Personal Year Number Calculator</h1>
+<h1 id="mainTitle">📅 Personal Year Number Calculator</h1>
 
 <p class="tagline" id="tagline">
 Discover the energy and opportunities of your current year.
 </p>
 
 <div class="nav">
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a>
+<a href="index.html" id="navHome">Home</a> |
+<a href="about.html" id="navAbout">About</a> |
+<a href="contact.html" id="navContact">Contact</a>
 </div>
 
 <div class="language-box">
@@ -147,9 +147,9 @@ Calculate Personal Year Number
 
 <hr>
 
-<h2>What is a Personal Year Number?</h2>
+<h2 id="infoTitle">What is a Personal Year Number?</h2>
 
-<p>
+<p id="infoText">
 A Personal Year Number reveals the type of energy, opportunities, and lessons you are likely to experience during the current year.
 </p>
 
@@ -253,20 +253,56 @@ let lang = this.value;
 
 if(lang==="hi"){
 
+document.getElementById("mainTitle").innerText =
+"📅 पर्सनल ईयर नंबर कैलकुलेटर";
+
 document.getElementById("tagline").innerText =
 "वर्तमान वर्ष की ऊर्जा, अवसरों और सीख को जानें।";
 
 document.getElementById("calcBtn").innerText =
-"Personal Year Number जानें";
+"पर्सनल ईयर नंबर जानें";
+
+document.getElementById("infoTitle").innerText =
+"पर्सनल ईयर नंबर क्या है?";
+
+document.getElementById("infoText").innerText =
+"पर्सनल ईयर नंबर यह बताता है कि वर्तमान वर्ष में आपके लिए किस प्रकार की ऊर्जा, अवसर, चुनौतियाँ और सीख सक्रिय रहेंगी।";
+
+document.getElementById("navHome").innerText =
+"होम";
+
+document.getElementById("navAbout").innerText =
+"हमारे बारे में";
+
+document.getElementById("navContact").innerText =
+"संपर्क";
 
 }
 else{
+
+document.getElementById("mainTitle").innerText =
+"📅 Personal Year Number Calculator";
 
 document.getElementById("tagline").innerText =
 "Discover the energy and opportunities of your current year.";
 
 document.getElementById("calcBtn").innerText =
 "Calculate Personal Year Number";
+
+document.getElementById("infoTitle").innerText =
+"What is a Personal Year Number?";
+
+document.getElementById("infoText").innerText =
+"A Personal Year Number reveals the type of energy, opportunities, and lessons you are likely to experience during the current year.";
+
+document.getElementById("navHome").innerText =
+"Home";
+
+document.getElementById("navAbout").innerText =
+"About";
+
+document.getElementById("navContact").innerText =
+"Contact";
 
 }
 
