@@ -115,23 +115,19 @@ button:hover {
 <script>
 let finalNumber = null;
 
-/* REDUCE TO SINGLE DIGIT ONLY */
-function reduceToSingleDigit(num) {
-  while (num > 9) {
-    num = num.toString()
-      .split('')
-      .reduce((a, b) => a + Number(b), 0);
+/* REDUCE NUMBER */
+function reduce(num){
+  while(num > 9 && num !== 11 && num !== 22 && num !== 33){
+    num = num.toString().split('').reduce((a,b)=>a + Number(b), 0);
   }
   return num;
 }
 
 /* LIFE PATH CALCULATION */
-function lifePathFromDOB(dob) {
+function lifePath(dob){
   let cleaned = dob.replaceAll("-", "");
-  let sum = cleaned.split("")
-    .reduce((a, b) => a + Number(b), 0);
-
-  return reduceToSingleDigit(sum);
+  let sum = cleaned.split("").reduce((a,b)=>a + Number(b), 0);
+  return reduce(sum);
 }
 /* MAIN FUNCTION */
 function calculate(){
