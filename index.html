@@ -1,192 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔢 NumeroWise | AI Numerology Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔢 NumeroWise | Numerology Dashboard</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-    }
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    h1 {
-      color: #ffd700;
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+h1 {
+  font-size: 42px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
 
-    p {
-      opacity: 0.9;
-    }
+.subtitle {
+  opacity: 0.8;
+  font-size: 16px;
+}
 
-    input {
-      padding: 12px;
-      margin: 10px;
-      width: 250px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-    }
+.section {
+  padding: 20px 40px;
+}
 
-    .btn {
-      padding: 12px 25px;
-      background: #ffd700;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
-    }
+.section-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #00e5ff;
+  border-left: 4px solid #00e5ff;
+  padding-left: 10px;
+}
 
-    .btn:hover {
-      background: #ffcc00;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
 
-    .card-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
-    .card {
-      background: rgba(255,255,255,0.08);
-      padding: 20px;
-      margin: 10px;
-      border-radius: 12px;
-      width: 250px;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,229,255,0.4);
+  border-color: #00e5ff;
+}
 
-    .result {
-      margin-top: 30px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
+.card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #ffd700;
+}
 
-    .highlight {
-      color: #00e5ff;
-      font-weight: bold;
-    }
-  </style>
+.card p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.premium {
+  background: linear-gradient(135deg, #ffcc00, #ff8800);
+  color: black;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.5;
+  font-size: 12px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
-
+<header>
   <h1>🔢 NumeroWise</h1>
-  <p>AI-powered Numerology Dashboard for Life Path, Destiny & Soul Insights</p>
+  <div class="subtitle">AI Numerology & Astrology Intelligence Platform</div>
+</header>
 
-  <input type="text" id="name" placeholder="Enter Your Full Name">
-  <input type="date" id="dob">
+<!-- CORE CALCULATORS -->
+<div class="section">
+  <div class="section-title">🔢 Core Calculators</div>
+  <div class="grid">
 
-  <br>
-  <button class="btn" onclick="generate()">Generate My Report</button>
-
-  <div class="result" id="result"></div>
-
-  <div class="card-container">
-    <div class="card">
-      <h3>🔢 Life Path</h3>
-      <p>Based on Date of Birth</p>
+    <div class="card" onclick="go('life-path.html')">
+      <h3>Life Path Calculator</h3>
+      <p>Discover your life purpose</p>
     </div>
 
-    <div class="card">
-      <h3>🔮 Destiny Number</h3>
-      <p>Based on Full Name</p>
+    <div class="card" onclick="go('personal-year.html')">
+      <h3>Personal Year Calculator</h3>
+      <p>Know your yearly energy</p>
     </div>
 
-    <div class="card">
-      <h3>💫 Soul Number</h3>
-      <p>Based on Vowels in Name</p>
+    <div class="card" onclick="go('destiny.html')">
+      <h3>Destiny Number Calculator</h3>
+      <p>Your life direction</p>
     </div>
+
+    <div class="card" onclick="go('soul-urge.html')">
+      <h3>Soul Urge Calculator</h3>
+      <p>Inner emotional truth</p>
+    </div>
+
+    <div class="card" onclick="go('personality.html')">
+      <h3>Personality Calculator</h3>
+      <p>Outer personality image</p>
+    </div>
+
+    <div class="card" onclick="go('birthday.html')">
+      <h3>Birthday Number Calculator</h3>
+      <p>Special birth energy</p>
+    </div>
+
   </div>
+</div>
 
+<!-- GUIDES -->
+<div class="section">
+  <div class="section-title">📘 Numerology Guides</div>
+  <div class="grid">
+
+    <div class="card" onclick="go('guides.html')">
+      <h3>Numerology Guides</h3>
+      <p>Learn meaning of numbers</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- RELATIONSHIP -->
+<div class="section">
+  <div class="section-title">🤝 Relationship Tools</div>
+  <div class="grid">
+
+    <div class="card" onclick="go('compatibility.html')">
+      <h3>Compatibility Calculator</h3>
+      <p>Check relationship match</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- NAME SYSTEMS -->
+<div class="section">
+  <div class="section-title">🧾 Name Numerology</div>
+  <div class="grid">
+
+    <div class="card" onclick="go('name.html')">
+      <h3>Name Numerology</h3>
+      <p>Name vibration analysis</p>
+    </div>
+
+    <div class="card" onclick="go('baby-name.html')">
+      <h3>Baby Name Numerology</h3>
+      <p>Perfect name selection</p>
+    </div>
+
+    <div class="card" onclick="go('business-name.html')">
+      <h3>Business Numerology</h3>
+      <p>Business success energy</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- PREMIUM -->
+<div class="section">
+  <div class="section-title">💎 Premium</div>
+  <div class="grid">
+
+    <div class="card premium" onclick="go('premium.html')">
+      <h3>Premium Reports</h3>
+      <p>Deep AI personalized analysis</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 🔢 NumeroWise | All Rights Reserved
 </div>
 
 <script>
-  // Reduce number to single digit (unless master numbers 11,22,33)
-  function reduce(num) {
-    while (num > 9 && num !== 11 && num !== 22 && num !== 33) {
-      num = num.toString().split('').reduce((a,b)=>a+parseInt(b),0);
-    }
-    return num;
-  }
-
-  // Life Path Number
-  function lifePath(dob) {
-    let sum = dob.replaceAll("-", "")
-                 .split("")
-                 .reduce((a,b)=>a+parseInt(b),0);
-    return reduce(sum);
-  }
-
-  // Pythagorean mapping
-  const map = {
-    a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,
-    j:1,k:2,l:3,m:4,n:5,o:6,p:7,q:8,r:9,
-    s:1,t:2,u:3,v:4,w:5,x:6,y:7,z:8
-  };
-
-  // Destiny Number (full name)
-  function destiny(name) {
-    name = name.toLowerCase().replace(/[^a-z]/g,'');
-    let sum = 0;
-    for(let char of name){
-      sum += map[char] || 0;
-    }
-    return reduce(sum);
-  }
-
-  // Soul Number (vowels only)
-  function soul(name) {
-    name = name.toLowerCase();
-    let vowels = "aeiou";
-    let sum = 0;
-    for(let char of name){
-      if(vowels.includes(char)){
-        sum += map[char] || 0;
-      }
-    }
-    return reduce(sum);
-  }
-
-  function generate() {
-    let name = document.getElementById("name").value;
-    let dob = document.getElementById("dob").value;
-
-    if(!name || !dob){
-      alert("Please enter both Name and Date of Birth");
-      return;
-    }
-
-    let lp = lifePath(dob);
-    let dn = destiny(name);
-    let sn = soul(name);
-
-    document.getElementById("result").innerHTML = `
-      <h2>Your Numerology Report</h2>
-      <p><span class="highlight">Life Path Number:</span> ${lp}</p>
-      <p><span class="highlight">Destiny Number:</span> ${dn}</p>
-      <p><span class="highlight">Soul Number:</span> ${sn}</p>
-
-      <hr style="opacity:0.2">
-
-      <p>✨ AI Insight: Your numbers indicate a unique personality pattern combining emotional depth, purpose direction, and inner intuition.</p>
-    `;
-  }
+function go(page){
+  window.location.href = page;
+}
 </script>
 
 </body>
