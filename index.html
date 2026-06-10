@@ -1,461 +1,192 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔢 NumeroWise | AI Numerology Dashboard</title>
 
-<meta name="google-site-verification" content="9UVtTurFTKL7OU69Ieob7TKhlLRmwOuPwFDxBn5LAm8" />
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      text-align: center;
+    }
 
-<title>NumeroWise | Life Path Number Calculator</title>
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
 
-<meta name="description" content="Discover your Life Path Number with NumeroWise. Free Numerology Calculator with English and Hindi interpretations.">
+    h1 {
+      color: #ffd700;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-<style>
-body{
-font-family:Arial, sans-serif;
-background:#f5f7fb;
-margin:0;
-padding:20px;
-color:#333;
-}
+    p {
+      opacity: 0.9;
+    }
 
-.container{
-max-width:900px;
-margin:auto;
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
+    input {
+      padding: 12px;
+      margin: 10px;
+      width: 250px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
 
-h1{
-text-align:center;
-color:#2c3e50;
-margin-bottom:10px;
-}
+    .btn {
+      padding: 12px 25px;
+      background: #ffd700;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
 
-.tagline{
-text-align:center;
-color:#666;
-margin-bottom:25px;
-}
+    .btn:hover {
+      background: #ffcc00;
+    }
 
-.nav{
-text-align:center;
-margin-bottom:20px;
-}
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
 
-.nav a{
-text-decoration:none;
-color:#4f46e5;
-font-weight:bold;
-margin:0 10px;
-}
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 12px;
+      width: 250px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
 
-.language-box{
-text-align:center;
-margin-bottom:20px;
-}
+    .result {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-select{
-padding:10px;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:16px;
-}
-
-.input-box{
-text-align:center;
-}
-
-input{
-padding:12px;
-font-size:16px;
-border:1px solid #ddd;
-border-radius:8px;
-}
-
-button{
-background:#4f46e5;
-color:white;
-border:none;
-padding:12px 24px;
-font-size:16px;
-border-radius:8px;
-cursor:pointer;
-margin-top:10px;
-}
-
-button:hover{
-background:#4338ca;
-}
-
-.result{
-margin-top:25px;
-padding:20px;
-background:#eef2ff;
-border-radius:10px;
-line-height:1.8;
-}
-
-footer{
-text-align:center;
-margin-top:30px;
-font-size:14px;
-color:#777;
-}
-
-.cards-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.card{
-display:block;
-background:#eef2ff;
-padding:20px;
-border-radius:12px;
-text-decoration:none;
-color:#333;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-3px);
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-
-.card h3{
-margin-top:0;
-margin-bottom:10px;
-color:#2c3e50;
-}
-
-.card p{
-margin:0;
-}
-
-</style>
-
+    .highlight {
+      color: #00e5ff;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>🔢 NumeroWise</h1>
+  <h1>🔢 NumeroWise</h1>
+  <p>AI-powered Numerology Dashboard for Life Path, Destiny & Soul Insights</p>
 
-<p class="tagline" id="tagline">
-Unlock your personality, strengths, and life purpose through numerology.
-</p>
+  <input type="text" id="name" placeholder="Enter Your Full Name">
+  <input type="date" id="dob">
 
-<div class="nav">
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a> |
-<a href="privacy-policy.html">Privacy Policy</a>
-</div>
+  <br>
+  <button class="btn" onclick="generate()">Generate My Report</button>
 
-<div class="language-box">
-<select id="language">
-<option value="en">English</option>
-<option value="hi">हिन्दी</option>
-</select>
-</div>
+  <div class="result" id="result"></div>
 
-<div class="input-box">
-<input type="date" id="dob">
-<br><br>
+  <div class="card-container">
+    <div class="card">
+      <h3>🔢 Life Path</h3>
+      <p>Based on Date of Birth</p>
+    </div>
 
-<button onclick="calculate()" id="calcBtn">
-Calculate Life Path Number
-</button>
-</div>
+    <div class="card">
+      <h3>🔮 Destiny Number</h3>
+      <p>Based on Full Name</p>
+    </div>
 
-<div class="result" id="result"></div>
-
-  
-<hr style="margin:40px 0;">
-
-<hr>
-
-<h2 style="text-align:center;">
-✨ Explore Life Path Numbers
-</h2>
-
-<div class="cards-grid">
-
-<a class="card" href="life-path-number-1.html">
-<h3>🏆 Life Path 1</h3>
-<p>Leader Personality</p>
-</a>
-
-<a class="card" href="life-path-number-2.html">
-<h3>🤝 Life Path 2</h3>
-<p>Peacemaker Personality</p>
-</a>
-
-<a class="card" href="life-path-number-3.html">
-<h3>🎨 Life Path 3</h3>
-<p>Creative Personality</p>
-</a>
-
-<a class="card" href="life-path-number-4.html">
-<h3>🛠️ Life Path 4</h3>
-<p>Builder Personality</p>
-</a>
-
-<a class="card" href="life-path-number-5.html">
-<h3>✈️ Life Path 5</h3>
-<p>Adventurer Personality</p>
-</a>
-
-<a class="card" href="life-path-number-6.html">
-<h3>❤️ Life Path 6</h3>
-<p>Caregiver Personality</p>
-</a>
-
-<a class="card" href="life-path-number-7.html">
-<h3>🔮 Life Path 7</h3>
-<p>Seeker Personality</p>
-</a>
-
-<a class="card" href="life-path-number-8.html">
-<h3>💰 Life Path 8</h3>
-<p>Achiever Personality</p>
-</a>
-
-<a class="card" href="life-path-number-9.html">
-<h3>🌍 Life Path 9</h3>
-<p>Humanitarian Personality</p>
-</a>
+    <div class="card">
+      <h3>💫 Soul Number</h3>
+      <p>Based on Vowels in Name</p>
+    </div>
+  </div>
 
 </div>
-
-<div style="text-align:center; margin-top:20px;">
-<a href="what-is-life-path-number.html">
-📖 What Is a Life Path Number? Read the Complete Guide →
-</a>
-</div>
-  
-<hr>
-
-<h2 style="text-align:center;">
-📅 Explore Personal Year Numbers
-</h2>
-
-<div class="cards-grid">
-
-<a class="card" href="what-is-personal-year-number.html">
-<h3>📖 Personal Year Guide</h3>
-<p>Learn what a Personal Year Number means</p>
-</a>
-
-<a class="card" href="personal-year-1.html">
-<h3>🌱 Personal Year 1</h3>
-<p>New Beginnings</p>
-</a>
-
-<a class="card" href="personal-year-2.html">
-<h3>🤝 Personal Year 2</h3>
-<p>Cooperation & Patience</p>
-</a>
-
-<a class="card" href="personal-year-3.html">
-<h3>🎨 Personal Year 3</h3>
-<p>Creativity & Expression</p>
-</a>
-
-<a class="card" href="personal-year-4.html">
-<h3>🛠️ Personal Year 4</h3>
-<p>Stability & Hard Work</p>
-</a>
-
-<a class="card" href="personal-year-5.html">
-<h3>✈️ Personal Year 5</h3>
-<p>Change & Freedom</p>
-</a>
-
-<a class="card" href="personal-year-6.html">
-<h3>❤️ Personal Year 6</h3>
-<p>Love & Responsibility</p>
-</a>
-
-<a class="card" href="personal-year-7.html">
-<h3>🔮 Personal Year 7</h3>
-<p>Spiritual Growth</p>
-</a>
-
-<a class="card" href="personal-year-8.html">
-<h3>💰 Personal Year 8</h3>
-<p>Success & Achievement</p>
-</a>
-
-<a class="card" href="personal-year-9.html">
-<h3>🌍 Personal Year 9</h3>
-<p>Completion & Transformation</p>
-</a>
-
-</div>
-
-<hr>
-
-<h2 style="text-align:center;">
-✨ Popular Calculators
-</h2>
-
-<div style="text-align:center; line-height:2;">
-
-<p>
-<a href="index.html">
-🔢 Life Path Number Calculator
-</a>
-</p>
-
-<p>
-<a href="personal-year-calculator.html">
-📅 Personal Year Number Calculator
-</a>
-</p>
-
-</div>
-
-<hr>
-  
-<hr>
-
-<h2 style="text-align:center;">📖 Popular Guide</h2>
-
-<p style="text-align:center;font-size:18px;">
-<a href="what-is-life-path-number.html">
-What Is a Life Path Number? Read the Complete Guide →
-</a>
-</p>
-
-  
-</div>
-
-<footer>
-© 2026 NumeroWise. All Rights Reserved.
-</footer>
 
 <script>
+  // Reduce number to single digit (unless master numbers 11,22,33)
+  function reduce(num) {
+    while (num > 9 && num !== 11 && num !== 22 && num !== 33) {
+      num = num.toString().split('').reduce((a,b)=>a+parseInt(b),0);
+    }
+    return num;
+  }
 
-function calculate(){
+  // Life Path Number
+  function lifePath(dob) {
+    let sum = dob.replaceAll("-", "")
+                 .split("")
+                 .reduce((a,b)=>a+parseInt(b),0);
+    return reduce(sum);
+  }
 
-let dob = document.getElementById("dob").value;
-let language = document.getElementById("language").value;
+  // Pythagorean mapping
+  const map = {
+    a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,
+    j:1,k:2,l:3,m:4,n:5,o:6,p:7,q:8,r:9,
+    s:1,t:2,u:3,v:4,w:5,x:6,y:7,z:8
+  };
 
-if(!dob){
-alert(language==="en"
-? "Please select your date of birth."
-: "कृपया अपनी जन्म तिथि चुनें।");
-return;
-}
+  // Destiny Number (full name)
+  function destiny(name) {
+    name = name.toLowerCase().replace(/[^a-z]/g,'');
+    let sum = 0;
+    for(let char of name){
+      sum += map[char] || 0;
+    }
+    return reduce(sum);
+  }
 
-let digits = dob.replace(/-/g,'');
+  // Soul Number (vowels only)
+  function soul(name) {
+    name = name.toLowerCase();
+    let vowels = "aeiou";
+    let sum = 0;
+    for(let char of name){
+      if(vowels.includes(char)){
+        sum += map[char] || 0;
+      }
+    }
+    return reduce(sum);
+  }
 
-let sum = digits.split('').reduce((a,b)=>a+parseInt(b),0);
+  function generate() {
+    let name = document.getElementById("name").value;
+    let dob = document.getElementById("dob").value;
 
-while(sum > 9){
-sum = sum.toString().split('').reduce((a,b)=>a+parseInt(b),0);
-}
+    if(!name || !dob){
+      alert("Please enter both Name and Date of Birth");
+      return;
+    }
 
-const englishTitles = {
-1:"🏆 Leader Personality",
-2:"🤝 Peacemaker Personality",
-3:"🎨 Creative Personality",
-4:"🛠️ Builder Personality",
-5:"✈️ Adventurer Personality",
-6:"❤️ Caregiver Personality",
-7:"🔮 Seeker Personality",
-8:"💰 Achiever Personality",
-9:"🌍 Humanitarian Personality"
-};
+    let lp = lifePath(dob);
+    let dn = destiny(name);
+    let sn = soul(name);
 
-const hindiTitles = {
-1:"🏆 नेतृत्वकर्ता व्यक्तित्व",
-2:"🤝 सामंजस्यकारी व्यक्तित्व",
-3:"🎨 रचनात्मक व्यक्तित्व",
-4:"🛠️ निर्माता व्यक्तित्व",
-5:"✈️ साहसी व्यक्तित्व",
-6:"❤️ संरक्षक व्यक्तित्व",
-7:"🔮 ज्ञान खोजी व्यक्तित्व",
-8:"💰 उपलब्धि प्राप्तकर्ता व्यक्तित्व",
-9:"🌍 मानवतावादी व्यक्तित्व"
-};
+    document.getElementById("result").innerHTML = `
+      <h2>Your Numerology Report</h2>
+      <p><span class="highlight">Life Path Number:</span> ${lp}</p>
+      <p><span class="highlight">Destiny Number:</span> ${dn}</p>
+      <p><span class="highlight">Soul Number:</span> ${sn}</p>
 
-const englishMeanings = {
-1:"You are a natural leader with strong independence and determination.",
-2:"You are cooperative, diplomatic, and value harmony in relationships.",
-3:"You are creative, expressive, and enjoy inspiring others.",
-4:"You are practical, disciplined, and dedicated to building stability.",
-5:"You love freedom, adventure, and adapting to change.",
-6:"You are caring, responsible, and focused on family and community.",
-7:"You are analytical, spiritual, and enjoy seeking deeper knowledge.",
-8:"You are ambitious, confident, and driven toward success and achievement.",
-9:"You are compassionate, generous, and motivated to help others."
-};
+      <hr style="opacity:0.2">
 
-const hindiMeanings = {
-1:"आप एक स्वाभाविक नेता हैं। आपमें आत्मनिर्भरता, दृढ़ संकल्प और नेतृत्व करने की क्षमता होती है।",
-2:"आप सहयोगी, समझदार और रिश्तों में संतुलन बनाए रखने वाले व्यक्ति हैं।",
-3:"आप रचनात्मक, अभिव्यक्तिशील और दूसरों को प्रेरित करने वाले व्यक्ति हैं।",
-4:"आप व्यावहारिक, अनुशासित और जीवन में मजबूत आधार बनाने पर केंद्रित रहते हैं।",
-5:"आपको स्वतंत्रता, रोमांच और नए अनुभव पसंद हैं। आप बदलावों को आसानी से अपनाते हैं।",
-6:"आप जिम्मेदार, दयालु और परिवार व समाज की भलाई को महत्व देने वाले व्यक्ति हैं।",
-7:"आप गहराई से सोचने वाले, आध्यात्मिक और ज्ञान की खोज में रुचि रखने वाले व्यक्ति हैं।",
-8:"आप महत्वाकांक्षी, आत्मविश्वासी और सफलता प्राप्त करने के लिए निरंतर प्रयासरत रहते हैं।",
-9:"आप दयालु, उदार और मानवता की सेवा करने की भावना रखने वाले व्यक्ति हैं।"
-};
-
-if(language === "en"){
-
-document.getElementById("result").innerHTML =
-"<h2>✨ Your Life Path Number is: "+sum+"</h2>" +
-"<h3>"+englishTitles[sum]+"</h3>" +
-"<hr>" +
-"<p>"+englishMeanings[sum]+"</p>";
-
-}else{
-
-document.getElementById("result").innerHTML =
-"<h2>✨ आपका लाइफ पाथ नंबर है: "+sum+"</h2>" +
-"<h3>"+hindiTitles[sum]+"</h3>" +
-"<hr>" +
-"<p>"+hindiMeanings[sum]+"</p>";
-
-}
-
-}
-
-document.getElementById("language").addEventListener("change", function(){
-
-let lang = this.value;
-
-if(lang === "hi"){
-document.getElementById("tagline").innerText =
-"अंक ज्योतिष के माध्यम से अपने व्यक्तित्व, क्षमताओं और जीवन उद्देश्य को जानें।";
-
-document.getElementById("calcBtn").innerText =
-"लाइफ पाथ नंबर जानें";
-
-}else{
-
-document.getElementById("tagline").innerText =
-"Unlock your personality, strengths, and life purpose through numerology.";
-
-document.getElementById("calcBtn").innerText =
-"Calculate Life Path Number";
-
-}
-
-});
-
+      <p>✨ AI Insight: Your numbers indicate a unique personality pattern combining emotional depth, purpose direction, and inner intuition.</p>
+    `;
+  }
 </script>
 
 </body>
