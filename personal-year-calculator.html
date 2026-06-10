@@ -1,410 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personal Year Number Calculator | NumeroWise</title>
-
-<meta name="description" content="Calculate your Personal Year Number instantly with NumeroWise. Discover what the current year means for your opportunities, growth, relationships, and success.">
+<title>Personal Year Calculator | NumeroWise</title>
 
 <style>
-
-body{
-font-family:Arial,sans-serif;
-background:#f5f7fb;
-margin:0;
-padding:20px;
-color:#333;
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+  text-align: center;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
 }
 
-h1{
-text-align:center;
-color:#2c3e50;
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
 }
 
-.tagline{
-text-align:center;
-color:#666;
-margin-bottom:25px;
+button {
+  padding: 12px 20px;
+  background: #ffd700;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
-.nav{
-text-align:center;
-margin-bottom:20px;
+.result {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #00e5ff;
+  display: none;
 }
-
-.nav a{
-text-decoration:none;
-color:#4f46e5;
-font-weight:bold;
-margin:0 10px;
-}
-
-.language-box{
-text-align:center;
-margin-bottom:20px;
-}
-
-select{
-padding:10px;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:16px;
-}
-
-.input-box{
-text-align:center;
-}
-
-input{
-padding:12px;
-font-size:16px;
-border:1px solid #ddd;
-border-radius:8px;
-}
-
-button{
-background:#4f46e5;
-color:white;
-border:none;
-padding:12px 24px;
-font-size:16px;
-border-radius:8px;
-cursor:pointer;
-margin-top:10px;
-}
-
-button:hover{
-background:#4338ca;
-}
-
-.result{
-margin-top:25px;
-padding:20px;
-background:#eef2ff;
-border-radius:10px;
-line-height:1.8;
-}
-
-footer{
-text-align:center;
-margin-top:30px;
-font-size:14px;
-color:#777;
-}
-
-.cards-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.card{
-background:#eef2ff;
-padding:20px;
-border-radius:12px;
-text-decoration:none;
-color:#333;
-transition:0.3s;
-display:block;
-}
-
-.card:hover{
-transform:translateY(-3px);
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-
-.card h3{
-margin-top:0;
-margin-bottom:10px;
-color:#2c3e50;
-}
-
-.card p{
-margin:0;
-}
-  
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<h1 id="mainTitle">📅 Personal Year Number Calculator</h1>
+<h1>🔮 Personal Year Calculator</h1>
 
-<p class="tagline" id="tagline">
-Discover the energy and opportunities of your current year.
-</p>
+<input type="text" id="dob" placeholder="Enter DOB (YYYY-MM-DD)">
+<button onclick="calculate()">Calculate</button>
 
-<div class="nav">
-<a href="index.html" id="navHome">Home</a> |
-<a href="about.html" id="navAbout">About</a> |
-<a href="contact.html" id="navContact">Contact</a> |
-<a href="privacy-policy.html" id="navPrivacy">Privacy Policy</a>
-</div>
-
-<div class="language-box">
-<select id="language">
-<option value="en">English</option>
-<option value="hi">हिन्दी</option>
-</select>
-</div>
-
-<div class="input-box">
-
-<input type="date" id="dob">
-
+<div class="result" id="resultBox">
+Your Personal Year Number: <span id="result"></span>
 <br><br>
-
-<button onclick="calculatePersonalYear()" id="calcBtn">
-Calculate Personal Year Number
-</button>
-
+<button onclick="goDetail()">View Full Reading</button>
 </div>
 
-<div class="result" id="result"></div>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<h2 id="guideTitle" style="text-align:center;">
-✨ Personal Year Guides
-</h2>
-
-<div class="cards-grid">
-
-<a class="card" href="personal-year-1.html">
-<h3>🌱 Personal Year 1</h3>
-<p>New Beginnings</p>
-</a>
-
-<a class="card" href="personal-year-2.html">
-<h3>🤝 Personal Year 2</h3>
-<p>Cooperation & Patience</p>
-</a>
-
-<a class="card" href="personal-year-3.html">
-<h3>🎨 Personal Year 3</h3>
-<p>Creativity & Expression</p>
-</a>
-
-<a class="card" href="personal-year-4.html">
-<h3>🛠️ Personal Year 4</h3>
-<p>Stability & Hard Work</p>
-</a>
-
-<a class="card" href="personal-year-5.html">
-<h3>✈️ Personal Year 5</h3>
-<p>Change & Freedom</p>
-</a>
-
-<a class="card" href="personal-year-6.html">
-<h3>❤️ Personal Year 6</h3>
-<p>Love & Responsibility</p>
-</a>
-
-<a class="card" href="personal-year-7.html">
-<h3>🔮 Personal Year 7</h3>
-<p>Spiritual Growth</p>
-</a>
-
-<a class="card" href="personal-year-8.html">
-<h3>💰 Personal Year 8</h3>
-<p>Success & Achievement</p>
-</a>
-
-<a class="card" href="personal-year-9.html">
-<h3>🌍 Personal Year 9</h3>
-<p>Completion & Transformation</p>
-</a>
-
 </div>
-  
-<hr>
-
-<h2 id="infoTitle">What is a Personal Year Number?</h2>
-
-<p id="infoText">
-A Personal Year Number reveals the type of energy, opportunities, and lessons you are likely to experience during the current year.
-</p>
-
-</div>
-
-<footer>
-© 2026 NumeroWise. All Rights Reserved.
-</footer>
 
 <script>
 
-function reduceNumber(num){
+let finalNumber = null;
 
-while(num > 9){
-num = num.toString().split('').reduce((a,b)=>a+parseInt(b),0);
+/* REDUCTION */
+function reduce(num){
+  while(num > 9){
+    num = num.toString().split('').reduce((a,b)=>a+Number(b),0);
+  }
+  return num;
 }
 
-return num;
+/* PERSONAL YEAR CALC */
+function calculate(){
+  let dob = document.getElementById("dob").value;
+  if(!dob){
+    alert("Enter DOB");
+    return;
+  }
 
+  let year = new Date().getFullYear();
+
+  let [y,m,d] = dob.split("-");
+
+  let sum =
+    Number(d) + Number(m) +
+    year.toString().split('').reduce((a,b)=>a+Number(b),0);
+
+  finalNumber = reduce(sum);
+
+  document.getElementById("result").innerText = finalNumber;
+  document.getElementById("resultBox").style.display = "block";
 }
 
-function calculatePersonalYear(){
-
-let dob = document.getElementById("dob").value;
-let language = document.getElementById("language").value;
-
-if(!dob){
-
-alert(language==="en"
-? "Please select your date of birth."
-: "कृपया अपनी जन्म तिथि चुनें।");
-
-return;
-
+/* REDIRECT */
+function goDetail(){
+  window.location.href = "personal-year-number-" + finalNumber + ".html";
 }
-
-let parts = dob.split("-");
-
-let month = parseInt(parts[1]);
-let day = parseInt(parts[2]);
-
-let currentYear = new Date().getFullYear();
-
-let total =
-reduceNumber(month) +
-reduceNumber(day) +
-reduceNumber(currentYear);
-
-let personalYear = reduceNumber(total);
-
-const englishMeanings = {
-
-1:"🌱 New beginnings, fresh opportunities, and leadership.",
-2:"🤝 Cooperation, patience, relationships, and partnerships.",
-3:"🎨 Creativity, communication, joy, and self-expression.",
-4:"🛠️ Hard work, stability, planning, and discipline.",
-5:"✈️ Change, freedom, travel, and exciting experiences.",
-6:"❤️ Family, responsibility, relationships, and harmony.",
-7:"🔮 Spiritual growth, learning, reflection, and wisdom.",
-8:"💰 Career growth, financial success, and achievement.",
-9:"🌍 Completion, transformation, and humanitarian service."
-
-};
-
-const hindiMeanings = {
-
-1:"🌱 नई शुरुआत, नए अवसर और नेतृत्व का वर्ष।",
-2:"🤝 सहयोग, धैर्य, रिश्ते और साझेदारी का वर्ष।",
-3:"🎨 रचनात्मकता, संवाद और आत्म-अभिव्यक्ति का वर्ष।",
-4:"🛠️ मेहनत, स्थिरता, योजना और अनुशासन का वर्ष।",
-5:"✈️ बदलाव, स्वतंत्रता, यात्रा और नए अनुभवों का वर्ष।",
-6:"❤️ परिवार, जिम्मेदारी और सामंजस्य का वर्ष।",
-7:"🔮 आध्यात्मिक विकास, अध्ययन और आत्म-चिंतन का वर्ष।",
-8:"💰 करियर, धन और उपलब्धियों का वर्ष।",
-9:"🌍 पूर्णता, परिवर्तन और मानव सेवा का वर्ष।"
-
-};
-
-if(language==="en"){
-
-document.getElementById("result").innerHTML =
-"<h2>✨ Your Personal Year Number for " + currentYear + " is: " + personalYear + "</h2>" +
-"<hr>" +
-"<p>" + englishMeanings[personalYear] + "</p>";
-
-}
-else{
-
-document.getElementById("guideTitle").innerText =
-"✨ Personal Year Guides";
-  
-document.getElementById("result").innerHTML =
-"<h2>✨ " + currentYear + " के लिए आपका Personal Year Number है: " + personalYear + "</h2>" +
-"<hr>" +
-"<p>" + hindiMeanings[personalYear] + "</p>";
-
-}
-
-}
-
-document.getElementById("language").addEventListener("change", function(){
-
-let lang = this.value;
-
-if(lang==="hi"){
-
-document.getElementById("guideTitle").innerText =
-"✨ पर्सनल ईयर गाइड";
-  
-document.getElementById("mainTitle").innerText =
-"📅 पर्सनल ईयर नंबर कैलकुलेटर";
-
-document.getElementById("tagline").innerText =
-"वर्तमान वर्ष की ऊर्जा, अवसरों और सीख को जानें।";
-
-document.getElementById("calcBtn").innerText =
-"पर्सनल ईयर नंबर जानें";
-
-document.getElementById("infoTitle").innerText =
-"पर्सनल ईयर नंबर क्या है?";
-
-document.getElementById("infoText").innerText =
-"पर्सनल ईयर नंबर यह बताता है कि वर्तमान वर्ष में आपके लिए किस प्रकार की ऊर्जा, अवसर, चुनौतियाँ और सीख सक्रिय रहेंगी।";
-
-document.getElementById("navHome").innerText =
-"होम";
-
-document.getElementById("navAbout").innerText =
-"हमारे बारे में";
-
-document.getElementById("navContact").innerText =
-"संपर्क";
-
-}
-else{
-
-document.getElementById("mainTitle").innerText =
-"📅 Personal Year Number Calculator";
-
-document.getElementById("tagline").innerText =
-"Discover the energy and opportunities of your current year.";
-
-document.getElementById("calcBtn").innerText =
-"Calculate Personal Year Number";
-
-document.getElementById("infoTitle").innerText =
-"What is a Personal Year Number?";
-
-document.getElementById("infoText").innerText =
-"A Personal Year Number reveals the type of energy, opportunities, and lessons you are likely to experience during the current year.";
-
-document.getElementById("navHome").innerText =
-"Home";
-
-document.getElementById("navAbout").innerText =
-"About";
-
-document.getElementById("navContact").innerText =
-"Contact";
-
-}
-
-});
 
 </script>
 
