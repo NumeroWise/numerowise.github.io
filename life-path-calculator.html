@@ -113,46 +113,63 @@ button:hover {
 </div>
 
 <script>
+
 let finalNumber = null;
 
-/* REDUCE NUMBER */
-function reduce(num){
-  while(num > 9 && num !== 11 && num !== 22 && num !== 33){
-    num = num.toString().split('').reduce((a,b)=>a + Number(b), 0);
+/* REDUCE TO SINGLE DIGIT */
+function reduceToSingleDigit(num) {
+  num = parseInt(num);
+
+  while (num > 9) {
+    num = num
+      .toString()
+      .split('')
+      .reduce((sum, digit) => sum + Number(digit), 0);
   }
+
   return num;
 }
 
-/* LIFE PATH CALCULATION */
-function lifePath(dob){
-  let cleaned = dob.replaceAll("-", "");
-  let sum = cleaned.split("").reduce((a,b)=>a + Number(b), 0);
-  return reduce(sum);
+/* LIFE PATH FROM DOB */
+function lifePathFromDOB(dob) {
+  if (!dob) return null;
+
+  let cleaned = dob.split("-").join("");
+
+  let sum = cleaned
+    .split("")
+    .reduce((a, b) => a + Number(b), 0);
+
+  return reduceToSingleDigit(sum);
 }
-/* MAIN FUNCTION */
-function calculate(){
+
+/* CALCULATE BUTTON */
+function calculate() {
   let name = document.getElementById("name").value;
   let dob = document.getElementById("dob").value;
 
-  if(!name || !dob){
+  if (!name || !dob) {
     alert("Please enter both Name and Date of Birth");
     return;
   }
 
-  finalNumber = lifePath(dob);
+  finalNumber = lifePathFromDOB(dob);
 
   document.getElementById("lifePathNumber").innerText = finalNumber;
 
   document.getElementById("summary").innerText =
-    "Based on your birth energy, this number reveals your life direction and purpose.";
+    "Your Life Path Number reveals your core life direction.";
 
   document.getElementById("resultBox").style.display = "block";
 }
 
 /* CLICK NUMBER → DETAIL PAGE */
-function goDetail(){
-  window.location.href = "life-path-number-" + finalNumber + ".html";
+function goDetail() {
+  if (finalNumber !== null) {
+    window.location.href = "life-path/" + finalNumber + ".html";
+  }
 }
+  
 </script>
 
 </body>
