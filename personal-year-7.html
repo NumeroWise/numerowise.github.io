@@ -1,49 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Personal Year 7 | NumeroWise</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Year Number 7 Meaning | NumeroWise</title>
+<meta name="description" content="Discover Personal Year Number 7 meaning in numerology. Learn about spirituality, introspection, career, and personal growth.">
+
 <style>
-body{margin:0;font-family:Arial;background:radial-gradient(circle,#1a1a2e,#000);color:white;}
-.container{max-width:900px;margin:auto;padding:30px;}
-h1{text-align:center;color:#ffd700;}
-.card{background:rgba(255,255,255,0.05);padding:25px;border-radius:12px;line-height:1.8;}
-h2{color:#00e5ff;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav a {
+  color: #00e5ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #ffd700;
+}
+
+.language-box {
+  text-align: center;
+  margin: 15px 0;
+}
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 25px;
+  line-height: 1.8;
+}
+
+h2 {
+  color: #00e5ff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  opacity: 0.6;
+}
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
-<h1>Personal Year 7</h1>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="personal-year-calculator.html">Calculator</a>
+<a href="life-path-calculator.html">Life Path</a>
+</div>
 
-<div class="card">
+<h1 id="title">Personal Year Number 7</h1>
+
+<div class="language-box">
+<select id="language">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
+
+<div class="card" id="content">
+
 <h2>Introduction</h2>
-<p>Spiritual growth, introspection, and inner discovery.</p>
+<p>
+Personal Year 7 is a spiritual and introspective year focused on inner growth and self-discovery.
+</p>
+
+<h2>Personality Influence</h2>
+<p>
+You become more reflective, analytical, and spiritually aware.
+</p>
 
 <h2>Strengths</h2>
 <ul>
-<li>Wisdom development</li>
 <li>Deep thinking</li>
-<li>Spiritual awakening</li>
+<li>Spiritual growth</li>
+<li>Wisdom development</li>
+<li>Focus on learning</li>
 </ul>
 
 <h2>Challenges</h2>
 <ul>
 <li>Isolation</li>
 <li>Overthinking</li>
+<li>Emotional distance</li>
 </ul>
 
 <h2>Career & Money</h2>
-<p>Research, learning, and analysis-focused work.</p>
+<p>
+Best for research, study, analysis, and spiritual work.</p>
 
 <h2>Relationships</h2>
-<p>Emotional distance may increase.</p>
+<p>
+Emotional distance may increase; self-focus dominates.</p>
 
 <h2>Conclusion</h2>
-<p>A reflective and spiritual year.</p>
+<p>
+This year is about inner awakening and self-understanding.</p>
+
 </div>
 
 </div>
+
+<footer>© 2026 🔢 NumeroWise</footer>
+
+<script>
+const englishContent = document.getElementById("content").innerHTML;
+
+const hindiContent = `
+<h2>परिचय</h2>
+<p>यह वर्ष आध्यात्मिकता और आत्म-विश्लेषण का है।</p>
+
+<h2>व्यक्तित्व प्रभाव</h2>
+<p>आप अधिक चिंतनशील और आध्यात्मिक बनते हैं।</p>
+
+<h2>शक्तियाँ</h2>
+<ul>
+<li>गहरी सोच</li>
+<li>आध्यात्मिक विकास</li>
+<li>ज्ञान वृद्धि</li>
+<li>अध्ययन</li>
+</ul>
+
+<h2>चुनौतियाँ</h2>
+<ul>
+<li>अकेलापन</li>
+<li>अधिक सोच</li>
+<li>भावनात्मक दूरी</li>
+</ul>
+
+<h2>करियर और धन</h2>
+<p>अनुसंधान और अध्ययन के लिए अच्छा समय।</p>
+
+<h2>रिश्ते</h2>
+<p>भावनात्मक दूरी बढ़ सकती है।</p>
+
+<h2>निष्कर्ष</h2>
+<p>यह वर्ष आत्म-ज्ञान और आंतरिक विकास का है।</p>
+`;
+
+document.getElementById("language").addEventListener("change", function () {
+if (this.value === "hi") {
+document.getElementById("title").innerText = "पर्सनल ईयर नंबर 7";
+document.getElementById("content").innerHTML = hindiContent;
+} else {
+document.getElementById("title").innerText = "Personal Year Number 7";
+document.getElementById("content").innerHTML = englishContent;
+}
+});
+</script>
+
 </body>
 </html>
