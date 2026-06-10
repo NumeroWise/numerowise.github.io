@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Path Calculator | NumeroWise</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+h1 {
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* INPUT BOX */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background: #00e5ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00c2d1;
+}
+
+/* RESULT BOX */
+.result {
+  margin-top: 30px;
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.number {
+  font-size: 80px;
+  color: #ffd700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.number:hover {
+  transform: scale(1.1);
+  color: #00e5ff;
+}
+
+.label {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Life Path Calculator</h1>
+  <div class="subtitle">Discover your life purpose through numbers</div>
+
+  <!-- INPUT -->
+  <input type="text" id="name" placeholder="Enter Full Name">
+  <input type="date" id="dob">
+
+  <br>
+  <button onclick="calculate()">Calculate Life Path</button>
+
+  <!-- RESULT -->
+  <div class="result" id="resultBox">
+
+    <div class="label">Your Life Path Number</div>
+    <div class="number" id="lifePathNumber" onclick="goDetail()"></div>
+
+    <div style="margin-top:15px; opacity:0.8;" id="summary"></div>
+
+  </div>
+
+</div>
+
+<script>
+let finalNumber = null;
+
+/* REDUCE NUMBER */
+function reduce(num){
+  while(num > 9 && num !== 11 && num !== 22 && num !== 33){
+    num = num.toString().split('').reduce((a,b)=>a + Number(b), 0);
+  }
+  return num;
+}
+
+/* LIFE PATH CALCULATION */
+function lifePath(dob){
+  let cleaned = dob.replaceAll("-", "");
+  let sum = cleaned.split("").reduce((a,b)=>a + Number(b), 0);
+  return reduce(sum);
+}
+
+/* MAIN FUNCTION */
+function calculate(){
+  let name = document.getElementById("name").value;
+  let dob = document.getElementById("dob").value;
+
+  if(!name || !dob){
+    alert("Please enter both Name and Date of Birth");
+    return;
+  }
+
+  finalNumber = lifePath(dob);
+
+  document.getElementById("lifePathNumber").innerText = finalNumber;
+
+  document.getElementById("summary").innerText =
+    "Based on your birth energy, this number reveals your life direction and purpose.";
+
+  document.getElementById("resultBox").style.display = "block";
+}
+
+/* CLICK NUMBER → DETAIL PAGE */
+function goDetail(){
+  window.location.href = "life-path/" + finalNumber + ".html";
+}
+</script>
+
+</body>
+</html>
