@@ -1,49 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Personal Year 8 | NumeroWise</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Year Number 8 Meaning | NumeroWise</title>
+<meta name="description" content="Discover Personal Year Number 8 meaning in numerology. Learn about success, money, power, career growth, and challenges.">
+
 <style>
-body{margin:0;font-family:Arial;background:radial-gradient(circle,#1a1a2e,#000);color:white;}
-.container{max-width:900px;margin:auto;padding:30px;}
-h1{text-align:center;color:#ffd700;}
-.card{background:rgba(255,255,255,0.05);padding:25px;border-radius:12px;line-height:1.8;}
-h2{color:#00e5ff;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav a {
+  color: #00e5ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #ffd700;
+}
+
+.language-box {
+  text-align: center;
+  margin: 15px 0;
+}
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 25px;
+  line-height: 1.8;
+}
+
+h2 {
+  color: #00e5ff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  opacity: 0.6;
+}
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
-<h1>Personal Year 8</h1>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="personal-year-calculator.html">Calculator</a>
+<a href="life-path-calculator.html">Life Path</a>
+</div>
 
-<div class="card">
+<h1 id="title">Personal Year Number 8</h1>
+
+<div class="language-box">
+<select id="language">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
+
+<div class="card" id="content">
+
 <h2>Introduction</h2>
-<p>A powerful year of success, money, authority, and career growth.</p>
+<p>Personal Year 8 is a year of power, money, career growth, and achievement.</p>
+
+<h2>Personality Influence</h2>
+<p>You become more ambitious, focused, and goal-driven.</p>
 
 <h2>Strengths</h2>
 <ul>
+<li>Leadership</li>
 <li>Financial growth</li>
-<li>Leadership rise</li>
-<li>Career expansion</li>
+<li>Success mindset</li>
+<li>Confidence</li>
 </ul>
 
 <h2>Challenges</h2>
 <ul>
 <li>Pressure</li>
-<li>Work overload</li>
+<li>Work stress</li>
+<li>Power struggles</li>
 </ul>
 
 <h2>Career & Money</h2>
-<p>Peak year for professional success.</p>
+<p>Strong year for business, promotion, and financial success.</p>
 
 <h2>Relationships</h2>
-<p>Work may dominate personal life.</p>
+<p>Work focus may affect personal relationships.</p>
 
 <h2>Conclusion</h2>
-<p>A powerful achievement-oriented year.</p>
+<p>This is a peak achievement year.</p>
+
 </div>
 
 </div>
+
+<footer>© 2026 🔢 NumeroWise</footer>
+
+<script>
+const englishContent = document.getElementById("content").innerHTML;
+
+const hindiContent = `
+<h2>परिचय</h2>
+<p>यह वर्ष शक्ति, धन और सफलता का है।</p>
+
+<h2>व्यक्तित्व प्रभाव</h2>
+<p>आप अधिक महत्वाकांक्षी और लक्ष्य-केन्द्रित बनते हैं।</p>
+
+<h2>शक्तियाँ</h2>
+<ul>
+<li>नेतृत्व</li>
+<li>आर्थिक वृद्धि</li>
+<li>सफलता सोच</li>
+<li>आत्मविश्वास</li>
+</ul>
+
+<h2>चुनौतियाँ</h2>
+<ul>
+<li>दबाव</li>
+<li>काम का तनाव</li>
+<li>शक्ति संघर्ष</li>
+</ul>
+
+<h2>करियर और धन</h2>
+<p>व्यापार और प्रमोशन के लिए अच्छा वर्ष।</p>
+
+<h2>रिश्ते</h2>
+<p>काम का दबाव रिश्तों को प्रभावित कर सकता है।</p>
+
+<h2>निष्कर्ष</h2>
+<p>यह उपलब्धि का उच्च वर्ष है।</p>
+`;
+
+document.getElementById("language").addEventListener("change", function () {
+if (this.value === "hi") {
+document.getElementById("title").innerText = "पर्सनल ईयर नंबर 8";
+document.getElementById("content").innerHTML = hindiContent;
+} else {
+document.getElementById("title").innerText = "Personal Year Number 8";
+document.getElementById("content").innerHTML = englishContent;
+}
+});
+</script>
+
 </body>
 </html>
