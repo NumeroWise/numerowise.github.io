@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learn Numerology | NumeroWise</title>
+<meta name="description" content="Learn Numerology with NumeroWise. Explore Life Path Numbers, Personal Year Numbers, and Destiny Numbers through detailed guides.">
+
+<style>
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
+  color:white;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+h1{
+  text-align:center;
+  color:#ffd700;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  text-align:center;
+  opacity:0.8;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:12px;
+  padding:25px;
+  text-align:center;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+  border-color:#00e5ff;
+  box-shadow:0 0 18px rgba(0,229,255,0.3);
+}
+
+.card h2{
+  color:#ffd700;
+  margin-top:0;
+  font-size:22px;
+}
+
+.card p{
+  opacity:0.8;
+  line-height:1.6;
+}
+
+.back-btn{
+  display:block;
+  width:220px;
+  margin:40px auto 0;
+  text-align:center;
+  background:#ffd700;
+  color:black;
+  padding:12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.back-btn:hover{
+  background:#ffcc00;
+}
+
+.footer{
+  text-align:center;
+  padding:25px;
+  opacity:0.6;
+  font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Learn Numerology</h1>
+
+<div class="subtitle">
+Explore the most important numerology systems and discover how numbers influence your life, personality, purpose, and yearly cycles.
+</div>
+
+<div class="grid">
+
+<div class="card" onclick="go('what-is-life-path-number.html')">
+<h2>Life Path Number</h2>
+<p>
+Learn how your Life Path Number reveals your life purpose, natural talents, strengths, challenges, and destiny.
+</p>
+</div>
+
+<div class="card" onclick="go('what-is-personal-year-number.html')">
+<h2>Personal Year Number</h2>
+<p>
+Understand yearly energy cycles and discover what opportunities, lessons, and changes each year may bring.
+</p>
+</div>
+
+<div class="card" onclick="go('what-is-destiny-number.html')">
+<h2>Destiny Number</h2>
+<p>
+Explore how your Destiny Number reveals your life's mission, potential achievements, talents, and long-term direction.
+</p>
+</div>
+
+</div>
+
+<a href="index.html" class="back-btn">⬅ Back to Dashboard</a>
+
+</div>
+
+<div class="footer">
+© 2026 🔢 NumeroWise | All Rights Reserved
+</div>
+
+<script>
+function go(page){
+  window.location.href = page;
+}
+</script>
+
+</body>
+</html>
