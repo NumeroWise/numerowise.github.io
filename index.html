@@ -1,9 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🔢 NumeroWise | Dashboard</title>
+
+<title>NumeroWise | Free AI Numerology Calculator & Astrology Tools</title>
+
+<meta name="description" content="NumeroWise is a free AI-powered numerology platform. Calculate Life Path, Destiny, Soul Urge, Personality numbers and get deep numerology insights." />
+
+<meta name="keywords" content="numerology calculator, life path number, destiny number, soul urge number, personality number, numerology tools, free numerology, astrology numerology" />
+
+<meta name="author" content="NumeroWise" />
+
+<link rel="canonical" href="https://numerowise.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="NumeroWise | AI Numerology Dashboard" />
+<meta property="og:description" content="Explore free numerology calculators and AI-powered insights for Life Path, Destiny, and Soul numbers." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://numerowise.github.io/" />
+
+<meta property="og:image" content="https://numerowise.github.io/preview.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NumeroWise | Numerology Tools" />
+<meta name="twitter:description" content="Free AI numerology calculators for Life Path, Destiny, Soul Urge and more." />
+
+<!-- SEO Schema (NO VISUAL IMPACT) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NumeroWise",
+  "url": "https://numerowise.github.io/",
+  "description": "Free AI numerology platform for Life Path, Destiny, Soul Urge and Personality number calculations.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://numerowise.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #ffd700;
+  margin: 0;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+/* SECTION */
+.section {
+  padding: 20px 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px 0 15px;
+  color: #00e5ff;
+}
+
+/* GRID FIX (3 per row) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #00e5ff;
+  box-shadow: 0 0 18px rgba(0,229,255,0.3);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #ffd700;
+}
+
+.card p {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+/* PREMIUM CARD */
+.premium {
+  background: linear-gradient(135deg, #ffcc00, #ff8800);
+  color: black;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  opacity: 0.5;
+  font-size: 12px;
+}
+</style>
+</head>
 
 <style>
 body {
