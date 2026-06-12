@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Number Calculator | NumeroWise</title>
+
+<meta name="description" content="Calculate your Birthday Number and discover your natural talents, gifts, strengths, and hidden abilities with NumeroWise.">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+h1 {
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* INPUT */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background: #00e5ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00c2d1;
+}
+
+/* RESULT */
+.result {
+  margin-top: 30px;
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.number {
+  font-size: 80px;
+  color: #ffd700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.number:hover {
+  transform: scale(1.1);
+  color: #00e5ff;
+}
+
+.label {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(10px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.footer{
+  text-align:center;
+  padding:25px;
+  opacity:0.6;
+  font-size:12px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Birthday Number Calculator</h1>
+
+<div class="subtitle">
+Discover your natural talents and hidden gifts through numerology
+</div>
+
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<input type="date" id="dob">
+
+<br>
+
+<button onclick="calculateBirthday()">
+Calculate Birthday Number
+</button>
+
+<div class="result" id="resultBox">
+
+<div class="label">
+Your Birthday Number
+</div>
+
+<div class="number" id="birthdayNumber" onclick="goDetail()"></div>
+
+<div style="margin-top:15px; opacity:0.8;" id="summary"></div>
+
+</div>
+
+</div>
+
+<div class="footer">
+ <p>
+<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
+</p>
+</div>
+
+<script>
+
+let finalNumber = null;
+
+/* Reduce to Single Digit */
+
+function reduceToSingleDigit(num){
+
+num = parseInt(num);
+
+while(num > 9){
+
+num = num.toString()
+.split('')
+.reduce((sum,digit)=>sum + Number(digit),0);
+
+}
+
+return num;
+
+}
+
+/* Birthday Number */
+
+function birthdayFromDOB(dob){
+
+if(!dob) return null;
+
+let day = parseInt(dob.split("-")[2]);
+
+return reduceToSingleDigit(day);
+
+}
+
+/* Calculate */
+
+function calculateBirthday(){
+
+let name = document.getElementById("name").value;
+
+let dob = document.getElementById("dob").value;
+
+if(!name || !dob){
+
+alert("Please enter both Name and Date of Birth");
+
+return;
+
+}
+
+finalNumber = birthdayFromDOB(dob);
+
+document.getElementById("birthdayNumber").innerText = finalNumber;
+
+document.getElementById("summary").innerText =
+"Your Birthday Number reveals your natural talents, gifts, strengths and abilities. CLICK Birthday Number to Know More...";
+
+document.getElementById("resultBox").style.display = "block";
+
+}
+
+/* Open Report */
+
+function goDetail(){
+
+if(finalNumber !== null){
+
+window.location.href =
+"birthday-number-" + finalNumber + ".html";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
