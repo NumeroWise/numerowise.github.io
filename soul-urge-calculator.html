@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soul Urge Calculator | NumeroWise</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background: #00e5ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00c2d1;
+}
+
+.result {
+  margin-top: 30px;
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.number {
+  font-size: 80px;
+  color: #ffd700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.number:hover {
+  transform: scale(1.1);
+  color: #00e5ff;
+}
+
+.label {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Soul Urge Calculator</h1>
+  <div class="subtitle">Discover your inner desires and heart's motivation</div>
+
+  <input type="text" id="fullName" placeholder="Enter Full Name">
+
+  <br>
+  <button onclick="calculateSoulUrge()">Calculate Soul Urge Number</button>
+
+  <div class="result" id="resultBox">
+
+```
+<div class="label">Your Soul Urge Number</div>
+
+<div class="number" id="soulUrgeNumber" onclick="goDetail()"></div>
+
+<div style="margin-top:15px; opacity:0.8;" id="summary"></div>
+```
+
+  </div>
+
+</div>
+
+<script>
+
+let finalNumber = null;
+
+function reduceNumber(num) {
+
+  while (num > 9) {
+
+    num = num
+      .toString()
+      .split('')
+      .reduce((sum, digit) => sum + Number(digit), 0);
+
+  }
+
+  return num;
+}
+
+function calculateSoulUrge() {
+
+  let name = document
+    .getElementById("fullName")
+    .value
+    .toUpperCase()
+    .trim();
+
+  if (!name) {
+    alert("Please enter your Full Name");
+    return;
+  }
+
+  const values = {
+    A:1,
+    E:5,
+    I:9,
+    O:6,
+    U:3
+  };
+
+  let total = 0;
+
+  for (let char of name) {
+
+    if (values[char]) {
+      total += values[char];
+    }
+
+  }
+
+  if (total === 0) {
+    alert("Please enter a valid name");
+    return;
+  }
+
+  finalNumber = reduceNumber(total);
+
+  document.getElementById("soulUrgeNumber").innerText =
+    finalNumber;
+
+  document.getElementById("summary").innerText =
+    "Your Soul Urge Number reveals your inner desires, motivations, and deepest emotional needs. CLICK Soul Urge Number to Know More...";
+
+  document.getElementById("resultBox").style.display =
+    "block";
+}
+
+function goDetail() {
+
+  if (finalNumber !== null) {
+
+    window.location.href =
+      "soul-urge-number-" +
+      finalNumber +
+      ".html";
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
