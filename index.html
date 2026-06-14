@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,41 +7,10 @@
 <title>NumeroWise | Free AI Numerology Calculator & Astrology Tools</title>
 
 <meta name="description" content="NumeroWise is a free AI-powered numerology platform. Calculate Life Path, Destiny, Soul Urge, Personality numbers and get deep numerology insights." />
-
 <meta name="keywords" content="numerology calculator, life path number, destiny number, soul urge number, personality number, numerology tools, free numerology, astrology numerology" />
-
 <meta name="author" content="NumeroWise" />
 
 <link rel="canonical" href="https://numerowise.github.io/" />
-
-<!-- Open Graph -->
-<meta property="og:title" content="NumeroWise | AI Numerology Dashboard" />
-<meta property="og:description" content="Explore free numerology calculators and AI-powered insights for Life Path, Destiny, and Soul numbers." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://numerowise.github.io/" />
-
-<meta property="og:image" content="https://numerowise.github.io/preview.png" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="NumeroWise | Numerology Tools" />
-<meta name="twitter:description" content="Free AI numerology calculators for Life Path, Destiny, Soul Urge and more." />
-
-<!-- SEO Schema (NO VISUAL IMPACT) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "NumeroWise",
-  "url": "https://numerowise.github.io/",
-  "description": "Free AI numerology platform for Life Path, Destiny, Soul Urge and Personality number calculations.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://numerowise.github.io/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
 
 <style>
 body {
@@ -88,28 +59,22 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+  .grid { grid-template-columns: 1fr; }
 }
 
-/* ✅ UNIFIED CARD SYSTEM (FINAL FIX) */
-
- .card {
+/* CARD SYSTEM (FINAL STABLE VERSION) */
+.card {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 12px;
 
-  padding: 18px;
-  box-sizing: border-box;
-
   height: 130px;
+  padding: 15px;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -138,7 +103,7 @@ h1 {
   font-size: 12px;
   opacity: 0.75;
   margin-top: 6px;
-} 
+}
 
 /* FOOTER */
 .footer {
@@ -148,7 +113,6 @@ h1 {
   font-size: 12px;
 }
 </style>
-  
 </head>
 
 <body>
@@ -163,76 +127,62 @@ h1 {
     AI Powered Numerology Calculator for Life Path, Destiny & Soul Numbers & More
   </h2>
 </div>
-  
+
 <!-- CORE -->
 <div class="section">
   <div class="section-title">Core Calculators</div>
-  <div class="grid">
 
+  <div class="grid">
     <div class="card" onclick="go('life-path-calculator.html')">
-      <h3>Life Path Number Calculator</h3>
-      <p>Life purpose analysis</p>
+      <h3>Life Path Number</h3><p>Life purpose analysis</p>
     </div>
 
     <div class="card" onclick="go('personal-year-calculator.html')">
-      <h3>Personal Year Number Calculator</h3>
-      <p>Yearly energy</p>
+      <h3>Personal Year Number</h3><p>Yearly energy</p>
     </div>
 
     <div class="card" onclick="go('destiny-calculator.html')">
-      <h3>Destiny Number Calculator</h3>
-      <p>Life direction</p>
+      <h3>Destiny Number</h3><p>Life direction</p>
     </div>
 
     <div class="card" onclick="go('soul-urge-calculator.html')">
-      <h3>Soul Urge Number Calculator</h3>
-      <p>Inner desires</p>
+      <h3>Soul Urge Number</h3><p>Inner desires</p>
     </div>
 
     <div class="card" onclick="go('personality-calculator.html')">
-      <h3>Personality Number Calculator</h3>
-      <p>Outer behavior</p>
+      <h3>Personality Number</h3><p>Outer behavior</p>
     </div>
 
     <div class="card" onclick="go('birthday-calculator.html')">
-      <h3>Birthday Number Calculator</h3>
-      <p>Birth influence</p>
+      <h3>Birthday Number</h3><p>Birth influence</p>
     </div>
+  </div>
+</div>
 
 <!-- MONEY & CAREER -->
-<div class="section money-career">
+<div class="section">
   <div class="section-title">💰 Money & Career Numerology</div>
 
   <div class="grid">
-
     <div class="card" onclick="go('career-number-calculator.html')">
-      <h3>Career Number Analysis</h3>
-      <p>Best job & profession path</p>
+      <h3>Career Number</h3><p>Best job path</p>
     </div>
 
     <div class="card" onclick="go('wealth-prediction-calculator.html')">
-      <h3>Wealth Prediction System</h3>
-      <p>Money growth & earning style</p>
+      <h3>Wealth Prediction</h3><p>Money flow</p>
     </div>
 
     <div class="card" onclick="go('business-success-calculator.html')">
-      <h3>Business Success Numerology</h3>
-      <p>Business potential analysis</p>
+      <h3>Business Success</h3><p>Business potential</p>
     </div>
 
     <div class="card" onclick="go('job-vs-business-calculator.html')">
-      <h3>Job vs Business Guidance</h3>
-      <p>Choose job or business</p>
+      <h3>Job vs Business</h3><p>Career choice</p>
     </div>
 
     <div class="card" onclick="go('financial-blockage-analysis.html')">
-      <h3>Financial Blockage Analysis</h3>
-      <p>Why money is stuck</p>
+      <h3>Financial Blockage</h3><p>Money issues</p>
     </div>
-
-  </div>
-</div>
-    
   </div>
 </div>
 
@@ -240,12 +190,9 @@ h1 {
 <div class="section">
   <div class="section-title">Numerology Guides</div>
   <div class="grid">
-
     <div class="card" onclick="go('guides.html')">
-      <h3>Learn Numerology</h3>
-      <p>Number meanings</p>
+      <h3>Learn Numerology</h3><p>Number meanings</p>
     </div>
-
   </div>
 </div>
 
@@ -253,35 +200,27 @@ h1 {
 <div class="section">
   <div class="section-title">Relationship Tools</div>
   <div class="grid">
-
     <div class="card" onclick="go('compatibility.html')">
-      <h3>Compatibility</h3>
-      <p>Relationship match</p>
+      <h3>Compatibility</h3><p>Match analysis</p>
     </div>
-
   </div>
 </div>
 
-<!-- NAME SYSTEMS -->
+<!-- NAME -->
 <div class="section">
   <div class="section-title">Name Numerology</div>
   <div class="grid">
-
     <div class="card" onclick="go('name.html')">
-      <h3>Name Numerology</h3>
-      <p>Name vibration</p>
+      <h3>Name Numerology</h3><p>Name vibration</p>
     </div>
 
     <div class="card" onclick="go('baby-name.html')">
-      <h3>Baby Name</h3>
-      <p>Best baby names</p>
+      <h3>Baby Name</h3><p>Best names</p>
     </div>
 
     <div class="card" onclick="go('business-name.html')">
-      <h3>Business Name</h3>
-      <p>Business success</p>
+      <h3>Business Name</h3><p>Brand success</p>
     </div>
-
   </div>
 </div>
 
@@ -289,34 +228,24 @@ h1 {
 <div class="section">
   <div class="section-title">Premium Reports</div>
   <div class="grid">
-
-    <div class="card premium" onclick="go('premium.html')">
-      <h3>Premium Reports</h3>
-      <p>AI deep insights</p>
+    <div class="card" onclick="go('premium.html')">
+      <h3>Premium Reports</h3><p>Deep AI insights</p>
     </div>
-
   </div>
 </div>
 
+<!-- FAQ -->
 <div class="section">
   <div class="section-title">Frequently Asked Questions</div>
-
   <div style="max-width:800px;margin:auto;opacity:0.85;line-height:1.6;">
-
-    <p><b>What is Numerology?</b><br>
-    Numerology is the study of numbers and their influence on human life.</p>
-
-    <p><b>What is Life Path Number?</b><br>
-    It shows your life purpose and direction.</p>
-
-    <p><b>Is this accurate?</b><br>
-    It provides personality-based and symbolic insights.</p>
-
+    <p><b>What is Numerology?</b><br>Study of numbers and life patterns.</p>
+    <p><b>What is Life Path Number?</b><br>Your life purpose number.</p>
+    <p><b>Is it accurate?</b><br>It provides symbolic guidance.</p>
   </div>
 </div>
-  
+
 <div class="footer">
-  © 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers
+  © 2026 NumeroWise
 </div>
 
 <script>
