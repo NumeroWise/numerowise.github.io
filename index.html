@@ -87,7 +87,6 @@ h1 {
   margin: auto;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -100,26 +99,24 @@ h1 {
   }
 }
 
-/* CARD */
+/* ✅ UNIFIED CARD SYSTEM (FINAL FIX) */
 .card {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 12px;
 
-  width: 100%;
-  aspect-ratio: 1.8 / 1;   /* 🔥 uniform rectangle */
-
-  padding: 16px;
+  height: 120px;              /* 🔥 SAME SIZE EVERYWHERE */
+  padding: 15px;
   box-sizing: border-box;
-
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -140,29 +137,7 @@ h1 {
   opacity: 0.75;
   margin-top: 6px;
 }
-  
-/* PREMIUM CARD */
-.premium {
-  background: linear-gradient(135deg, #ffcc00, #ff8800);
-  color: black;
-  font-weight: bold;
-}
 
-.money-career .card {
-  min-height: 150px;
-  padding: 20px;
-}
-
-.money-career .card h3 {
-  font-size: 15px;
-  line-height: 1.2;
-}
-
-.money-career .card p {
-  font-size: 12px;
-  opacity: 0.75;
-}
-  
 /* FOOTER */
 .footer {
   text-align: center;
@@ -170,32 +145,8 @@ h1 {
   opacity: 0.5;
   font-size: 12px;
 }
-
-.money-career .card {
-  height: 110px;
-  padding: 18px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  box-sizing: border-box;
-}
-
-.money-career .card h3 {
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.money-career .card p {
-  font-size: 12px;
-  opacity: 0.75;
-  margin-top: 6px;
-}
-  
 </style>
+  
 </head>
 
 <body>
