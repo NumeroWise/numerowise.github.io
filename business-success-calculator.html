@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Business Success Numerology Calculator | NumeroWise</title>
+
+<meta name="description" content="Calculate your Business Success Number and discover your business strengths, growth potential, leadership style, and success opportunities through numerology.">
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
+color:white;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+padding:30px;
+}
+
+.nav{
+text-align:center;
+margin-bottom:20px;
+}
+
+.nav a{
+color:#00e5ff;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+h1{
+text-align:center;
+color:#ffd700;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+opacity:.8;
+margin-bottom:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.15);
+border-radius:12px;
+padding:25px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:none;
+font-size:16px;
+box-sizing:border-box;
+}
+
+button{
+margin-top:20px;
+width:100%;
+padding:14px;
+border:none;
+border-radius:8px;
+background:#ffd700;
+color:black;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ffcc00;
+}
+
+.result{
+margin-top:25px;
+text-align:center;
+display:none;
+}
+
+.number{
+font-size:60px;
+font-weight:bold;
+color:#00e5ff;
+cursor:pointer;
+margin-top:10px;
+}
+
+.number:hover{
+color:#ffd700;
+}
+
+.note{
+margin-top:10px;
+opacity:.8;
+font-size:14px;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+font-size:12px;
+opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="what-is-business-success-numerology.html">Guide</a>
+<a href="wealth-prediction-calculator.html">Wealth</a>
+</div>
+
+<h1>Business Success Calculator</h1>
+
+<div class="subtitle">
+Discover your Business Success Number using your business name.
+</div>
+
+<div class="card">
+
+<label>Business Name</label>
+<input type="text" id="businessName" placeholder="Enter your business name">
+
+<button onclick="calculateBusinessSuccess()">
+Calculate Business Success Number
+</button>
+
+<div class="result" id="resultBox">
+
+<h2>Your Business Success Number Is</h2>
+
+<div class="number"
+id="businessNumber"
+onclick="openBusinessPage()">
+</div>
+
+<div class="note">
+Click the number to read your detailed business success report.
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<p>
+<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
+</p>
+</div>
+
+</div>
+
+<script>
+
+let businessResult = 0;
+
+const values = {
+A:1,B:2,C:3,D:4,E:5,F:6,G:7,H:8,I:9,
+J:1,K:2,L:3,M:4,N:5,O:6,P:7,Q:8,R:9,
+S:1,T:2,U:3,V:4,W:5,X:6,Y:7,Z:8
+};
+
+function reduceNumber(num){
+
+while(num > 9){
+
+let sum = 0;
+
+num.toString().split('').forEach(d=>{
+sum += parseInt(d);
+});
+
+num = sum;
+
+}
+
+return num;
+}
+
+function calculateBusinessSuccess(){
+
+let name =
+document.getElementById("businessName")
+.value
+.toUpperCase()
+.replace(/[^A-Z]/g,'');
+
+if(name===""){
+alert("Please enter your business name.");
+return;
+}
+
+let total = 0;
+
+for(let i=0;i<name.length;i++){
+total += values[name[i]];
+}
+
+businessResult = reduceNumber(total);
+
+document.getElementById("businessNumber")
+.innerHTML = businessResult;
+
+document.getElementById("resultBox")
+.style.display="block";
+}
+
+function openBusinessPage(){
+
+if(businessResult > 0){
+
+window.location.href =
+"business-success-number-" + businessResult + ".html";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
