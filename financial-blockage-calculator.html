@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Financial Blockage Analysis | NumeroWise</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0f0c29;
+  color:white;
+  text-align:center;
+}
+
+.container{
+  max-width:600px;
+  margin:50px auto;
+  padding:20px;
+}
+
+input{
+  width:80%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:none;
+}
+
+button{
+  padding:12px 20px;
+  background:#00e5ff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.result{
+  margin-top:20px;
+  font-size:18px;
+  color:#ffd700;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>💰 Financial Blockage Analysis</h1>
+  <p>Enter your date of birth</p>
+
+  <input type="date" id="dob">
+  <br>
+  <button onclick="calculate()">Analyze Blockage</button>
+
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+function reduce(num){
+  while(num > 9){
+    num = num.toString().split('').reduce((a,b)=>+a + +b,0);
+  }
+  return num;
+}
+
+function calculate(){
+  let dob = document.getElementById("dob").value;
+  if(!dob){
+    document.getElementById("result").innerHTML = "Please enter DOB";
+    return;
+  }
+
+  let digits = dob.replaceAll("-","");
+  let sum = 0;
+  for(let d of digits){
+    sum += parseInt(d);
+  }
+
+  let number = reduce(sum);
+
+  window.location.href = `financial-blockage-number-${number}.html`;
+}
+</script>
+
+</body>
+</html>
