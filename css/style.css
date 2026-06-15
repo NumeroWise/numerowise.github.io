@@ -26,8 +26,9 @@ HEADER
 ===================================================== */
 
 .site-header{
-text-align:center;
-padding:30px 20px 20px;
+  text-align:center;
+  padding:30px 20px 20px;
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .site-header .brand{
