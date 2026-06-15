@@ -5,115 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Learn Numerology | NumeroWise</title>
+<link rel="stylesheet" href="css/style.css">  
 <meta name="description" content="Learn Numerology with NumeroWise. Explore Life Path Numbers, Personal Year Numbers, and Destiny Numbers through detailed guides.">
 
-<style>
-
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
-  color:white;
-}
-
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-h1{
-  text-align:center;
-  color:#ffd700;
-  margin-bottom:10px;
-}
-
-.subtitle{
-  text-align:center;
-  opacity:0.8;
-  margin-bottom:40px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-@media(max-width:900px){
-  .grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:600px){
-  .grid{
-    grid-template-columns:1fr;
-  }
-}
-
-.card{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.15);
-  border-radius:12px;
-  padding:25px;
-  text-align:center;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:scale(1.05);
-  border-color:#00e5ff;
-  box-shadow:0 0 18px rgba(0,229,255,0.3);
-}
-
-.card h2{
-  color:#ffd700;
-  margin-top:0;
-  font-size:22px;
-}
-
-.card p{
-  opacity:0.8;
-  line-height:1.6;
-}
-
-.back-btn{
-  display:block;
-  width:220px;
-  margin:40px auto 0;
-  text-align:center;
-  background:#ffd700;
-  color:black;
-  padding:12px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.back-btn:hover{
-  background:#ffcc00;
-}
-
-.footer{
-  text-align:center;
-  padding:25px;
-  opacity:0.6;
-  font-size:12px;
-}
-
-.section-title{
-  text-align:center;
-  margin:50px 0 20px;
-  font-size:20px;
-  color:#00e5ff;
-}
-
-</style>
 </head>
 
 <body>
+
+<div id="header"></div>  
 
 <div class="container">
 
@@ -194,16 +93,34 @@ Explore the most important numerology systems and discover how numbers influence
 
 </div>
 
-<div class="footer">
-<p>
-© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers
-</p>
-</div>
+<script>
+function go(page){
+  window.location.href = page;
+}
+</script>
+
+<div id="footer"></div>
 
 <script>
 function go(page){
   window.location.href = page;
 }
+</script>
+
+<script>
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
 </script>
 
 </body>
