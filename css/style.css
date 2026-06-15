@@ -1,0 +1,127 @@
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
+  color:white;
+}
+
+/* PAGE CONTAINER */
+.container{
+  max-width:700px;
+  margin:auto;
+  padding:30px;
+}
+
+/* NAVIGATION */
+.nav{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.nav a{
+  color:#00e5ff;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.nav a:hover{
+  color:#ffd700;
+}
+
+/* HEADINGS */
+h1{
+  text-align:center;
+  color:#ffd700;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  text-align:center;
+  opacity:.8;
+  margin-bottom:30px;
+}
+
+/* MAIN CARD (INPUT BOX) */
+.card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+/* LABEL */
+label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:bold;
+}
+
+/* INPUT */
+input{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  font-size:16px;
+  box-sizing:border-box;
+  outline:none;
+}
+
+/* BUTTON */
+button{
+  margin-top:20px;
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:#ffd700;
+  color:black;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#ffcc00;
+}
+
+/* RESULT BOX */
+.result{
+  margin-top:25px;
+  text-align:center;
+  display:none;
+}
+
+/* NUMBER DISPLAY */
+.number{
+  font-size:60px;
+  font-weight:bold;
+  color:#00e5ff;
+  cursor:pointer;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.number:hover{
+  color:#ffd700;
+}
+
+/* NOTE */
+.note{
+  margin-top:10px;
+  opacity:.8;
+  font-size:14px;
+}
+
+/* FOOTER (OUTSIDE CARD - GLOBAL) */
+footer{
+  text-align:center;
+  margin-top:30px;
+  font-size:10px;   /* reduced size (2 points smaller) */
+  opacity:.6;
+  padding:20px;
+}
