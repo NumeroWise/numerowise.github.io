@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
 
-<body>
-
-<div id="header"></div>
-  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="css/style.css">
+  
 <title>NumeroWise | Free AI Numerology Calculator & Astrology Tools</title>
 
 <meta name="description" content="NumeroWise is a free AI-powered numerology platform. Calculate Life Path, Destiny, Soul Urge, Personality numbers and get deep numerology insights." />
@@ -122,6 +120,8 @@ h1 {
 
 <body>
 
+<div id="header"></div>
+  
 <header>
   <h1>🔢 NumeroWise</h1>
   <div class="subtitle">Free AI Powered Numerology Calculator</div>
@@ -257,5 +257,21 @@ function go(page){
 }
 </script>
 
+<script>
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
+</script>
+  
 </body>
 </html>
