@@ -78,6 +78,17 @@ FOOTER
   box-sizing:border-box;
 }
 
+/* GUIDES PAGE */
+
+.guides-container{
+  max-width:1100px;
+}
+
+.guide-card{
+  height:auto;
+  min-height:260px;
+}
+
 /* =====================================================
 PAGE CONTAINERS
 ===================================================== */
