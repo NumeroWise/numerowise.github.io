@@ -1,127 +1,385 @@
+/* =====================================================
+NUMEROWISE MASTER CSS v2.0 (PART 1)
+GLOBAL + HEADER + FOOTER + CONTAINERS
+===================================================== */
+
+*{
+box-sizing:border-box;
+}
+
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
-  color:white;
+margin:0;
+font-family:Arial,sans-serif;
+background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
+color:white;
+line-height:1.6;
 }
 
-/* PAGE CONTAINER */
+/* LINKS */
+
+a{
+text-decoration:none;
+}
+
+/* =====================================================
+HEADER
+===================================================== */
+
+.site-header{
+text-align:center;
+padding:30px 20px 20px;
+}
+
+.site-header .brand{
+font-size:42px;
+font-weight:bold;
+color:#ffd700;
+margin-bottom:8px;
+}
+
+.site-header .subtitle{
+opacity:.85;
+font-size:16px;
+margin-bottom:25px;
+}
+
+.site-header .menu{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:18px;
+}
+
+.site-header .menu a{
+color:#00e5ff;
+font-weight:bold;
+transition:.3s;
+}
+
+.site-header .menu a:hover
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+.site-footer{
+text-align:center;
+padding:25px;
+margin-top:40px;
+opacity:.6;
+font-size:12px;
+}
+
+/* =====================================================
+PAGE CONTAINERS
+===================================================== */
+
+/* Calculator Pages */
+
 .container{
-  max-width:700px;
-  margin:auto;
-  padding:30px;
+max-width:700px;
+margin:auto;
+padding:30px;
 }
 
-/* NAVIGATION */
-.nav{
-  text-align:center;
-  margin-bottom:20px;
+/* Guide & Report Pages */
+
+.content-container{
+max-width:900px;
+margin:auto;
+padding:30px;
 }
 
-.nav a{
-  color:#00e5ff;
-  text-decoration:none;
-  margin:0 10px;
-  font-weight:bold;
-  transition:0.3s;
+/* Homepage */
+
+.home-container{
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
-.nav a:hover{
-  color:#ffd700;
-}
+/* =====================================================
+HEADINGS
+===================================================== */
 
-/* HEADINGS */
 h1{
-  text-align:center;
-  color:#ffd700;
-  margin-bottom:10px;
+text-align:center;
+color:#ffd700;
+margin-top:0;
+margin-bottom:12px;
+}
+
+h2{
+color:#00e5ff;
+}
+
+h3{
+color:#ffd700;
 }
 
 .subtitle{
-  text-align:center;
-  opacity:.8;
-  margin-bottom:30px;
+text-align:center;
+opacity:.85;
+margin-bottom:30px;
 }
 
-/* MAIN CARD (INPUT BOX) */
+/* =====================================================
+NAVIGATION (OLD PAGES SUPPORT)
+===================================================== */
+
+.nav{
+text-align:center;
+margin-bottom:20px;
+}
+
+.nav a{
+color:#00e5ff;
+margin:0 10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.nav a:hover
+
+/* =====================================================
+LANGUAGE SELECTOR
+===================================================== */
+
+.language-box{
+text-align:center;
+margin:15px 0 20px;
+}
+
+select{
+padding:10px;
+border-radius:8px;
+border:none;
+font-size:15px;
+}
+/* =====================================================
+NUMEROWISE MASTER CSS v2.0 (PART 2)
+CARDS + FORMS + HOMEPAGE + RESPONSIVE
+===================================================== */
+
+/* =====================================================
+CARD SYSTEM
+===================================================== */
+
 .card{
-  background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:12px;
-  padding:25px;
-  box-shadow:0 0 15px rgba(0,0,0,0.3);
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.15);
+border-radius:12px;
+padding:25px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
 }
 
-/* LABEL */
+.card h2{
+color:#00e5ff;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:8px;
+}
+
+/* Guide & Prediction Pages Hover */
+
+.content-card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.15);
+border-radius:12px;
+padding:25px;
+line-height:1.8;
+transition:.3s;
+}
+
+.content-card:hover{
+border-color:#00e5ff;
+box-shadow:0 0 18px rgba(0,229,255,.25);
+}
+
+/* =====================================================
+FORMS
+===================================================== */
+
 label{
-  display:block;
-  margin-bottom:8px;
-  font-weight:bold;
+display:block;
+margin-bottom:8px;
+font-weight:bold;
 }
 
-/* INPUT */
-input{
-  width:100%;
-  padding:12px;
-  border-radius:8px;
-  border:none;
-  font-size:16px;
-  box-sizing:border-box;
-  outline:none;
+input,
+textarea{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:16px;
+outline:none;
 }
 
-/* BUTTON */
+/* =====================================================
+BUTTONS
+===================================================== */
+
 button{
-  margin-top:20px;
-  width:100%;
-  padding:14px;
-  border:none;
-  border-radius:8px;
-  background:#ffd700;
-  color:black;
-  font-weight:bold;
-  font-size:16px;
-  cursor:pointer;
-  transition:0.3s;
+margin-top:20px;
+width:100%;
+padding:14px;
+border:none;
+border-radius:8px;
+background:#ffd700;
+color:black;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
 }
 
-button:hover{
-  background:#ffcc00;
-}
+button:hover
 
-/* RESULT BOX */
+/* =====================================================
+RESULT SECTION
+===================================================== */
+
 .result{
-  margin-top:25px;
-  text-align:center;
-  display:none;
+display:none;
+text-align:center;
+margin-top:25px;
 }
 
-/* NUMBER DISPLAY */
 .number{
-  font-size:60px;
-  font-weight:bold;
-  color:#00e5ff;
-  cursor:pointer;
-  margin-top:10px;
-  transition:0.3s;
+font-size:60px;
+font-weight:bold;
+color:#00e5ff;
+cursor:pointer;
+margin-top:10px;
+transition:.3s;
 }
 
-.number:hover{
-  color:#ffd700;
-}
+.number:hover
 
-/* NOTE */
 .note{
-  margin-top:10px;
-  opacity:.8;
-  font-size:14px;
+margin-top:10px;
+opacity:.8;
+font-size:14px;
 }
 
-/* FOOTER (OUTSIDE CARD - GLOBAL) */
-footer{
-  text-align:center;
-  margin-top:30px;
-  font-size:10px;   /* reduced size (2 points smaller) */
-  opacity:.6;
-  padding:20px;
+/* =====================================================
+HOMEPAGE SECTIONS
+===================================================== */
+
+.section{
+padding:20px 0;
+}
+
+.section-title{
+text-align:center;
+color:#00e5ff;
+font-size:22px;
+margin:30px 0 20px;
+}
+
+/* =====================================================
+HOMEPAGE GRID
+===================================================== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+/* =====================================================
+HOMEPAGE CARDS
+===================================================== */
+
+.grid .card{
+height:130px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+cursor:pointer;
+transition:.3s;
+}
+
+.grid .card:hover{
+transform:scale(1.05);
+border-color:#00e5ff;
+box-shadow:0 0 18px rgba(0,229,255,.3);
+}
+
+.grid .card h3{
+margin:0;
+line-height:1.2;
+}
+
+.grid .card p{
+font-size:12px;
+opacity:.8;
+margin-top:6px;
+}
+
+/* =====================================================
+FAQ SECTION
+===================================================== */
+
+.faq-box{
+max-width:800px;
+margin:auto;
+opacity:.85;
+line-height:1.8;
+}
+
+/* =====================================================
+RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width:900px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.site-header .brand{
+font-size:36px;
+}
+
+}
+
+/* =====================================================
+RESPONSIVE MOBILE
+===================================================== */
+
+@media (max-width:600px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.container,
+.content-container,
+.home-container{
+padding:20px;
+}
+
+.site-header .brand{
+font-size:32px;
+}
+
+.site-header .menu{
+gap:12px;
+}
+
+.number{
+font-size:50px;
+}
+
 }
