@@ -51,23 +51,30 @@ gap:18px;
 }
 
 .site-header .menu a{
-color:#00e5ff;
-font-weight:bold;
-transition:.3s;
+  color:#00e5ff;
+  font-weight:bold;
+  transition:.3s;
+  padding:6px 10px;
+  border-radius:6px;
 }
 
-.site-header .menu a:hover
+.site-header .menu a:hover{
+  color:#ffd700;
+  background:rgba(255,215,0,.08);
+}
 
 /* =====================================================
 FOOTER
 ===================================================== */
 
 .site-footer{
-text-align:center;
-padding:25px;
-margin-top:40px;
-opacity:.6;
-font-size:12px;
+  text-align:center;
+  width:100%;
+  padding:25px 20px;
+  margin-top:40px;
+  opacity:.6;
+  font-size:12px;
+  box-sizing:border-box;
 }
 
 /* =====================================================
