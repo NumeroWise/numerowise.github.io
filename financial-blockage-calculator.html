@@ -1,45 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Financial Blockage Analysis | NumeroWise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Financial Blockage Calculator | NumeroWise</title>
+
+<meta name="description" content="Calculate your Financial Blockage Number using your date of birth and discover money blocks, financial challenges, and wealth flow patterns in numerology.">
 
 <style>
 body{
-  margin:0;
-  font-family:Arial;
-  background:#0f0c29;
-  color:white;
-  text-align:center;
+margin:0;
+font-family:Arial,sans-serif;
+background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
+color:white;
 }
 
 .container{
-  max-width:600px;
-  margin:50px auto;
-  padding:20px;
+max-width:700px;
+margin:auto;
+padding:30px;
+}
+
+.nav{
+text-align:center;
+margin-bottom:20px;
+}
+
+.nav a{
+color:#00e5ff;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+h1{
+text-align:center;
+color:#ffd700;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+opacity:.8;
+margin-bottom:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.15);
+border-radius:12px;
+padding:25px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
 }
 
 input{
-  width:80%;
-  padding:12px;
-  margin:10px 0;
-  border-radius:8px;
-  border:none;
+width:100%;
+padding:12px;
+border-radius:8px;
+border:none;
+font-size:16px;
+box-sizing:border-box;
 }
 
 button{
-  padding:12px 20px;
-  background:#00e5ff;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
+margin-top:20px;
+width:100%;
+padding:14px;
+border:none;
+border-radius:8px;
+background:#ffd700;
+color:black;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ffcc00;
 }
 
 .result{
-  margin-top:20px;
-  font-size:18px;
-  color:#ffd700;
+margin-top:25px;
+text-align:center;
+display:none;
+}
+
+.number{
+font-size:60px;
+font-weight:bold;
+color:#00e5ff;
+cursor:pointer;
+margin-top:10px;
+}
+
+.number:hover{
+color:#ffd700;
+}
+
+.note{
+margin-top:10px;
+opacity:.8;
+font-size:14px;
+}
+
+.footer{
+text-align:center;
+margin-top:30px;
+font-size:12px;
+opacity:.6;
 }
 </style>
 </head>
@@ -47,41 +121,113 @@ button{
 <body>
 
 <div class="container">
-  <h1>💰 Financial Blockage Analysis</h1>
-  <p>Enter your date of birth</p>
 
-  <input type="date" id="dob">
-  <br>
-  <button onclick="calculate()">Analyze Blockage</button>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="what-is-financial-blockage.html">Guide</a>
+<a href="life-path-calculator.html">Life Path</a>
+</div>
 
-  <div class="result" id="result"></div>
+<h1>Financial Blockage Calculator</h1>
+
+<div class="subtitle">
+Discover your money blocks, financial patterns and wealth flow energy through numerology.
+</div>
+
+<div class="card">
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<button onclick="calculateBlockage()">
+Calculate Financial Blockage Number
+</button>
+
+<div class="result" id="resultBox">
+
+<h2>Your Financial Blockage Number Is</h2>
+
+<div class="number"
+id="blockageNumber"
+onclick="openBlockagePage()">
+</div>
+
+<div class="note">
+Click the number to read your detailed financial blockage report.
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<p>
+<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
+</p>
+</div>
+
 </div>
 
 <script>
-function reduce(num){
-  while(num > 9){
-    num = num.toString().split('').reduce((a,b)=>+a + +b,0);
-  }
-  return num;
+
+let blockageResult = 0;
+
+function reduceNumber(num){
+
+while(num > 9){
+
+let sum = 0;
+
+num.toString().split('').forEach(d=>{
+sum += parseInt(d);
+});
+
+num = sum;
+
 }
 
-function calculate(){
-  let dob = document.getElementById("dob").value;
-  if(!dob){
-    document.getElementById("result").innerHTML = "Please enter DOB";
-    return;
-  }
-
-  let digits = dob.replaceAll("-","");
-  let sum = 0;
-  for(let d of digits){
-    sum += parseInt(d);
-  }
-
-  let number = reduce(sum);
-
-  window.location.href = `financial-blockage-number-${number}.html`;
+return num;
 }
+
+function calculateBlockage(){
+
+let dob =
+document.getElementById("dob").value;
+
+if(dob===""){
+alert("Please enter your date of birth.");
+return;
+}
+
+let digits =
+dob.replace(/-/g,'');
+
+let total = 0;
+
+for(let i=0;i<digits.length;i++){
+total += parseInt(digits[i]);
+}
+
+blockageResult = reduceNumber(total);
+
+document.getElementById("blockageNumber")
+.innerHTML = blockageResult;
+
+document.getElementById("resultBox")
+.style.display="block";
+}
+
+function openBlockagePage(){
+
+if(blockageResult>0){
+
+window.location.href =
+"financial-blockage-number-"+blockageResult+".html";
+
+}
+
+}
+
 </script>
 
 </body>
