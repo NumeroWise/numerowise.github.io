@@ -413,3 +413,24 @@ font-size:50px;
   height:auto;
   min-height:260px;
 }
+
+/* BACK BUTTON */
+
+.back-btn{
+  display:block;
+  width:220px;
+  margin:30px auto;
+  text-align:center;
+  background:#ffd700;
+  color:black;
+  padding:12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.back-btn:hover{
+  background:#ffcc00;
+  color:black;
+}
