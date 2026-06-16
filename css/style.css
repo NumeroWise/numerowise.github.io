@@ -293,12 +293,12 @@ button:hover {
 /* Calculator Result Summary */
 
 #summary{
-  font-size:11px;
+  font-size:12px;
 }
 
 .result-summary{
   margin-top:15px;
   opacity:0.8;
-  font-size:11px;
+  font-size:12px;
   line-height:1.5;
 }
