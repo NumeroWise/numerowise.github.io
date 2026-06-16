@@ -288,18 +288,17 @@ button:hover {
 /* Prevent calculator button style on homepage cards */
 .grid .card button {
   display: none;
-
-   /* Calculator Result Summary */
-
-#summary{
-  font-size:13px;
 }
 
 /* Calculator Result Summary */
 
+#summary{
+  font-size:10px;
+}
+
 .result-summary{
   margin-top:15px;
   opacity:0.8;
-  font-size:10px !important;
+  font-size:10px;
   line-height:1.5;
 }
