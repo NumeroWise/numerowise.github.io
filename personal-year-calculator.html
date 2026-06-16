@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,102 +7,159 @@
 
 <title>Personal Year Calculator | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-  text-align: center;
-}
+<meta name="description" content="Calculate your Personal Year Number and discover the opportunities, lessons, and themes influencing your current year.">
 
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 40px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-input {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: none;
-}
-
-button {
-  padding: 12px 20px;
-  background: #ffd700;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 8px;
-}
-
-.result {
-  margin-top: 20px;
-  font-size: 22px;
-  color: #00e5ff;
-  display: none;
-}
-</style>
 </head>
 
 <body>
 
+<div id="header"></div>
+
 <div class="container">
 
-<h1>🔮 Personal Year Calculator</h1>
+<h1>Personal Year Calculator</h1>
 
-<input type="date" id="dob">
-<button onclick="calculate()">Calculate</button>
+<div class="subtitle">
+Discover the energy and opportunities shaping your current year
+</div>
+
+<div class="card">
+
+<input
+type="date"
+id="dob">
+
+<button onclick="calculate()">
+Calculate Personal Year Number
+</button>
 
 <div class="result" id="resultBox">
-Your Personal Year Number: <span id="result"></span>
-<br><br>
-<button onclick="goDetail()">View Full Reading</button>
+
+<div class="label">
+Your Personal Year Number
+</div>
+
+<div
+class="number"
+id="result"
+onclick="goDetail()">
+</div>
+
+<div class="result-summary">
+Your Personal Year Number reveals the opportunities, challenges and lessons influencing your current year. CLICK Personal Year Number to Know More...
 </div>
 
 </div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
 
 <script>
 
 let finalNumber = null;
 
-/* REDUCTION */
+/* REDUCE */
+
 function reduce(num){
-  while(num > 9){
-    num = num.toString().split('').reduce((a,b)=>a+Number(b),0);
-  }
-  return num;
+
+while(num > 9){
+
+num = num
+.toString()
+.split('')
+.reduce(
+(a,b)=>a + Number(b),
+0
+);
+
+}
+
+return num;
+
 }
 
 /* PERSONAL YEAR CALC */
+
 function calculate(){
-  let dob = document.getElementById("dob").value;
-  if(!dob){
-    alert("Enter DOB");
-    return;
-  }
 
-  let year = new Date().getFullYear();
+let dob =
+document.getElementById("dob").value;
 
-  let [y,m,d] = dob.split("-");
+if(!dob){
 
-  let sum =
-    Number(d) + Number(m) +
-    year.toString().split('').reduce((a,b)=>a+Number(b),0);
+alert("Please enter your Date of Birth");
 
-  finalNumber = reduce(sum);
+return;
 
-  document.getElementById("result").innerText = finalNumber;
-  document.getElementById("resultBox").style.display = "block";
+}
+
+let year =
+new Date().getFullYear();
+
+let [y,m,d] =
+dob.split("-");
+
+let sum =
+
+Number(d) +
+Number(m) +
+
+year
+.toString()
+.split('')
+.reduce(
+(a,b)=>a + Number(b),
+0
+);
+
+finalNumber =
+reduce(sum);
+
+document
+.getElementById("result")
+.innerText = finalNumber;
+
+document
+.getElementById("resultBox")
+.style.display = "block";
+
 }
 
 /* REDIRECT */
+
 function goDetail(){
-  window.location.href = "personal-year-" + finalNumber + ".html";
+
+if(finalNumber !== null){
+
+window.location.href =
+"personal-year-" +
+finalNumber +
+".html";
+
 }
+
+}
+
+/* HEADER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 </script>
 
