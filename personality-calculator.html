@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,102 +9,13 @@
 
 <meta name="description" content="Free Personality Number Calculator. Discover how others see you, your outer personality, first impressions, and social image through numerology.">
 
-<style>
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
-  color:white;
-  text-align:center;
-}
-
-.container{
-  max-width:700px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-/* HEADER */
-h1{
-  color:#ffd700;
-  margin-bottom:5px;
-}
-
-.subtitle{
-  opacity:0.7;
-  margin-bottom:30px;
-}
-
-/* INPUT */
-input{
-  width:90%;
-  padding:12px;
-  margin:10px 0;
-  border-radius:8px;
-  border:none;
-  outline:none;
-}
-
-button{
-  padding:12px 25px;
-  background:#00e5ff;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
-  margin-top:10px;
-}
-
-button:hover{
-  background:#00c2d1;
-}
-
-/* RESULT */
-.result{
-  margin-top:30px;
-  display:none;
-  animation:fadeIn 0.5s ease-in;
-}
-
-.number{
-  font-size:80px;
-  color:#ffd700;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.number:hover{
-  transform:scale(1.1);
-  color:#00e5ff;
-}
-
-.label{
-  opacity:0.7;
-  margin-top:10px;
-}
-
-@keyframes fadeIn{
-  from{
-    opacity:0;
-    transform:translateY(10px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-.footer{
-  text-align:center;
-  padding:25px;
-  opacity:0.5;
-  font-size:12px;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+
+<div id="header"></div>
 
 <div class="container">
 
@@ -113,9 +25,12 @@ button:hover{
 Discover how others perceive you through numerology
 </div>
 
-<input type="text" id="name" placeholder="Enter Full Name">
+<div class="card">
 
-<br>
+<input
+type="text"
+id="name"
+placeholder="Enter Full Name">
 
 <button onclick="calculate()">
 Calculate Personality Number
@@ -127,25 +42,30 @@ Calculate Personality Number
 Your Personality Number
 </div>
 
-<div class="number" id="personalityNumber" onclick="goDetail()"></div>
+<div
+class="number"
+id="personalityNumber"
+onclick="goDetail()">
+</div>
 
-<div style="margin-top:15px; opacity:0.8;" id="summary"></div>
+<div class="result-summary" id="summary">
+Your Personality Number reflects how others perceive you. CLICK Personality Number to Know More...
+</div>
+
+</div>
 
 </div>
 
 </div>
 
-<div class="footer">
- <p>
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>
-</div>
+<div id="footer"></div>
 
 <script>
 
 let finalNumber = null;
 
 /* PYTHAGOREAN VALUES */
+
 const values = {
 A:1,B:2,C:3,D:4,E:5,F:6,G:7,H:8,I:9,
 J:1,K:2,L:3,M:4,N:5,O:6,P:7,Q:8,R:9,
@@ -153,16 +73,23 @@ S:1,T:2,U:3,V:4,W:5,X:6,Y:7,Z:8
 };
 
 /* VOWELS */
+
 const vowels = ["A","E","I","O","U"];
 
 /* REDUCE TO SINGLE DIGIT */
+
 function reduceToSingleDigit(num){
 
 while(num > 9){
+
 num = num
 .toString()
 .split("")
-.reduce((sum,digit)=>sum + Number(digit),0);
+.reduce(
+(sum,digit)=>sum + Number(digit),
+0
+);
+
 }
 
 return num;
@@ -170,16 +97,22 @@ return num;
 }
 
 /* PERSONALITY NUMBER */
+
 function calculatePersonality(name){
 
-name = name.toUpperCase().replace(/[^A-Z]/g,'');
+name =
+name
+.toUpperCase()
+.replace(/[^A-Z]/g,'');
 
 let sum = 0;
 
 for(let char of name){
 
 if(!vowels.includes(char)){
+
 sum += values[char];
+
 }
 
 }
@@ -189,9 +122,13 @@ return reduceToSingleDigit(sum);
 }
 
 /* BUTTON */
+
 function calculate(){
 
-let name = document.getElementById("name").value;
+let name =
+document
+.getElementById("name")
+.value;
 
 if(!name){
 
@@ -201,28 +138,49 @@ return;
 
 }
 
-finalNumber = calculatePersonality(name);
+finalNumber =
+calculatePersonality(name);
 
-document.getElementById("personalityNumber").innerText = finalNumber;
+document
+.getElementById("personalityNumber")
+.innerText = finalNumber;
 
-document.getElementById("summary").innerText =
-"Your Personality Number reflects how others perceive you. CLICK Personality Number to Know More...";
-
-document.getElementById("resultBox").style.display = "block";
+document
+.getElementById("resultBox")
+.style.display = "block";
 
 }
 
 /* RESULT PAGE */
+
 function goDetail(){
 
 if(finalNumber !== null){
 
 window.location.href =
-"personality-number-" + finalNumber + ".html";
+"personality-number-" +
+finalNumber +
+".html";
 
 }
 
 }
+
+/* HEADER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 </script>
 
