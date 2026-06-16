@@ -258,24 +258,34 @@ button:hover {
   letter-spacing: 0.5px;
 }
 
-/* Home page cards (grid cards fix) */
+/* =========================
+   HOME GRID CARDS FIX (FINAL)
+   ========================= */
+
 .grid .card {
-  height: 130px;
+  min-height: 130px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 18px;
+  overflow: hidden;
 }
 
-/* Home page card text tuning */
 .grid .card h3 {
   font-size: 15px;
   color: #ffd700;
+  margin-bottom: 6px;
+  line-height: 1.3;
 }
 
 .grid .card p {
   font-size: 12px;
   opacity: 0.75;
+  margin: 0;
+  line-height: 1.4;
+  padding: 0 4px;
 }
 
 /* Prevent calculator button style on homepage cards */
