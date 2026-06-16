@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,96 +9,13 @@
 
 <meta name="description" content="Calculate your Birthday Number and discover your natural talents, gifts, strengths, and hidden abilities with NumeroWise.">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-  text-align: center;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.container {
-  max-width: 700px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* HEADER */
-h1 {
-  color: #ffd700;
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  opacity: 0.7;
-  margin-bottom: 30px;
-}
-
-/* INPUT */
-input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-button {
-  padding: 12px 25px;
-  background: #00e5ff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-button:hover {
-  background: #00c2d1;
-}
-
-/* RESULT */
-.result {
-  margin-top: 30px;
-  display: none;
-  animation: fadeIn 0.5s ease-in;
-}
-
-.number {
-  font-size: 80px;
-  color: #ffd700;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.number:hover {
-  transform: scale(1.1);
-  color: #00e5ff;
-}
-
-.label {
-  opacity: 0.7;
-  margin-top: 10px;
-}
-
-@keyframes fadeIn {
-  from {opacity:0; transform:translateY(10px);}
-  to {opacity:1; transform:translateY(0);}
-}
-
-.footer{
-  text-align:center;
-  padding:25px;
-  opacity:0.6;
-  font-size:12px;
-  margin-top:40px;
-}
-</style>
 </head>
 
 <body>
+
+<div id="header"></div>
 
 <div class="container">
 
@@ -107,11 +25,16 @@ button:hover {
 Discover your natural talents and hidden gifts through numerology
 </div>
 
-<input type="text" id="name" placeholder="Enter Full Name">
+<div class="card">
 
-<input type="date" id="dob">
+<input
+type="text"
+id="name"
+placeholder="Enter Full Name">
 
-<br>
+<input
+type="date"
+id="dob">
 
 <button onclick="calculateBirthday()">
 Calculate Birthday Number
@@ -123,19 +46,23 @@ Calculate Birthday Number
 Your Birthday Number
 </div>
 
-<div class="number" id="birthdayNumber" onclick="goDetail()"></div>
+<div
+class="number"
+id="birthdayNumber"
+onclick="goDetail()">
+</div>
 
-<div style="margin-top:15px; opacity:0.8;" id="summary"></div>
+<div class="result-summary" id="summary">
+Your Birthday Number reveals your natural talents, gifts, strengths and abilities. CLICK Birthday Number to Know More...
+</div>
+
+</div>
 
 </div>
 
 </div>
 
-<div class="footer">
- <p>
-© 2026 🔢 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers.
-</p>
-</div>
+<div id="footer"></div>
 
 <script>
 
@@ -149,9 +76,13 @@ num = parseInt(num);
 
 while(num > 9){
 
-num = num.toString()
+num = num
+.toString()
 .split('')
-.reduce((sum,digit)=>sum + Number(digit),0);
+.reduce(
+(sum,digit)=>sum + Number(digit),
+0
+);
 
 }
 
@@ -165,7 +96,10 @@ function birthdayFromDOB(dob){
 
 if(!dob) return null;
 
-let day = parseInt(dob.split("-")[2]);
+let day =
+parseInt(
+dob.split("-")[2]
+);
 
 return reduceToSingleDigit(day);
 
@@ -175,26 +109,32 @@ return reduceToSingleDigit(day);
 
 function calculateBirthday(){
 
-let name = document.getElementById("name").value;
+let name =
+document.getElementById("name").value;
 
-let dob = document.getElementById("dob").value;
+let dob =
+document.getElementById("dob").value;
 
 if(!name || !dob){
 
-alert("Please enter both Name and Date of Birth");
+alert(
+"Please enter both Name and Date of Birth"
+);
 
 return;
 
 }
 
-finalNumber = birthdayFromDOB(dob);
+finalNumber =
+birthdayFromDOB(dob);
 
-document.getElementById("birthdayNumber").innerText = finalNumber;
+document
+.getElementById("birthdayNumber")
+.innerText = finalNumber;
 
-document.getElementById("summary").innerText =
-"Your Birthday Number reveals your natural talents, gifts, strengths and abilities. CLICK Birthday Number to Know More...";
-
-document.getElementById("resultBox").style.display = "block";
+document
+.getElementById("resultBox")
+.style.display = "block";
 
 }
 
@@ -205,11 +145,29 @@ function goDetail(){
 if(finalNumber !== null){
 
 window.location.href =
-"birthday-number-" + finalNumber + ".html";
+"birthday-number-" +
+finalNumber +
+".html";
 
 }
 
 }
+
+/* HEADER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 </script>
 
