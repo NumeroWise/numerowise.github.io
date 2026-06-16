@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,100 +9,13 @@
 
 <meta name="description" content="Calculate your Soul Urge Number using your full name. Discover your inner desires, motivations, and emotional needs with NumeroWise.">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-  text-align: center;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.container {
-  max-width: 700px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-h1 {
-  color: #ffd700;
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  opacity: 0.8;
-  margin-bottom: 30px;
-}
-
-input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-
-button {
-  padding: 12px 25px;
-  background: #00e5ff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-button:hover {
-  background: #00c2d1;
-}
-
-.result {
-  margin-top: 30px;
-  display: none;
-  animation: fadeIn 0.5s ease-in;
-}
-
-.number {
-  font-size: 80px;
-  color: #ffd700;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.number:hover {
-  transform: scale(1.1);
-  color: #00e5ff;
-}
-
-.label {
-  opacity: 0.8;
-  margin-top: 10px;
-}
-
-.footer {
-  text-align: center;
-  padding: 25px;
-  opacity: 0.5;
-  font-size: 12px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
 </head>
 
 <body>
+
+<div id="header"></div>
 
 <div class="container">
 
@@ -111,12 +25,12 @@ button:hover {
 Discover your inner desires, motivations and heart's true calling
 </div>
 
+<div class="card">
+
 <input
 type="text"
 id="fullName"
 placeholder="Enter Full Name">
-
-<br>
 
 <button onclick="calculateSoulUrge()">
 Calculate Soul Urge Number
@@ -134,18 +48,17 @@ id="soulUrgeNumber"
 onclick="goDetail()">
 </div>
 
-<div
-style="margin-top:15px; opacity:0.8;"
-id="summary">
+<div class="result-summary" id="summary">
+Your Soul Urge Number reveals your deepest desires, emotional needs, and inner motivations. CLICK Soul Urge Number to Know More...
 </div>
 
 </div>
 
 </div>
 
-<div class="footer">
-© 2026 🔢 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers
 </div>
+
+<div id="footer"></div>
 
 <script>
 
@@ -153,108 +66,118 @@ let finalNumber = null;
 
 /* REDUCE TO SINGLE DIGIT */
 
-function reduceToSingleDigit(num) {
+function reduceToSingleDigit(num){
 
-  while (num > 9) {
+while(num > 9){
 
-    num = num
-      .toString()
-      .split('')
-      .reduce(
-        (sum, digit) =>
-        sum + Number(digit),
-        0
-      );
+num = num
+.toString()
+.split('')
+.reduce(
+(sum, digit) => sum + Number(digit),
+0
+);
 
-  }
+}
 
-  return num;
+return num;
+
 }
 
 /* SOUL URGE CALCULATION */
 
-function calculateSoulUrge() {
+function calculateSoulUrge(){
 
-  let name =
-    document
-    .getElementById("fullName")
-    .value
-    .toUpperCase()
-    .trim();
+let name =
+document
+.getElementById("fullName")
+.value
+.toUpperCase()
+.trim();
 
-  if (!name) {
+if(!name){
 
-    alert("Please enter your Full Name");
+alert("Please enter your Full Name");
 
-    return;
+return;
 
-  }
+}
 
-  const vowelValues = {
+const vowelValues = {
 
-    A: 1,
-    E: 5,
-    I: 9,
-    O: 6,
-    U: 3
+A:1,
+E:5,
+I:9,
+O:6,
+U:3
 
-  };
+};
 
-  let total = 0;
+let total = 0;
 
-  for (let char of name) {
+for(let char of name){
 
-    if (vowelValues[char]) {
+if(vowelValues[char]){
 
-      total += vowelValues[char];
+total += vowelValues[char];
 
-    }
+}
 
-  }
+}
 
-  if (total === 0) {
+if(total === 0){
 
-    alert("Please enter a valid name");
+alert("Please enter a valid name");
 
-    return;
+return;
 
-  }
+}
 
-  finalNumber =
-    reduceToSingleDigit(total);
+finalNumber =
+reduceToSingleDigit(total);
 
-  document
-    .getElementById("soulUrgeNumber")
-    .innerText = finalNumber;
+document
+.getElementById("soulUrgeNumber")
+.innerText = finalNumber;
 
-  document
-    .getElementById("summary")
-    .innerText =
-    "Your Soul Urge Number reveals your deepest desires, emotional needs, and inner motivations. CLICK Soul Urge Number to Know More...";
-
-  document
-    .getElementById("resultBox")
-    .style.display = "block";
+document
+.getElementById("resultBox")
+.style.display = "block";
 
 }
 
 /* OPEN REPORT PAGE */
 
-function goDetail() {
+function goDetail(){
 
-  if (finalNumber !== null) {
+if(finalNumber !== null){
 
-    window.location.href =
-      "soul-urge-number-" +
-      finalNumber +
-      ".html";
-
-  }
+window.location.href =
+"soul-urge-number-" +
+finalNumber +
+".html";
 
 }
+
+}
+
+/* HEADER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 </script>
 
 </body>
 </html>
-```
