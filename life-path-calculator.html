@@ -1,175 +1,192 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Life Path Calculator | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-  text-align: center;
-}
+<meta name="description" content="Calculate your Life Path Number and discover your life purpose, strengths, talents, and destiny through numerology.">
 
-.container {
-  max-width: 700px;
-  margin: auto;
-  padding: 40px 20px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-/* HEADER */
-h1 {
-  color: #ffd700;
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  opacity: 0.7;
-  margin-bottom: 30px;
-}
-
-/* INPUT BOX */
-input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-button {
-  padding: 12px 25px;
-  background: #00e5ff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-button:hover {
-  background: #00c2d1;
-}
-
-/* RESULT BOX */
-.result {
-  margin-top: 30px;
-  display: none;
-  animation: fadeIn 0.5s ease-in;
-}
-
-.number {
-  font-size: 80px;
-  color: #ffd700;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.number:hover {
-  transform: scale(1.1);
-  color: #00e5ff;
-}
-
-.label {
-  opacity: 0.7;
-  margin-top: 10px;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(10px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-</style>
 </head>
 
 <body>
 
+<div id="header"></div>
+
 <div class="container">
 
-  <h1>Life Path Calculator</h1>
-  <div class="subtitle">Discover your life purpose through numbers</div>
+<h1>Life Path Calculator</h1>
 
-  <!-- INPUT -->
-  <input type="text" id="name" placeholder="Enter Full Name">
-  <input type="date" id="dob">
+<div class="subtitle">
+Discover your life purpose through numbers
+</div>
 
-  <br>
-  <button onclick="calculate()">Calculate Life Path</button>
+<div class="card">
 
-  <!-- RESULT -->
-  <div class="result" id="resultBox">
+<input
+type="text"
+id="name"
+placeholder="Enter Full Name">
 
-    <div class="label">Your Life Path Number</div>
-    <div class="number" id="lifePathNumber" onclick="goDetail()"></div>
+<input
+type="date"
+id="dob">
 
-    <div style="margin-top:15px; opacity:0.8;" id="summary"></div>
+<button onclick="calculate()">
+Calculate Life Path
+</button>
 
-  </div>
+<div class="result" id="resultBox">
+
+<div class="label">
+Your Life Path Number
+</div>
+
+<div
+class="number"
+id="lifePathNumber"
+onclick="goDetail()">
+</div>
+
+<div
+id="summary"
+style="margin-top:15px;opacity:0.8;">
+</div>
 
 </div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
 
 <script>
 
 let finalNumber = null;
 
 /* REDUCE TO SINGLE DIGIT */
-function reduceToSingleDigit(num) {
-  num = parseInt(num);
 
-  while (num > 9) {
-    num = num
-      .toString()
-      .split('')
-      .reduce((sum, digit) => sum + Number(digit), 0);
-  }
+function reduceToSingleDigit(num){
 
-  return num;
+num = parseInt(num);
+
+while(num > 9){
+
+num = num
+.toString()
+.split('')
+.reduce(
+(sum,digit)=>
+sum + Number(digit),
+0
+);
+
+}
+
+return num;
+
 }
 
 /* LIFE PATH FROM DOB */
-function lifePathFromDOB(dob) {
-  if (!dob) return null;
 
-  let cleaned = dob.split("-").join("");
+function lifePathFromDOB(dob){
 
-  let sum = cleaned
-    .split("")
-    .reduce((a, b) => a + Number(b), 0);
+if(!dob) return null;
 
-  return reduceToSingleDigit(sum);
+let cleaned =
+dob.split("-").join("");
+
+let sum =
+cleaned
+.split("")
+.reduce(
+(a,b)=>
+a + Number(b),
+0
+);
+
+return reduceToSingleDigit(sum);
+
 }
 
-/* CALCULATE BUTTON */
-function calculate() {
-  let name = document.getElementById("name").value;
-  let dob = document.getElementById("dob").value;
+/* CALCULATE */
 
-  if (!name || !dob) {
-    alert("Please enter both Name and Date of Birth");
-    return;
-  }
+function calculate(){
 
-  finalNumber = lifePathFromDOB(dob);
+let name =
+document
+.getElementById("name")
+.value;
 
-  document.getElementById("lifePathNumber").innerText = finalNumber;
+let dob =
+document
+.getElementById("dob")
+.value;
 
-  document.getElementById("summary").innerText =
-    "Your Life Path Number reveals your core life direction. CLICK Life Path Number to Know More...";
+if(!name || !dob){
 
-  document.getElementById("resultBox").style.display = "block";
+alert(
+"Please enter both Name and Date of Birth"
+);
+
+return;
+
 }
 
-/* CLICK NUMBER → DETAIL PAGE */
-function goDetail() {
-  if (finalNumber !== null) {
-    window.location.href = "life-path-number-" + finalNumber + ".html";
-  }
+finalNumber =
+lifePathFromDOB(dob);
+
+document
+.getElementById("lifePathNumber")
+.innerText =
+finalNumber;
+
+document
+.getElementById("summary")
+.innerText =
+"Your Life Path Number reveals your core life direction. CLICK Life Path Number to Know More...";
+
+document
+.getElementById("resultBox")
+.style.display =
+"block";
+
 }
-  
+
+/* OPEN DETAIL PAGE */
+
+function goDetail(){
+
+if(finalNumber !== null){
+
+window.location.href =
+"life-path-number-" +
+finalNumber +
+".html";
+
+}
+
+}
+
+/* HEADER + FOOTER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
 </script>
 
 </body>
