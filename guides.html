@@ -5,15 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Learn Numerology | NumeroWise</title>
-<link rel="stylesheet" href="css/style.css">  
+
+<link rel="stylesheet" href="css/style.css">
+
 <meta name="description" content="Learn Numerology with NumeroWise. Explore Life Path Numbers, Personal Year Numbers, and Destiny Numbers through detailed guides.">
 
 </head>
 
 <body>
 
-<div id="header"></div>  
+<!-- HEADER -->
+<div id="header"></div>
 
+<!-- MAIN CONTENT -->
 <div class="container guides-container">
 
 <h1>📚 Learn Numerology</h1>
@@ -58,7 +62,9 @@ Explore the most important numerology systems and discover how numbers influence
 </div>
 
 <!-- MONEY & CAREER SECTION -->
-<div class="section-title">💰 Money & Career Numerology</div>
+<div class="section-title primary">
+💰 Money & Career Numerology
+</div>
 
 <div class="grid">
 
@@ -89,18 +95,15 @@ Explore the most important numerology systems and discover how numbers influence
 
 </div>
 
+<!-- BACK BUTTON -->
 <a href="index.html" class="back-btn">⬅ Back to Dashboard</a>
 
 </div>
 
-<script>
-function go(page){
-  window.location.href = page;
-}
-</script>
-
+<!-- FOOTER -->
 <div id="footer"></div>
 
+<!-- SCRIPT (ONLY ONCE FIXED) -->
 <script>
 function go(page){
   window.location.href = page;
@@ -108,19 +111,17 @@ function go(page){
 </script>
 
 <script>
-
 fetch('components/header.html')
-.then(response => response.text())
+.then(res => res.text())
 .then(data => {
-document.getElementById('header').innerHTML = data;
+  document.getElementById('header').innerHTML = data;
 });
 
 fetch('components/footer.html')
-.then(response => response.text())
+.then(res => res.text())
 .then(data => {
-document.getElementById('footer').innerHTML = data;
+  document.getElementById('footer').innerHTML = data;
 });
-
 </script>
 
 </body>
