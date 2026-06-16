@@ -240,22 +240,28 @@ button:hover {
 }
 
 /* =========================
-   FIXED SECTION TITLES (HOME PAGE SAFE)
+   SECTION TITLE COLOR SYSTEM (FINAL FIX)
    ========================= */
 
+/* Default (Home page style) */
 .section-title {
   width: 100%;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
-  color: #00e5ff;
   margin: 40px auto 20px;
   display: block;
+  letter-spacing: 0.5px;
 }
 
-/* ensure icon headings also center correctly */
-.section-title {
-  letter-spacing: 0.5px;
+/* TYPE 1 - PRIMARY (cyan) */
+.section-title.primary {
+  color: #00e5ff;
+}
+
+/* TYPE 2 - GOLD (important sections) */
+.section-title.gold {
+  color: #ffd700;
 }
 
 /* =========================
