@@ -240,16 +240,22 @@ button:hover {
 }
 
 /* =========================
-   HOME PAGE FIX (ONLY INDEX.HTML)
+   FIXED SECTION TITLES (HOME PAGE SAFE)
    ========================= */
 
-/* Home page section title restore */
 .section-title {
+  width: 100%;
   text-align: center;
-  font-size: 20px;
-  margin: 30px 0 15px;
-  color: #00e5ff;
+  font-size: 22px;
   font-weight: bold;
+  color: #00e5ff;
+  margin: 40px auto 20px;
+  display: block;
+}
+
+/* ensure icon headings also center correctly */
+.section-title {
+  letter-spacing: 0.5px;
 }
 
 /* Home page cards (grid cards fix) */
