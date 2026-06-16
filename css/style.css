@@ -300,7 +300,6 @@ button:hover {
 .result-summary{
   margin-top:15px;
   opacity:0.8;
-  font-size:10px;
+  font-size:10px !important;
   line-height:1.5;
-}
 }
