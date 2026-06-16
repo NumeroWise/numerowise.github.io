@@ -254,16 +254,6 @@ button:hover {
   letter-spacing: 0.5px;
 }
 
-/* TYPE 1 - PRIMARY (cyan) */
-.section-title.primary {
-  color: #00e5ff;
-}
-
-/* TYPE 2 - GOLD (important sections) */
-.section-title.gold {
-  color: #ffd700;
-}
-
 /* =========================
    HOME GRID CARDS FIX (FINAL)
    ========================= */
