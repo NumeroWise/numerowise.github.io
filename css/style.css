@@ -238,3 +238,41 @@ button:hover {
   opacity: 0.6;
   margin-top: 30px;
 }
+
+/* =========================
+   HOME PAGE FIX (ONLY INDEX.HTML)
+   ========================= */
+
+/* Home page section title restore */
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px 0 15px;
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+/* Home page cards (grid cards fix) */
+.grid .card {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home page card text tuning */
+.grid .card h3 {
+  font-size: 15px;
+  color: #ffd700;
+}
+
+.grid .card p {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+/* Prevent calculator button style on homepage cards */
+.grid .card button {
+  display: none;
+}
