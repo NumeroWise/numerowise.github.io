@@ -1,167 +1,201 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personal Year Number 3 | NumeroWise</title>
+<title>Life Path Number 3 | NumeroWise</title>
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-background:radial-gradient(circle at top,#1a1a2e,#0f0c29,#000);
-color:white;
-}
+<meta name="description" content="Discover Life Path Number 3 meaning, personality traits, strengths, challenges, career guidance, relationships, and lucky insights in English and Hindi.">
 
-.container{max-width:900px;margin:auto;padding:30px;}
+<link rel="stylesheet" href="css/style.css">
 
-.nav{
-text-align:center;
-margin-bottom:20px;
-}
-
-.nav a{
-color:#00e5ff;
-text-decoration:none;
-margin:0 10px;
-font-weight:bold;
-}
-
-h1{
-text-align:center;
-color:#ffd700;
-}
-
-.language-box{
-text-align:center;
-margin:15px 0;
-}
-
-select{
-padding:10px;
-border-radius:8px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.15);
-border-radius:12px;
-padding:25px;
-line-height:1.8;
-}
-
-h2{color:#00e5ff;}
-
-footer{
-text-align:center;
-margin-top:30px;
-font-size:12px;
-opacity:0.6;
-}
-</style>
 </head>
-
 <body>
+
+<!-- HEADER -->
+
+<div id="header"></div>
 
 <div class="container">
 
-<!-- NAV -->
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="life-path-calculator.html">Life Path</a>
-<a href="personal-year-calculator.html">Personal Year</a>
-</div>
+<h1 id="title">Life Path Number 3</h1>
 
-<h1 id="title">Personal Year Number 3</h1>
-
-<!-- LANGUAGE -->
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
 </div>
 
-<!-- CONTENT -->
 <div class="card" id="content">
 
 <h2>Introduction</h2>
-<p>Personal Year 3 brings creativity, communication, joy, and social expansion.</p>
+<p>
+Life Path Number 3 represents creativity, self-expression, optimism, and communication. People with this number are often gifted with artistic talent and a natural ability to inspire others.
+</p>
 
-<h2>Personality Influence</h2>
-<p>This year enhances expression, confidence, and creative thinking.</p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Creative and imaginative</li>
+<li>Excellent communicator</li>
+<li>Optimistic and cheerful</li>
+<li>Social and outgoing</li>
+<li>Expressive and inspiring</li>
+</ul>
 
 <h2>Strengths</h2>
-<ul>
-<li>Creativity boost</li>
-<li>Communication skills</li>
-<li>Social growth</li>
-</ul>
+<p>
+Life Path Number 3 individuals are charismatic, creative, enthusiastic, and naturally gifted in communication. They often bring joy and inspiration wherever they go.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Lack of focus</li>
-<li>Distraction</li>
-</ul>
+<p>
+They may become scattered, overly emotional, inconsistent, or struggle with discipline and focus.
+</p>
 
-<h2>Career & Money</h2>
-<p>Best for creative fields, media, marketing, and communication-based work.</p>
+<h2>Career</h2>
+<p>
+Writing, media, public speaking, acting, teaching, marketing, design, entertainment, and creative industries are excellent career choices.
+</p>
 
 <h2>Relationships</h2>
-<p>Romance and social connections increase strongly.</p>
+<p>
+They bring excitement, positivity, and affection into relationships. They thrive with partners who appreciate their creativity and freedom.
+</p>
 
-<h2>Conclusion</h2>
-<p>A joyful and expressive year of expansion.</p>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 3</li>
+<li><b>Lucky Days:</b> Thursday, Sunday</li>
+<li><b>Lucky Colors:</b> Yellow, Purple, Pink</li>
+<li><b>Best Compatibility:</b> 1, 3, 5</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personalized Report</h2>
+
+<p>
+Get a detailed AI-powered premium numerology report with deeper personality analysis, career guidance, relationship insights, wealth potential, hidden strengths, challenges, and personalized recommendations.
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
 </div>
 
-<footer>© 2026 🔢 NumeroWise</footer>
+</div>
+
+<!-- FOOTER -->
+
+<div id="footer"></div>
 
 <script>
-const englishContent=document.getElementById("content").innerHTML;
 
-const hindiContent=`
+// Load Header
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// Load Footer
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
+const englishContent = document.getElementById("content").innerHTML;
+
+const hindiContent = `
+
 <h2>परिचय</h2>
-<p>यह वर्ष रचनात्मकता, अभिव्यक्ति और सामाजिक विकास का है।</p>
+<p>
+लाइफ पाथ नंबर 3 रचनात्मकता, आत्म-अभिव्यक्ति, आशावाद और संचार का प्रतीक है। इस नंबर वाले लोग अक्सर कलात्मक प्रतिभा और दूसरों को प्रेरित करने की क्षमता रखते हैं।
+</p>
 
-<h2>व्यक्तित्व प्रभाव</h2>
-<p>इस वर्ष आपकी अभिव्यक्ति और आत्मविश्वास बढ़ता है।</p>
+<h2>व्यक्तित्व विशेषताएँ</h2>
+<ul>
+<li>रचनात्मक और कल्पनाशील</li>
+<li>उत्कृष्ट संचार कौशल</li>
+<li>आशावादी और प्रसन्नचित्त</li>
+<li>मिलनसार और सामाजिक</li>
+<li>अभिव्यक्तिशील और प्रेरणादायक</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>रचनात्मकता</li>
-<li>संचार कौशल</li>
-<li>सामाजिक विकास</li>
-</ul>
+<p>
+ये लोग करिश्माई, रचनात्मक, उत्साही और संवाद में कुशल होते हैं। अपने आसपास खुशी और प्रेरणा का वातावरण बनाते हैं।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>ध्यान की कमी</li>
-<li>भटकाव</li>
-</ul>
+<p>
+कभी-कभी ध्यान भटक सकता है, भावनात्मक अस्थिरता आ सकती है या अनुशासन और निरंतरता बनाए रखने में कठिनाई हो सकती है।
+</p>
 
 <h2>करियर</h2>
-<p>मीडिया, लेखन, मार्केटिंग और रचनात्मक क्षेत्र।</p>
+<p>
+लेखन, मीडिया, सार्वजनिक भाषण, अभिनय, शिक्षण, मार्केटिंग, डिजाइन और मनोरंजन क्षेत्र इनके लिए उपयुक्त हैं।
+</p>
 
 <h2>रिश्ते</h2>
-<p>सामाजिक और रोमांटिक संबंध बढ़ते हैं।</p>
+<p>
+ये रिश्तों में उत्साह, सकारात्मकता और प्रेम लाते हैं। ऐसे साथी इनके लिए बेहतर होते हैं जो उनकी रचनात्मकता और स्वतंत्रता को समझें।
+</p>
 
-<h2>निष्कर्ष</h2>
-<p>आनंद और अभिव्यक्ति का वर्ष।</p>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 3</li>
+<li><b>भाग्यशाली दिन:</b> गुरुवार, रविवार</li>
+<li><b>भाग्यशाली रंग:</b> पीला, बैंगनी, गुलाबी</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 1, 3, 5</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण व्यक्तिगत रिपोर्ट अनलॉक करें</h2>
+
+<p>
+विस्तृत AI-आधारित प्रीमियम न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें व्यक्तित्व विश्लेषण, करियर मार्गदर्शन, रिश्तों की जानकारी, धन संभावनाएँ, चुनौतियाँ और व्यक्तिगत सुझाव शामिल हैं।
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट प्राप्त करें
+</a>
+
+</div>
+
 `;
 
-document.getElementById("language").addEventListener("change",function(){
-if(this.value==="hi"){
-document.getElementById("title").innerText="पर्सनल ईयर नंबर 3";
-document.getElementById("content").innerHTML=hindiContent;
-}else{
-document.getElementById("title").innerText="Personal Year Number 3";
-document.getElementById("content").innerHTML=englishContent;
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("title").innerText =
+"लाइफ पाथ नंबर 3";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
 }
+else{
+
+document.getElementById("title").innerText =
+"Life Path Number 3";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
+}
+
 });
+
 </script>
 
 </body>
