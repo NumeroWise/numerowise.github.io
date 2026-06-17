@@ -5,154 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Life Path Number 1 | NumeroWise</title>
-<meta name="description" content="Discover Life Path Number 1 meaning, personality, strengths, career, and relationships in English and Hindi.">
+<meta name="description" content="Discover Life Path Number 1 meaning, personality, strengths, challenges, career, relationships and lucky insights in English and Hindi.">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
-
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
-
-/* HEADER */
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-/* LANGUAGE */
-.language-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-/* CONTENT CARD */
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-/* SECTION HEADINGS */
-h2 {
-  color: #00e5ff;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
+<div id="header"></div>
+
 <div class="container">
 
-  <!-- NAV -->
-  <div class="nav">
-    <a href="../index.html">Home</a>
-    <a href="../life-path-calculator.html">Calculator</a>
-    <a href="../guides.html">Guides</a>
-  </div>
+<h1 id="title">Life Path Number 1</h1>
 
-  <h1 id="title">Life Path Number 1</h1>
+<!-- LANGUAGE -->
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
 
-  <!-- LANGUAGE -->
-  <div class="language-box">
-    <select id="language">
-      <option value="en">English</option>
-      <option value="hi">हिन्दी</option>
-    </select>
-  </div>
+<!-- REPORT CARD -->
+<div class="card" id="content">
 
-  <!-- CONTENT -->
-  <div class="card" id="content">
+<h2>Introduction</h2>
+<p>
+Life Path Number 1 represents leadership, independence, ambition, and strong individuality.
+People with this number are natural pioneers and self-starters.
+</p>
 
-    <h2>Introduction</h2>
-    <p>
-      Life Path Number 1 represents leadership, independence, ambition, and strong individuality.
-      These individuals are natural pioneers.
-    </p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Natural leader</li>
+<li>Independent thinker</li>
+<li>Highly ambitious</li>
+<li>Creative mindset</li>
+<li>Strong decision maker</li>
+</ul>
 
-    <h2>Personality Traits</h2>
-    <ul>
-      <li>Natural leader</li>
-      <li>Independent thinker</li>
-      <li>Highly ambitious</li>
-      <li>Creative mindset</li>
-      <li>Goal oriented</li>
-    </ul>
+<h2>Strengths</h2>
+<p>
+Courage, confidence, innovation, and ability to take initiative in any situation.
+</p>
 
-    <h2>Strengths</h2>
-    <p>
-      Courage, confidence, innovation, and strong decision-making ability.
-    </p>
+<h2>Challenges</h2>
+<p>
+Can become stubborn, impatient, or overly dominant at times.
+</p>
 
-    <h2>Challenges</h2>
-    <p>
-      Can become stubborn, impatient, or overly dominant at times.
-    </p>
+<h2>Career</h2>
+<p>
+Best suited for leadership roles, entrepreneurship, business, politics, and creative industries.
+</p>
 
-    <h2>Career</h2>
-    <p>
-      Leadership roles, entrepreneurship, business, politics, and creative industries suit them best.
-    </p>
+<h2>Relationships</h2>
+<p>
+They value honesty, loyalty, and independence in relationships.
+</p>
 
-    <h2>Relationships</h2>
-    <p>
-      They value loyalty, honesty, and independence in relationships.
-    </p>
-
-  </div>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 1</li>
+<li><b>Lucky Days:</b> Sunday, Monday</li>
+<li><b>Lucky Colors:</b> Gold, Yellow, Orange</li>
+<li><b>Best Compatibility:</b> 1, 3, 5</li>
+</ul>
 
 </div>
 
-<footer>© 2026 🔢 NumeroWise</footer>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+// LOAD HEADER & FOOTER
+fetch('components/header.html')
+.then(res => res.text())
+.then(data => document.getElementById('header').innerHTML = data);
 
-/* ENGLISH CONTENT */
+fetch('components/footer.html')
+.then(res => res.text())
+.then(data => document.getElementById('footer').innerHTML = data);
+
+// LANGUAGE SWITCH
 const englishContent = document.getElementById("content").innerHTML;
 
-/* HINDI CONTENT */
 const hindiContent = `
 <h2>परिचय</h2>
 <p>
-लाइफ पाथ नंबर 1 नेतृत्व, स्वतंत्रता, महत्वाकांक्षा और आत्मविश्वास का प्रतीक है।
+लाइफ पाथ नंबर 1 नेतृत्व, स्वतंत्रता और महत्वाकांक्षा का प्रतीक है।
 </p>
 
 <h2>व्यक्तित्व विशेषताएँ</h2>
@@ -161,41 +105,39 @@ const hindiContent = `
 <li>स्वतंत्र सोच</li>
 <li>दृढ़ इच्छाशक्ति</li>
 <li>रचनात्मक दृष्टिकोण</li>
-<li>लक्ष्य-केंद्रित व्यक्तित्व</li>
+<li>निर्णय क्षमता</li>
 </ul>
 
 <h2>शक्तियाँ</h2>
-<p>
-साहस, आत्मविश्वास और निर्णय लेने की क्षमता।
-</p>
+<p>आत्मविश्वास, साहस और नेतृत्व क्षमता।</p>
 
 <h2>चुनौतियाँ</h2>
-<p>
-कभी-कभी जिद्दी और अधीर स्वभाव।
-</p>
+<p>कभी-कभी जिद्दी और अधीर स्वभाव।</p>
 
 <h2>करियर</h2>
-<p>
-नेतृत्व, व्यवसाय, राजनीति और क्रिएटिव क्षेत्र उपयुक्त हैं।
-</p>
+<p>नेतृत्व, व्यवसाय, राजनीति और क्रिएटिव क्षेत्र।</p>
 
 <h2>रिश्ते</h2>
-<p>
-ईमानदारी और स्वतंत्रता को महत्व देते हैं।
-</p>
+<p>ईमानदारी और स्वतंत्रता को महत्व देते हैं।</p>
+
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 1</li>
+<li><b>भाग्यशाली दिन:</b> रविवार, सोमवार</li>
+<li><b>भाग्यशाली रंग:</b> सुनहरा, पीला, नारंगी</li>
+<li><b>अनुकूलता:</b> 1, 3, 5</li>
+</ul>
 `;
 
-/* LANGUAGE SWITCH */
 document.getElementById("language").addEventListener("change", function () {
-  if (this.value === "hi") {
-    document.getElementById("title").innerText = "लाइफ पाथ नंबर 1";
-    document.getElementById("content").innerHTML = hindiContent;
-  } else {
-    document.getElementById("title").innerText = "Life Path Number 1";
-    document.getElementById("content").innerHTML = englishContent;
-  }
+if (this.value === "hi") {
+document.getElementById("title").innerText = "लाइफ पाथ नंबर 1";
+document.getElementById("content").innerHTML = hindiContent;
+} else {
+document.getElementById("title").innerText = "Life Path Number 1";
+document.getElementById("content").innerHTML = englishContent;
+}
 });
-
 </script>
 
 </body>
