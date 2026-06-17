@@ -4,199 +4,140 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Life Path Number 2 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Life Path Number 2 meaning in numerology. Learn personality traits, strengths, challenges, career, and relationships in English and Hindi.">
+<title>Life Path Number 2 | NumeroWise</title>
+<meta name="description" content="Discover Life Path Number 2 meaning, personality, strengths, challenges, career, relationships and lucky insights in English and Hindi.">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
-
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
-
-/* NAV */
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-/* TITLE */
-h1 {
-  text-align: center;
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-/* LANGUAGE */
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
-/* CONTENT CARD */
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-/* HEADINGS */
-h2 {
-  color: #00e5ff;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
+<div id="header"></div>
+
 <div class="container">
 
-  <!-- NAV -->
-  <div class="nav">
-    <a href="../index.html">Home</a>
-    <a href="../life-path-calculator.html">Calculator</a>
-    <a href="../guides.html">Guides</a>
-  </div>
+<h1 id="title">Life Path Number 2</h1>
 
-  <h1 id="title">Life Path Number 2</h1>
+<!-- LANGUAGE -->
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
+</div>
 
-  <!-- LANGUAGE -->
-  <div class="language-box">
-    <select id="language">
-      <option value="en">English</option>
-      <option value="hi">हिन्दी</option>
-    </select>
-  </div>
+<!-- REPORT CARD -->
+<div class="card" id="content">
 
-  <!-- CONTENT -->
-  <div class="card" id="content">
+<h2>Introduction</h2>
+<p>
+Life Path Number 2 represents harmony, diplomacy, cooperation, and emotional sensitivity.
+These individuals are natural peacemakers and support systems for others.
+</p>
 
-    <h2>Introduction</h2>
-    <p>
-      Life Path Number 2 represents harmony, cooperation, diplomacy, and emotional intelligence.
-      These individuals are natural peacemakers.
-    </p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Diplomatic and calm nature</li>
+<li>Highly sensitive and emotional</li>
+<li>Strong intuition</li>
+<li>Team player mindset</li>
+<li>Peace-loving personality</li>
+</ul>
 
-    <h2>Personality Traits</h2>
-    <ul>
-      <li>Cooperative and supportive</li>
-      <li>Diplomatic nature</li>
-      <li>Sensitive and caring</li>
-      <li>Strong intuition</li>
-      <li>Team-oriented mindset</li>
-    </ul>
+<h2>Strengths</h2>
+<p>
+Excellent at maintaining balance, resolving conflicts, and understanding others deeply.
+</p>
 
-    <h2>Strengths</h2>
-    <p>
-      Excellent at maintaining harmony, resolving conflicts, and building strong emotional connections.
-    </p>
+<h2>Challenges</h2>
+<p>
+Can become overly sensitive, dependent, or avoid confrontation.
+</p>
 
-    <h2>Challenges</h2>
-    <p>
-      Can become overly sensitive, indecisive, or dependent on others’ approval.
-    </p>
+<h2>Career</h2>
+<p>
+Best suited for counseling, HR, teaching, healing professions, and creative teamwork roles.
+</p>
 
-    <h2>Career</h2>
-    <p>
-      Best suited for counseling, teaching, healthcare, HR, diplomacy, and teamwork-based roles.
-    </p>
+<h2>Relationships</h2>
+<p>
+They are loyal, caring, and deeply emotional partners who seek stability and understanding.
+</p>
 
-    <h2>Relationships</h2>
-    <p>
-      Loyal, caring, and emotionally supportive partners who value trust and understanding.
-    </p>
-
-  </div>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 2</li>
+<li><b>Lucky Days:</b> Monday, Friday</li>
+<li><b>Lucky Colors:</b> White, Silver, Light Blue</li>
+<li><b>Best Compatibility:</b> 2, 6, 8</li>
+</ul>
 
 </div>
 
-<footer>© 2026 🔢 NumeroWise</footer>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+// LOAD HEADER & FOOTER
+fetch('components/header.html')
+.then(res => res.text())
+.then(data => document.getElementById('header').innerHTML = data);
 
-/* ENGLISH CONTENT */
+fetch('components/footer.html')
+.then(res => res.text())
+.then(data => document.getElementById('footer').innerHTML = data);
+
+// LANGUAGE SWITCH
 const englishContent = document.getElementById("content").innerHTML;
 
-/* HINDI CONTENT */
 const hindiContent = `
 <h2>परिचय</h2>
 <p>
-लाइफ पाथ नंबर 2 सामंजस्य, सहयोग, कूटनीति और भावनात्मक बुद्धिमत्ता का प्रतीक है।
+लाइफ पाथ नंबर 2 शांति, सहयोग और भावनात्मक संवेदनशीलता का प्रतीक है।
 </p>
 
 <h2>व्यक्तित्व विशेषताएँ</h2>
 <ul>
-<li>सहयोगी और सहायक</li>
-<li>कूटनीतिक स्वभाव</li>
-<li>संवेदनशील और देखभाल करने वाले</li>
+<li>शांत और संतुलित स्वभाव</li>
+<li>भावनात्मक और संवेदनशील</li>
 <li>मजबूत अंतर्ज्ञान</li>
-<li>टीमवर्क में कुशल</li>
+<li>टीम भावना</li>
+<li>शांतिप्रिय व्यक्तित्व</li>
 </ul>
 
 <h2>शक्तियाँ</h2>
-<p>
-रिश्तों को मजबूत बनाना और शांति बनाए रखना इनकी सबसे बड़ी ताकत है।
-</p>
+<p>लोगों को समझने और संतुलन बनाए रखने की क्षमता।</p>
 
 <h2>चुनौतियाँ</h2>
-<p>
-कभी-कभी निर्णय लेने में कठिनाई और भावनात्मक निर्भरता।
-</p>
+<p>अत्यधिक संवेदनशीलता और निर्णय में देरी।</p>
 
 <h2>करियर</h2>
-<p>
-शिक्षण, परामर्श, मानव संसाधन, स्वास्थ्य सेवा और कूटनीति।
-</p>
+<p>काउंसलिंग, शिक्षण, HR और टीम आधारित कार्य।</p>
 
 <h2>रिश्ते</h2>
-<p>
-वफादार, भावनात्मक और सहायक साथी।
-</p>
+<p>देखभाल करने वाले और भावनात्मक रूप से गहरे संबंध रखते हैं।</p>
+
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 2</li>
+<li><b>भाग्यशाली दिन:</b> सोमवार, शुक्रवार</li>
+<li><b>भाग्यशाली रंग:</b> सफेद, सिल्वर, हल्का नीला</li>
+<li><b>अनुकूलता:</b> 2, 6, 8</li>
+</ul>
 `;
 
-/* LANGUAGE SWITCH */
 document.getElementById("language").addEventListener("change", function () {
-  if (this.value === "hi") {
-    document.getElementById("title").innerText = "लाइफ पाथ नंबर 2";
-    document.getElementById("content").innerHTML = hindiContent;
-  } else {
-    document.getElementById("title").innerText = "Life Path Number 2";
-    document.getElementById("content").innerHTML = englishContent;
-  }
+if (this.value === "hi") {
+document.getElementById("title").innerText = "लाइफ पाथ नंबर 2";
+document.getElementById("content").innerHTML = hindiContent;
+} else {
+document.getElementById("title").innerText = "Life Path Number 2";
+document.getElementById("content").innerHTML = englishContent;
+}
 });
-
 </script>
 
 </body>
