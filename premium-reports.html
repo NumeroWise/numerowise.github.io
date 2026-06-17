@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Numerology Reports | NumeroWise</title>
+
+<meta name="description" content="Unlock detailed AI-powered Premium Numerology Reports with personalized insights on personality, career, wealth, relationships, and life purpose.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.premium-container{
+max-width:750px;
+margin:auto;
+padding:30px 20px;
+}
+
+.premium-box{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.15);
+border-radius:12px;
+padding:25px;
+margin-top:20px;
+text-align:center;
+}
+
+.coming-soon{
+font-size:26px;
+font-weight:bold;
+color:#00e5ff;
+margin-bottom:15px;
+}
+
+.premium-box ul{
+text-align:left;
+max-width:450px;
+margin:20px auto;
+padding-left:20px;
+}
+
+.premium-box li{
+margin-bottom:10px;
+}
+
+.highlight{
+color:#ffd700;
+font-weight:bold;
+}
+
+.notice{
+margin-top:20px;
+opacity:0.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div id="header"></div>
+
+<div class="premium-container">
+
+<h1>🔓 Premium Numerology Reports</h1>
+
+<div class="subtitle">
+Get deeper AI-powered numerology insights designed to help you understand your personality, destiny, career, wealth potential, relationships, and life purpose.
+</div>
+
+<div class="premium-box">
+
+<div class="coming-soon">
+🚀 Premium Reports Coming Soon
+</div>
+
+<p>
+We are currently building our next-generation premium report system.
+</p>
+
+<p>
+Unlike the free reports, these premium reports will provide highly detailed and personalized insights.
+</p>
+
+<ul>
+<li>✔ Complete Personality Analysis</li>
+<li>✔ Career & Wealth Guidance</li>
+<li>✔ Relationship Compatibility Insights</li>
+<li>✔ Hidden Strengths & Challenges</li>
+<li>✔ Personal Growth Recommendations</li>
+<li>✔ Professionally Designed PDF Report</li>
+<li>✔ AI-Powered Deep Analysis</li>
+<li>✔ Future Numerology Predictions</li>
+</ul>
+
+<div class="notice">
+<span class="highlight">
+Launch Phase Currently Under Development
+</span>
+</div>
+
+<a href="index.html" class="back-btn">
+⬅ Back to Dashboard
+</a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div id="footer"></div>
+
+<script>
+
+// Load Header
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// Load Footer
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
+</script>
+
+</body>
+</html>
