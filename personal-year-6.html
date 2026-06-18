@@ -4,85 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personal Year Number 6 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Personal Year Number 6 meaning in numerology. Learn about responsibility, love, family, career, and emotional growth.">
+<title>Personal Year Number 6 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Personal Year Number 6 meaning, opportunities, challenges, career guidance, relationships, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
-
 <body>
+
+<!-- HEADER -->
+<div id="header"></div>
 
 <div class="container">
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="personal-year-calculator.html">Calculator</a>
-<a href="life-path-calculator.html">Life Path</a>
-</div>
-
 <h1 id="title">Personal Year Number 6</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,94 +31,168 @@ footer {
 
 <h2>Introduction</h2>
 <p>
-Personal Year 6 is a year of responsibility, love, family, healing, and emotional balance.
+Personal Year Number 6 represents responsibility, love, family, harmony, and emotional balance. This year focuses on relationships, home life, and creating stability through care and commitment.
 </p>
 
-<h2>Personality Influence</h2>
-<p>
-You become more caring, responsible, and family-oriented during this phase.
-</p>
-
-<h2>Strengths</h2>
+<h2>Energy of the Year</h2>
 <ul>
-<li>Strong responsibility</li>
+<li>Love and relationships</li>
+<li>Family responsibilities</li>
+<li>Harmony and balance</li>
+<li>Care and nurturing</li>
 <li>Emotional maturity</li>
-<li>Supportive nature</li>
-<li>Relationship growth</li>
 </ul>
+
+<h2>Opportunities</h2>
+<p>
+This year brings opportunities to strengthen family bonds, build long-term relationships, improve home life, and take on meaningful responsibilities that bring emotional fulfillment.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Over-responsibility</li>
-<li>Emotional pressure</li>
-<li>Stress from duties</li>
-</ul>
-
-<h2>Career & Money</h2>
 <p>
-Stable year focused on responsibility, service, and structured growth.
+You may feel pressure from responsibilities, emotional burden, over-care for others, or difficulty balancing personal and professional life.
+</p>
+
+<h2>Career & Business</h2>
+<p>
+Personal Year 6 supports careers in teaching, healthcare, counseling, hospitality, design, social work, and family-oriented businesses or services.
 </p>
 
 <h2>Relationships</h2>
 <p>
-Strong focus on love, marriage, and family responsibilities.
+Relationships become deeply important. This year may bring commitment, marriage, or serious emotional decisions. Balance and understanding are key.
 </p>
 
-<h2>Conclusion</h2>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 6</li>
+<li><b>Lucky Days:</b> Friday, Monday</li>
+<li><b>Lucky Colors:</b> Pink, White, Light Green</li>
+<li><b>Best Compatibility:</b> 2, 6, 9</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personal Year Report</h2>
+
 <p>
-This year teaches emotional balance, care, and responsibility in life.
+Get a detailed AI-powered numerology report with yearly predictions, relationship insights, emotional guidance, career direction, financial stability, and personalized remedies for your personal year cycle.
 </p>
 
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
+
+</div>
+
 </div>
 
 </div>
 
-<footer>© 2026 🔢 NumeroWise</footer>
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// Load Header
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// Load Footer
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
+
 <h2>परिचय</h2>
-<p>यह वर्ष जिम्मेदारी, प्रेम, परिवार और भावनात्मक संतुलन का है।</p>
+<p>
+पर्सनल ईयर नंबर 6 प्रेम, जिम्मेदारी, परिवार, संतुलन और भावनात्मक स्थिरता का प्रतीक है। यह वर्ष रिश्तों और गृहस्थ जीवन पर केंद्रित होता है।
+</p>
 
-<h2>व्यक्तित्व प्रभाव</h2>
-<p>आप अधिक देखभाल करने वाले और जिम्मेदार बनते हैं।</p>
-
-<h2>शक्तियाँ</h2>
+<h2>वर्ष की ऊर्जा</h2>
 <ul>
-<li>जिम्मेदारी</li>
+<li>प्रेम और रिश्ते</li>
+<li>परिवार की जिम्मेदारियाँ</li>
+<li>संतुलन और सामंजस्य</li>
+<li>देखभाल और पोषण</li>
 <li>भावनात्मक परिपक्वता</li>
-<li>सहयोगी स्वभाव</li>
-<li>रिश्तों में सुधार</li>
 </ul>
+
+<h2>अवसर</h2>
+<p>
+यह वर्ष रिश्तों को मजबूत करने, परिवार के साथ जुड़ाव बढ़ाने और स्थिर जीवन बनाने का अवसर देता है।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>अधिक जिम्मेदारी</li>
-<li>भावनात्मक दबाव</li>
-<li>तनाव</li>
-</ul>
+<p>
+इस वर्ष जिम्मेदारियों का दबाव, भावनात्मक बोझ और व्यक्तिगत जीवन में संतुलन बनाए रखने की चुनौती हो सकती है।
+</p>
 
-<h2>करियर और धन</h2>
-<p>स्थिरता और सेवा आधारित कार्यों के लिए अच्छा वर्ष।</p>
+<h2>करियर और व्यवसाय</h2>
+<p>
+यह वर्ष शिक्षण, चिकित्सा, काउंसलिंग, हॉस्पिटैलिटी, डिजाइन और सेवा आधारित क्षेत्रों के लिए अनुकूल है।
+</p>
 
 <h2>रिश्ते</h2>
-<p>प्रेम, विवाह और परिवार पर ध्यान बढ़ता है।</p>
+<p>
+रिश्ते इस वर्ष सबसे महत्वपूर्ण रहेंगे। विवाह या गंभीर प्रतिबद्धता के योग बन सकते हैं।
+</p>
 
-<h2>निष्कर्ष</h2>
-<p>यह वर्ष जिम्मेदारी और भावनात्मक संतुलन सिखाता है।</p>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 6</li>
+<li><b>भाग्यशाली दिन:</b> शुक्रवार, सोमवार</li>
+<li><b>भाग्यशाली रंग:</b> गुलाबी, सफेद, हल्का हरा</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 6, 9</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण पर्सनल ईयर रिपोर्ट अनलॉक करें</h2>
+
+<p>
+विस्तृत AI-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें वार्षिक भविष्यवाणी, रिश्तों की समझ, भावनात्मक मार्गदर्शन, करियर दिशा और व्यक्तिगत उपाय शामिल हैं।
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट प्राप्त करें
+</a>
+
+</div>
+
 `;
 
-document.getElementById("language").addEventListener("change", function () {
-if (this.value === "hi") {
-document.getElementById("title").innerText = "पर्सनल ईयर नंबर 6";
-document.getElementById("content").innerHTML = hindiContent;
-} else {
-document.getElementById("title").innerText = "Personal Year Number 6";
-document.getElementById("content").innerHTML = englishContent;
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("title").innerText =
+"पर्सनल ईयर नंबर 6";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
 }
+else{
+
+document.getElementById("title").innerText =
+"Personal Year Number 6";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
+}
+
 });
+
 </script>
 
 </body>
