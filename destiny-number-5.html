@@ -4,85 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Destiny Number 5 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Destiny Number 5 meaning in numerology. Learn about personality, talents, career, relationships, strengths, and challenges.">
+<title>Destiny Number 5 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Destiny Number 5 meaning, personality traits, strengths, challenges, career guidance, relationships, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
-
 <body>
+
+<!-- HEADER -->
+<div id="header"></div>
 
 <div class="container">
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="destiny-calculator.html">Calculator</a>
-<a href="what-is-destiny-number.html">Guide</a>
-</div>
-
 <h1 id="title">Destiny Number 5</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,71 +31,82 @@ footer {
 
 <h2>Introduction</h2>
 <p>
-Destiny Number 5 represents freedom, adventure, versatility, and personal growth.
-People with this Destiny Number are born explorers who seek new experiences,
-knowledge, and opportunities. Their life purpose often involves embracing change
-and inspiring others to live more freely.
+Destiny Number 5 represents freedom, adventure, versatility, communication, and change. People with this Destiny Number are energetic explorers who thrive on new experiences and opportunities.
 </p>
 
-<h2>Natural Talents</h2>
-<p>
-Individuals with Destiny Number 5 possess adaptability, curiosity, and excellent
-communication skills. They quickly adjust to changing situations and often thrive
-in dynamic environments where flexibility is required.
-</p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Adventurous and curious</li>
+<li>Flexible and adaptable</li>
+<li>Excellent communicator</li>
+<li>Energetic and enthusiastic</li>
+<li>Independent thinker</li>
+</ul>
 
 <h2>Strengths</h2>
-<ul>
-<li>Adaptable and flexible</li>
-<li>Excellent communication skills</li>
-<li>Curious and open-minded</li>
-<li>Adventurous spirit</li>
-<li>Quick learner</li>
-</ul>
+<p>
+Destiny Number 5 individuals possess adaptability, charisma, communication skills, creativity, and the ability to embrace change with confidence.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Restlessness</li>
-<li>Difficulty committing long-term</li>
-<li>Impulsive decisions</li>
-<li>Easily distracted</li>
-</ul>
-
-<h2>Career & Success</h2>
 <p>
-Destiny Number 5 individuals often excel in sales, marketing, travel,
-media, public relations, entrepreneurship, journalism, and professions
-that involve movement and variety. Their success comes when they balance
-freedom with responsibility.
+They may become restless, impatient, impulsive, or struggle with commitment and long-term consistency.
+</p>
+
+<h2>Career</h2>
+<p>
+Sales, marketing, media, travel, public relations, entrepreneurship, journalism, digital content creation, and communication-based careers suit them well.
 </p>
 
 <h2>Relationships</h2>
 <p>
-These individuals value excitement, honesty, and independence in relationships.
-They prefer partners who respect their need for freedom while providing
-emotional support and understanding.
+They are exciting and passionate partners who value freedom, trust, communication, and shared adventures.
 </p>
 
-<h2>Life Purpose</h2>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 5</li>
+<li><b>Lucky Days:</b> Wednesday, Friday</li>
+<li><b>Lucky Colors:</b> Green, Turquoise, Light Grey</li>
+<li><b>Best Compatibility:</b> 1, 5, 7</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personalized Report</h2>
+
 <p>
-The purpose of Destiny Number 5 is to experience life fully, embrace change,
-and inspire others through courage, adaptability, and personal growth.
-Their journey involves finding balance between freedom and commitment.
+Get a detailed AI-powered premium numerology report with deeper personality analysis, career guidance, relationship insights, wealth potential, hidden strengths, challenges, and personalized recommendations.
 </p>
 
-<h2>Conclusion</h2>
-<p>
-Destiny Number 5 symbolizes freedom, adventure, adaptability, curiosity,
-and the ability to transform life through experience and exploration.
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
 </div>
 
-<footer>© 2026 🔢 NumeroWise</footer>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// Load Header
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// Load Footer
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
@@ -164,72 +114,85 @@ const hindiContent = `
 
 <h2>परिचय</h2>
 <p>
-डेस्टिनी नंबर 5 स्वतंत्रता, रोमांच, परिवर्तन और व्यक्तिगत विकास का प्रतीक है।
-इस नंबर वाले लोग नई चीज़ें सीखने, नए अनुभव प्राप्त करने और जीवन को पूरी तरह जीने के लिए जाने जाते हैं।
+डेस्टिनी नंबर 5 स्वतंत्रता, रोमांच, बहुमुखी प्रतिभा, संवाद कौशल और परिवर्तन का प्रतीक है। इस नंबर वाले लोग नए अनुभवों और अवसरों को अपनाने में विश्वास रखते हैं।
 </p>
 
-<h2>प्राकृतिक प्रतिभाएँ</h2>
-<p>
-इनमें अनुकूलन क्षमता, जिज्ञासा और उत्कृष्ट संवाद कौशल होते हैं।
-ये बदलती परिस्थितियों में तेजी से स्वयं को ढाल लेते हैं और विविध अनुभवों का आनंद लेते हैं।
-</p>
+<h2>व्यक्तित्व विशेषताएँ</h2>
+<ul>
+<li>रोमांचप्रिय और जिज्ञासु</li>
+<li>लचीले और अनुकूलनीय</li>
+<li>बेहतरीन संवादक</li>
+<li>ऊर्जावान और उत्साही</li>
+<li>स्वतंत्र विचारक</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>लचीला और अनुकूलनीय स्वभाव</li>
-<li>उत्कृष्ट संवाद क्षमता</li>
-<li>जिज्ञासु और खुले विचार</li>
-<li>रोमांचप्रिय व्यक्तित्व</li>
-<li>तेजी से सीखने की क्षमता</li>
-</ul>
+<p>
+इनमें अनुकूलन क्षमता, आकर्षक व्यक्तित्व, संवाद कौशल, रचनात्मकता और परिवर्तन को अपनाने की शक्ति होती है।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>बेचैनी</li>
-<li>लंबे समय तक प्रतिबद्ध रहने में कठिनाई</li>
-<li>आवेगपूर्ण निर्णय</li>
-<li>ध्यान भटकना</li>
-</ul>
-
-<h2>करियर और सफलता</h2>
 <p>
-सेल्स, मार्केटिंग, यात्रा, मीडिया, पत्रकारिता, जनसंपर्क,
-उद्यमिता और विविधता वाले क्षेत्रों में ये लोग अच्छा प्रदर्शन करते हैं।
-सफलता तब मिलती है जब स्वतंत्रता और जिम्मेदारी के बीच संतुलन बना रहे।
+कभी-कभी ये बेचैन, अधीर, आवेगी या दीर्घकालिक प्रतिबद्धताओं को निभाने में कठिनाई महसूस कर सकते हैं।
+</p>
+
+<h2>करियर</h2>
+<p>
+सेल्स, मार्केटिंग, मीडिया, यात्रा उद्योग, जनसंपर्क, उद्यमिता, पत्रकारिता और डिजिटल कंटेंट निर्माण इनके लिए उपयुक्त क्षेत्र हैं।
 </p>
 
 <h2>रिश्ते</h2>
 <p>
-रिश्तों में ये उत्साह, ईमानदारी और स्वतंत्रता को महत्व देते हैं।
-इन्हें ऐसे साथी पसंद होते हैं जो इनकी आज़ादी का सम्मान करें और भावनात्मक सहयोग दें।
+ये उत्साही और आकर्षक साथी होते हैं। रिश्तों में स्वतंत्रता, विश्वास, संवाद और रोमांच को महत्व देते हैं।
 </p>
 
-<h2>जीवन उद्देश्य</h2>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 5</li>
+<li><b>भाग्यशाली दिन:</b> बुधवार, शुक्रवार</li>
+<li><b>भाग्यशाली रंग:</b> हरा, फ़िरोज़ी, हल्का धूसर</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 1, 5, 7</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण व्यक्तिगत रिपोर्ट अनलॉक करें</h2>
+
 <p>
-इनका उद्देश्य जीवन के विभिन्न अनुभवों को अपनाना, परिवर्तन को स्वीकार करना
-और दूसरों को साहस एवं विकास के लिए प्रेरित करना होता है।
+विस्तृत AI-आधारित प्रीमियम न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें व्यक्तित्व विश्लेषण, करियर मार्गदर्शन, धन संभावनाएँ, रिश्तों की जानकारी और व्यक्तिगत सुझाव शामिल हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
-<p>
-डेस्टिनी नंबर 5 स्वतंत्रता, रोमांच, अनुकूलन क्षमता, जिज्ञासा
-और अनुभवों के माध्यम से विकास का प्रतिनिधित्व करता है।
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट प्राप्त करें
+</a>
+
+</div>
 
 `;
 
-document.getElementById("language").addEventListener("change", function () {
+document.getElementById("language").addEventListener("change", function(){
 
-if (this.value === "hi") {
-document.getElementById("title").innerText = "डेस्टिनी नंबर 5";
-document.getElementById("content").innerHTML = hindiContent;
+if(this.value === "hi"){
+
+document.getElementById("title").innerText =
+"डेस्टिनी नंबर 5";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
 }
-else {
-document.getElementById("title").innerText = "Destiny Number 5";
-document.getElementById("content").innerHTML = englishContent;
+else{
+
+document.getElementById("title").innerText =
+"Destiny Number 5";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
 }
 
 });
+
 </script>
 
 </body>
