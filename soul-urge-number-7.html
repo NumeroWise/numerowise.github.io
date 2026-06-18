@@ -29,7 +29,7 @@
 
 <div class="card" id="content">
 
-<!-- ENGLISH CONTENT -->
+<!-- ENGLISH -->
 <div id="en">
 
 <h2>Introduction</h2>
@@ -65,7 +65,7 @@
 
 </div>
 
-<!-- HINDI CONTENT -->
+<!-- HINDI -->
 <div id="hi" style="display:none">
 
 <h2>परिचय</h2>
@@ -99,24 +99,23 @@
 <li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 7, 9</li>
 </ul>
 
-</div>
-
-<!-- PREMIUM CTA (COMMON - NOT DUPLICATED) -->
+<!-- ✅ FIXED PREMIUM CTA (PURE HINDI) -->
 <div class="premium-cta">
 
-<h2>Unlock Your Complete Soul Urge Report</h2>
+<h2>अपनी सम्पूर्ण सोल अर्ग रिपोर्ट अनलॉक करें</h2>
 
 <p>
-Get a detailed AI-powered numerology report with spiritual insights, emotional patterns, personality decoding, and life direction guidance.
+विस्तृत एआई आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें आध्यात्मिक अंतर्दृष्टि, भावनात्मक पैटर्न, व्यक्तित्व विश्लेषण और जीवन दिशा मार्गदर्शन शामिल है।
 </p>
 
 <a href="premium-reports.html" class="back-btn">
-🔓 Unlock Full Premium Report
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
 </a>
 
 </div>
 
 </div>
+
 </div>
 
 <!-- FOOTER -->
@@ -124,7 +123,7 @@ Get a detailed AI-powered numerology report with spiritual insights, emotional p
 
 <script>
 
-// Load header/footer safely
+// Header/Footer load
 fetch('components/header.html')
 .then(r=>r.text())
 .then(d=>document.getElementById('header').innerHTML=d);
@@ -133,7 +132,7 @@ fetch('components/footer.html')
 .then(r=>r.text())
 .then(d=>document.getElementById('footer').innerHTML=d);
 
-// language toggle (safe DOM switch, no overwrite bugs)
+// language toggle
 document.getElementById("language").addEventListener("change", function () {
 if (this.value === "hi") {
 document.getElementById("en").style.display = "none";
