@@ -13,7 +13,6 @@
 
 <body>
 
-<!-- HEADER -->
 <div id="header"></div>
 
 <div class="container">
@@ -35,23 +34,22 @@
 <h2>Inner Desire</h2>
 <ul>
 <li>Seek truth and wisdom</li>
-<li>Deep understanding of life</li>
 <li>Spiritual growth</li>
-<li>Solitude for reflection</li>
-<li>Hidden knowledge exploration</li>
+<li>Solitude and reflection</li>
+<li>Deep understanding</li>
 </ul>
 
 <h2>Strengths</h2>
-<p>Intelligent, analytical, intuitive, and spiritually aware individuals.</p>
+<p>Intelligent, intuitive, analytical and spiritual thinkers.</p>
 
 <h2>Challenges</h2>
-<p>Overthinking, isolation, emotional distance, and trust issues.</p>
+<p>Overthinking, isolation and emotional distance.</p>
 
 <h2>Relationships</h2>
-<p>Needs space and deep emotional connection.</p>
+<p>Needs emotional depth and personal space.</p>
 
 <h2>Career</h2>
-<p>Research, psychology, science, teaching, and analysis.</p>
+<p>Research, psychology, science, teaching.</p>
 
 <h2>Lucky Insights</h2>
 <ul>
@@ -61,52 +59,75 @@
 <li><b>Compatibility:</b> 2, 7, 9</li>
 </ul>
 
+<!-- ✅ PREMIUM CTA RESTORED -->
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Soul Urge Report</h2>
+
+<p>
+Get a detailed AI-powered numerology report with spiritual insights, emotional patterns, personality decoding, and life direction guidance.
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
+
+</div>
+
 </div>
 </div>
 
-<!-- FOOTER -->
 <div id="footer"></div>
 
 <script>
 fetch('components/header.html')
-.then(r => r.text())
-.then(d => document.getElementById('header').innerHTML = d);
+.then(r=>r.text())
+.then(d=>document.getElementById('header').innerHTML=d);
 
 fetch('components/footer.html')
-.then(r => r.text())
-.then(d => document.getElementById('footer').innerHTML = d);
+.then(r=>r.text())
+.then(d=>document.getElementById('footer').innerHTML=d);
 
-const englishContent = document.getElementById("content").innerHTML;
+const englishContent=document.getElementById("content").innerHTML;
 
-const hindiContent = `
+const hindiContent=`
 <h2>परिचय</h2>
-<p>यह व्यक्ति ज्ञान, आध्यात्मिकता और गहराई से सोचने वाला होता है।</p>
+<p>यह व्यक्ति ज्ञान और आध्यात्मिकता की खोज में रहता है।</p>
 
 <h2>आंतरिक इच्छा</h2>
 <ul>
 <li>सत्य की खोज</li>
-<li>अकेले सोच-विचार</li>
 <li>आध्यात्मिक विकास</li>
+<li>गहराई से सोच</li>
 </ul>
 
 <h2>शक्तियाँ</h2>
-<p>गहरे विचारक और बुद्धिमान व्यक्ति।</p>
+<p>बुद्धिमान और अंतर्ज्ञानी व्यक्ति।</p>
 
 <h2>चुनौतियाँ</h2>
-<p>अधिक सोच और भावनात्मक दूरी।</p>
+<p>अधिक सोच और अकेलापन।</p>
 
 <h2>रिश्ते</h2>
-<p>गहरे लेकिन सीमित संबंध पसंद करते हैं।</p>
+<p>गहरे लेकिन सीमित संबंध।</p>
 
 <h2>करियर</h2>
-<p>रिसर्च और एनालिटिकल फील्ड्स।</p>
+<p>रिसर्च और एनालिटिकल क्षेत्र।</p>
 
 <h2>भाग्यशाली संकेत</h2>
 <ul>
 <li><b>अंक:</b> 7</li>
-<li><b>दिन:</b> गुरुवार</li>
 <li><b>रंग:</b> बैंगनी</li>
 </ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण रिपोर्ट अनलॉक करें</h2>
+
+<p>AI आधारित गहरी न्यूमरोलॉजी रिपोर्ट प्राप्त करें।</p>
+
+<a href="premium-reports.html" class="back-btn">🔓 प्रीमियम रिपोर्ट</a>
+
+</div>
 `;
 
 document.getElementById("language").addEventListener("change", function () {
