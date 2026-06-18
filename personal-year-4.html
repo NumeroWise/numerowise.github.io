@@ -4,85 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personal Year Number 4 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Personal Year Number 4 meaning in numerology. Learn about discipline, stability, career, challenges, and relationships.">
+<title>Personal Year Number 4 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Personal Year Number 4 meaning, opportunities, challenges, career guidance, relationships, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
-
 <body>
+
+<!-- HEADER -->
+<div id="header"></div>
 
 <div class="container">
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="personal-year-calculator.html">Calculator</a>
-<a href="life-path-calculator.html">Life Path</a>
-</div>
-
 <h1 id="title">Personal Year Number 4</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -91,85 +30,169 @@ footer {
 <div class="card" id="content">
 
 <h2>Introduction</h2>
-<p>Personal Year 4 is a year of discipline, hard work, structure, and building strong foundations for the future.</p>
+<p>
+Personal Year Number 4 represents structure, discipline, hard work, stability, and long-term foundation building. This year is about turning ideas into practical reality through consistent effort.
+</p>
 
-<h2>Personality Influence</h2>
-<p>You become more practical, focused, and responsible during this year.</p>
-
-<h2>Strengths</h2>
+<h2>Energy of the Year</h2>
 <ul>
-<li>Strong discipline</li>
-<li>Consistency</li>
+<li>Hard work and discipline</li>
+<li>Building strong foundations</li>
+<li>Responsibility and structure</li>
 <li>Practical thinking</li>
 <li>Long-term planning</li>
 </ul>
 
-<h2>Challenges</h2>
-<ul>
-<li>Stress and pressure</li>
-<li>Slow progress feeling</li>
-<li>Rigidity</li>
-</ul>
+<h2>Opportunities</h2>
+<p>
+This year brings opportunities to stabilize your career, build financial security, complete long-pending tasks, and create long-term systems for success.
+</p>
 
-<h2>Career & Money</h2>
-<p>Strong year for stability, job growth, and long-term career building.</p>
+<h2>Challenges</h2>
+<p>
+You may feel pressure, slow progress, workload burden, or frustration due to delays. Flexibility is important to avoid burnout.
+</p>
+
+<h2>Career & Business</h2>
+<p>
+Personal Year 4 supports careers in engineering, administration, government jobs, finance, real estate, technical work, and structured organizations.
+</p>
 
 <h2>Relationships</h2>
-<p>Responsibilities increase; emotional expression may reduce.</p>
+<p>
+Relationships require effort, patience, and responsibility this year. Emotional expression may feel limited due to workload, but stability can improve if balance is maintained.
+</p>
 
-<h2>Conclusion</h2>
-<p>This year builds the foundation for future success.</p>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 4</li>
+<li><b>Lucky Days:</b> Saturday, Wednesday</li>
+<li><b>Lucky Colors:</b> Blue, Grey, Earth tones</li>
+<li><b>Best Compatibility:</b> 2, 4, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personal Year Report</h2>
+
+<p>
+Get a detailed AI-powered numerology report with yearly predictions, career stability insights, financial planning guidance, relationship analysis, and personalized remedies for your personal year cycle.
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
 </div>
 
-<footer>© 2026 🔢 NumeroWise</footer>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// Load Header
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// Load Footer
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
+
 <h2>परिचय</h2>
-<p>यह वर्ष अनुशासन, मेहनत, संरचना और भविष्य की नींव बनाने का है।</p>
+<p>
+पर्सनल ईयर नंबर 4 स्थिरता, अनुशासन, मेहनत और मजबूत नींव बनाने का प्रतीक है। यह वर्ष व्यावहारिक प्रयासों और दीर्घकालिक सफलता पर केंद्रित होता है।
+</p>
 
-<h2>व्यक्तित्व प्रभाव</h2>
-<p>आप अधिक व्यावहारिक और जिम्मेदार बनते हैं।</p>
-
-<h2>शक्तियाँ</h2>
+<h2>वर्ष की ऊर्जा</h2>
 <ul>
-<li>अनुशासन</li>
-<li>लगातार प्रयास</li>
+<li>मेहनत और अनुशासन</li>
+<li>मजबूत नींव बनाना</li>
+<li>जिम्मेदारी और संरचना</li>
 <li>व्यावहारिक सोच</li>
-<li>योजना बनाना</li>
+<li>दीर्घकालिक योजना</li>
 </ul>
+
+<h2>अवसर</h2>
+<p>
+यह वर्ष करियर को स्थिर करने, आर्थिक सुरक्षा बनाने और लंबे समय से रुके हुए कार्यों को पूरा करने का अवसर देता है।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>तनाव</li>
-<li>धीमी प्रगति</li>
-<li>कठोरता</li>
-</ul>
+<p>
+इस वर्ष दबाव, धीमी प्रगति, काम का बोझ और देरी से निराशा हो सकती है। संतुलन बनाए रखना जरूरी है।
+</p>
 
-<h2>करियर और धन</h2>
-<p>स्थिरता और करियर ग्रोथ के लिए अच्छा वर्ष।</p>
+<h2>करियर और व्यवसाय</h2>
+<p>
+इंजीनियरिंग, प्रशासन, सरकारी नौकरी, वित्त, रियल एस्टेट और तकनीकी क्षेत्र इस वर्ष के लिए अनुकूल हैं।
+</p>
 
 <h2>रिश्ते</h2>
-<p>जिम्मेदारियाँ बढ़ती हैं, भावनात्मक समय कम हो सकता है।</p>
+<p>
+इस वर्ष रिश्तों में धैर्य और जिम्मेदारी की आवश्यकता होती है। काम के दबाव के कारण भावनात्मक अभिव्यक्ति कम हो सकती है।
+</p>
 
-<h2>निष्कर्ष</h2>
-<p>यह वर्ष भविष्य की मजबूत नींव रखता है।</p>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 4</li>
+<li><b>भाग्यशाली दिन:</b> शनिवार, बुधवार</li>
+<li><b>भाग्यशाली रंग:</b> नीला, ग्रे, मिट्टी जैसे रंग</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 4, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण पर्सनल ईयर रिपोर्ट अनलॉक करें</h2>
+
+<p>
+विस्तृत AI-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें वार्षिक भविष्यवाणी, करियर स्थिरता, वित्तीय योजना, रिश्तों की समझ और व्यक्तिगत उपाय शामिल हैं।
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट प्राप्त करें
+</a>
+
+</div>
+
 `;
 
-document.getElementById("language").addEventListener("change", function () {
-if (this.value === "hi") {
-document.getElementById("title").innerText = "पर्सनल ईयर नंबर 4";
-document.getElementById("content").innerHTML = hindiContent;
-} else {
-document.getElementById("title").innerText = "Personal Year Number 4";
-document.getElementById("content").innerHTML = englishContent;
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("title").innerText =
+"पर्सनल ईयर नंबर 4";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
 }
+else{
+
+document.getElementById("title").innerText =
+"Personal Year Number 4";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
+}
+
 });
+
 </script>
 
 </body>
