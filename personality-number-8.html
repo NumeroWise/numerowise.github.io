@@ -4,85 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personality Number 8 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Personality Number 8 meaning in numerology. Learn about personality traits, strengths, career, relationships, and challenges.">
+<title>Personality Number 8 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Personality Number 8 meaning, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="personality-calculator.html">Calculator</a>
-<a href="what-is-personality-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Personality Number 8</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,123 +32,159 @@ h2 {
 
 <h2>Introduction</h2>
 <p>
-Personality Number 8 reflects power, ambition, authority, and achievement. People often see you as confident, capable, and highly goal-oriented.
+Personality Number 8 represents power, ambition, authority, and achievement. People often see you as confident, determined, successful, and capable of handling major responsibilities.
 </p>
 
-<h2>First Impression</h2>
-<p>
-Others usually view you as successful, determined, and influential. You naturally project confidence, strength, and leadership.
-</p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Ambitious and goal-oriented</li>
+<li>Confident and authoritative</li>
+<li>Practical and disciplined</li>
+<li>Strong leadership qualities</li>
+<li>Determined and resilient</li>
+</ul>
 
 <h2>Strengths</h2>
-<ul>
-<li>Leadership ability</li>
-<li>Strong ambition</li>
-<li>Excellent organizational skills</li>
-<li>Financial awareness</li>
-<li>Determination and discipline</li>
-</ul>
+<p>
+You project confidence, strength, and competence. Others admire your leadership abilities, organizational skills, and determination to achieve success.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Can appear intimidating</li>
-<li>Workaholic tendencies</li>
-<li>Overemphasis on success</li>
-<li>Difficulty showing vulnerability</li>
-</ul>
-
-<h2>Career Influence</h2>
 <p>
-You often excel in business, finance, management, entrepreneurship, law, politics, and executive leadership roles.
+You may sometimes appear controlling, overly focused on work, impatient, or too concerned with status and material success.
 </p>
 
 <h2>Relationships</h2>
 <p>
-You value loyalty, respect, and stability. While you may appear strong on the outside, meaningful emotional connections are important to you.
+You value loyalty, trust, and commitment. You seek dependable partners who respect your ambitions and share your long-term vision.
 </p>
 
-<h2>Life Lesson</h2>
+<h2>Career & Social Image</h2>
 <p>
-Your growth comes from balancing material success with emotional fulfillment and learning that true power includes compassion and humility.
+People often view you as a natural leader and achiever. Careers in business, finance, management, law, politics, entrepreneurship, and executive leadership suit your public image.
 </p>
 
-<h2>Conclusion</h2>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 8</li>
+<li><b>Lucky Days:</b> Saturday, Friday</li>
+<li><b>Lucky Colors:</b> Black, Dark Blue, Grey</li>
+<li><b>Best Compatibility:</b> 2, 4, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personality Number Report</h2>
+
 <p>
-Personality Number 8 projects authority, success, confidence, and strong leadership qualities.
+Get a detailed AI-powered numerology report with deeper personality analysis, relationship insights, career guidance, hidden strengths, challenges, and personalized recommendations.
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p>
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
-
 <h2>परिचय</h2>
 <p>
-पर्सनैलिटी नंबर 8 शक्ति, महत्वाकांक्षा, अधिकार और उपलब्धि का प्रतीक है। लोग आपको आत्मविश्वासी, सक्षम और लक्ष्य-केंद्रित व्यक्ति के रूप में देखते हैं।
+पर्सनैलिटी नंबर 8 शक्ति, महत्वाकांक्षा, अधिकार और उपलब्धि का प्रतीक है। लोग आपको आत्मविश्वासी, दृढ़निश्चयी, सफल और बड़ी जिम्मेदारियों को संभालने में सक्षम व्यक्ति के रूप में देखते हैं।
 </p>
 
-<h2>पहली छाप</h2>
-<p>
-लोग आपको सफल, दृढ़ निश्चयी और प्रभावशाली व्यक्ति मानते हैं। आपकी उपस्थिति नेतृत्व और आत्मविश्वास का प्रभाव छोड़ती है।
-</p>
+<h2>व्यक्तित्व विशेषताएँ</h2>
+<ul>
+<li>महत्वाकांक्षी और लक्ष्य-केंद्रित</li>
+<li>आत्मविश्वासी और प्रभावशाली</li>
+<li>व्यावहारिक और अनुशासित</li>
+<li>मजबूत नेतृत्व क्षमता</li>
+<li>दृढ़निश्चयी और संघर्षशील</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>नेतृत्व क्षमता</li>
-<li>मजबूत महत्वाकांक्षा</li>
-<li>संगठनात्मक कौशल</li>
-<li>वित्तीय समझ</li>
-<li>अनुशासन और दृढ़ता</li>
-</ul>
+<p>
+आप आत्मविश्वास, शक्ति और दक्षता का प्रभाव छोड़ते हैं। लोग आपकी नेतृत्व क्षमता, संगठन कौशल और सफलता प्राप्त करने के दृढ़ संकल्प की सराहना करते हैं।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>डराने वाला व्यक्तित्व लगना</li>
-<li>अत्यधिक काम में डूब जाना</li>
-<li>सफलता पर अधिक ध्यान</li>
-<li>भावनाएँ व्यक्त करने में कठिनाई</li>
-</ul>
-
-<h2>करियर</h2>
 <p>
-व्यवसाय, वित्त, प्रबंधन, उद्यमिता, राजनीति, कानून और नेतृत्व पदों पर सफलता मिल सकती है।
+कभी-कभी आप नियंत्रक स्वभाव के, काम पर अत्यधिक केंद्रित, अधीर या सामाजिक प्रतिष्ठा और भौतिक सफलता के प्रति अधिक चिंतित दिखाई दे सकते हैं।
 </p>
 
 <h2>रिश्ते</h2>
 <p>
-आप सम्मान, वफादारी और स्थिरता को महत्व देते हैं। मजबूत दिखने के बावजूद आप गहरे भावनात्मक संबंधों की कद्र करते हैं।
+आप वफादारी, विश्वास और प्रतिबद्धता को महत्व देते हैं। आप ऐसे साथी की तलाश करते हैं जो आपकी महत्वाकांक्षाओं को समझे और आपके दीर्घकालिक दृष्टिकोण का सम्मान करे।
 </p>
 
-<h2>जीवन पाठ</h2>
+<h2>करियर और सामाजिक छवि</h2>
 <p>
-आपका विकास भौतिक सफलता और भावनात्मक संतुलन के बीच सामंजस्य बनाने तथा विनम्रता और करुणा विकसित करने में है।
+लोग आपको स्वाभाविक नेता और उपलब्धि हासिल करने वाले व्यक्ति के रूप में देखते हैं। व्यवसाय, वित्त, प्रबंधन, कानून, राजनीति, उद्यमिता और उच्च नेतृत्व पद आपके लिए उपयुक्त हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 8</li>
+<li><b>भाग्यशाली दिन:</b> शनिवार, शुक्रवार</li>
+<li><b>भाग्यशाली रंग:</b> काला, गहरा नीला, धूसर</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 4, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण पर्सनैलिटी नंबर रिपोर्ट अनलॉक करें</h2>
+
 <p>
-पर्सनैलिटी नंबर 8 सफलता, नेतृत्व, आत्मविश्वास और प्रभावशाली व्यक्तित्व का प्रतिनिधित्व करता है।
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें गहन व्यक्तित्व विश्लेषण, रिश्तों की जानकारी, करियर मार्गदर्शन, छिपी शक्तियाँ, चुनौतियाँ और व्यक्तिगत सुझाव शामिल हैं।
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
+
+</div>
 
 `;
 
-document.getElementById("language").addEventListener("change", function () {
+document.getElementById("language").addEventListener("change", function(){
 
-if (this.value === "hi") {
+if(this.value === "hi"){
+
 document.getElementById("title").innerText = "पर्सनैलिटी नंबर 8";
+
 document.getElementById("content").innerHTML = hindiContent;
+
 }
-else {
+else{
+
 document.getElementById("title").innerText = "Personality Number 8";
+
 document.getElementById("content").innerHTML = englishContent;
+
 }
 
 });
