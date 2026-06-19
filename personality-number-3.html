@@ -4,85 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personality Number 3 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Personality Number 3 meaning in numerology. Learn about personality traits, strengths, career, relationships, and challenges.">
+<title>Personality Number 3 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Personality Number 3 meaning, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="personality-calculator.html">Calculator</a>
-<a href="what-is-personality-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Personality Number 3</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,123 +32,159 @@ h2 {
 
 <h2>Introduction</h2>
 <p>
-Personality Number 3 reflects creativity, self-expression, communication, and optimism. People often see you as cheerful, friendly, and full of positive energy.
+Personality Number 3 represents creativity, self-expression, optimism, and charisma. People often see you as cheerful, inspiring, sociable, and full of positive energy.
 </p>
 
-<h2>First Impression</h2>
-<p>
-Others usually view you as outgoing, entertaining, and confident. Your natural charm and sense of humor often make you the center of attention.
-</p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Creative and imaginative</li>
+<li>Excellent communicator</li>
+<li>Friendly and sociable</li>
+<li>Optimistic and enthusiastic</li>
+<li>Expressive and entertaining</li>
+</ul>
 
 <h2>Strengths</h2>
-<ul>
-<li>Excellent communication skills</li>
-<li>Creative thinking</li>
-<li>Positive attitude</li>
-<li>Charismatic personality</li>
-<li>Strong social abilities</li>
-</ul>
+<p>
+You naturally attract people with your charm, communication skills, and positive outlook. Others appreciate your ability to inspire, entertain, and motivate.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Lack of focus</li>
-<li>Scattered energy</li>
-<li>Over-talking</li>
-<li>Avoiding serious responsibilities</li>
-</ul>
-
-<h2>Career Influence</h2>
 <p>
-You often excel in writing, media, marketing, teaching, entertainment, public speaking, and creative industries where communication is important.
+You may sometimes appear scattered, overly talkative, inconsistent, or easily distracted from long-term goals.
 </p>
 
 <h2>Relationships</h2>
 <p>
-You bring excitement, joy, and enthusiasm into relationships. People enjoy your company because of your optimistic and expressive nature.
+You bring excitement, warmth, and joy into relationships. You value communication, fun experiences, and emotional connection.
 </p>
 
-<h2>Life Lesson</h2>
+<h2>Career & Social Image</h2>
 <p>
-Your growth comes from balancing creativity with discipline and learning to follow through on your ideas and commitments.
+People often view you as creative and expressive. Careers in media, writing, public speaking, marketing, entertainment, teaching, and the arts suit your public image.
 </p>
 
-<h2>Conclusion</h2>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 3</li>
+<li><b>Lucky Days:</b> Thursday, Sunday</li>
+<li><b>Lucky Colors:</b> Yellow, Purple, Pink</li>
+<li><b>Best Compatibility:</b> 1, 3, 9</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personality Number Report</h2>
+
 <p>
-Personality Number 3 projects creativity, confidence, enthusiasm, and strong communication skills.
+Get a detailed AI-powered numerology report with deeper personality analysis, relationship insights, career guidance, hidden strengths, challenges, and personalized recommendations.
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p>
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
-
 <h2>परिचय</h2>
 <p>
-पर्सनैलिटी नंबर 3 रचनात्मकता, अभिव्यक्ति, संचार कौशल और आशावाद का प्रतीक है। लोग आपको खुशमिजाज और ऊर्जावान व्यक्ति के रूप में देखते हैं।
+पर्सनैलिटी नंबर 3 रचनात्मकता, आत्म-अभिव्यक्ति, आशावाद और आकर्षण का प्रतीक है। लोग आपको खुशमिजाज, प्रेरणादायक, मिलनसार और सकारात्मक ऊर्जा से भरपूर व्यक्ति के रूप में देखते हैं।
 </p>
 
-<h2>पहली छाप</h2>
-<p>
-लोग आपको मिलनसार, मनोरंजक और आत्मविश्वासी मानते हैं। आपका आकर्षक व्यक्तित्व अक्सर लोगों का ध्यान अपनी ओर खींचता है।
-</p>
+<h2>व्यक्तित्व विशेषताएँ</h2>
+<ul>
+<li>रचनात्मक और कल्पनाशील</li>
+<li>उत्कृष्ट संवाद कौशल</li>
+<li>मिलनसार और मित्रवत</li>
+<li>आशावादी और उत्साही</li>
+<li>अभिव्यक्तिशील और मनोरंजक</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>उत्कृष्ट संचार कौशल</li>
-<li>रचनात्मक सोच</li>
-<li>सकारात्मक दृष्टिकोण</li>
-<li>आकर्षक व्यक्तित्व</li>
-<li>सामाजिक क्षमता</li>
-</ul>
+<p>
+आप अपने आकर्षण, संवाद कौशल और सकारात्मक सोच से लोगों को सहज रूप से प्रभावित करते हैं। लोग आपकी प्रेरित करने और उत्साह बढ़ाने की क्षमता की सराहना करते हैं।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>ध्यान की कमी</li>
-<li>ऊर्जा का बिखराव</li>
-<li>बहुत अधिक बोलना</li>
-<li>गंभीर जिम्मेदारियों से बचना</li>
-</ul>
-
-<h2>करियर</h2>
 <p>
-लेखन, मीडिया, मार्केटिंग, शिक्षा, मनोरंजन, सार्वजनिक भाषण और रचनात्मक क्षेत्रों में सफलता प्राप्त हो सकती है।
+कभी-कभी आप अस्थिर, अत्यधिक बातूनी, ध्यान भटकाने वाले या दीर्घकालिक लक्ष्यों पर केंद्रित रहने में कठिनाई महसूस कर सकते हैं।
 </p>
 
 <h2>रिश्ते</h2>
 <p>
-आप रिश्तों में उत्साह, खुशी और सकारात्मक ऊर्जा लेकर आते हैं। लोग आपकी संगति का आनंद लेते हैं।
+आप रिश्तों में उत्साह, गर्मजोशी और खुशी लाते हैं। आप संवाद, मनोरंजन और भावनात्मक जुड़ाव को महत्व देते हैं।
 </p>
 
-<h2>जीवन पाठ</h2>
+<h2>करियर और सामाजिक छवि</h2>
 <p>
-आपका विकास रचनात्मकता और अनुशासन के बीच संतुलन बनाने तथा अपने विचारों को पूरा करने में है।
+लोग आपको रचनात्मक और अभिव्यक्तिशील व्यक्ति के रूप में देखते हैं। मीडिया, लेखन, सार्वजनिक भाषण, मार्केटिंग, मनोरंजन, शिक्षण और कला से जुड़े क्षेत्र आपके लिए उपयुक्त हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 3</li>
+<li><b>भाग्यशाली दिन:</b> गुरुवार, रविवार</li>
+<li><b>भाग्यशाली रंग:</b> पीला, बैंगनी, गुलाबी</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 1, 3, 9</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण पर्सनैलिटी नंबर रिपोर्ट अनलॉक करें</h2>
+
 <p>
-पर्सनैलिटी नंबर 3 रचनात्मक, आत्मविश्वासी और प्रभावशाली व्यक्तित्व का प्रतिनिधित्व करता है।
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें गहन व्यक्तित्व विश्लेषण, रिश्तों की जानकारी, करियर मार्गदर्शन, छिपी शक्तियाँ, चुनौतियाँ और व्यक्तिगत सुझाव शामिल हैं।
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
+
+</div>
 
 `;
 
-document.getElementById("language").addEventListener("change", function () {
+document.getElementById("language").addEventListener("change", function(){
 
-if (this.value === "hi") {
+if(this.value === "hi"){
+
 document.getElementById("title").innerText = "पर्सनैलिटी नंबर 3";
+
 document.getElementById("content").innerHTML = hindiContent;
+
 }
-else {
+else{
+
 document.getElementById("title").innerText = "Personality Number 3";
+
 document.getElementById("content").innerHTML = englishContent;
+
 }
 
 });
