@@ -4,85 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personality Number 2 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Personality Number 2 meaning in numerology. Learn about personality traits, strengths, career, relationships, and challenges.">
+<title>Personality Number 2 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Personality Number 2 meaning, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="personality-calculator.html">Calculator</a>
-<a href="what-is-personality-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Personality Number 2</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,123 +32,159 @@ h2 {
 
 <h2>Introduction</h2>
 <p>
-Personality Number 2 reflects kindness, diplomacy, cooperation, and emotional sensitivity. People often see you as friendly, approachable, and supportive.
+Personality Number 2 represents diplomacy, kindness, sensitivity, and cooperation. People often see you as gentle, supportive, trustworthy, and easy to approach.
 </p>
 
-<h2>First Impression</h2>
-<p>
-Others usually view you as calm, patient, and easy to work with. You naturally create harmony wherever you go.
-</p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Friendly and cooperative</li>
+<li>Diplomatic and tactful</li>
+<li>Patient and understanding</li>
+<li>Emotionally aware</li>
+<li>Peace-loving and supportive</li>
+</ul>
 
 <h2>Strengths</h2>
-<ul>
-<li>Diplomatic nature</li>
-<li>Excellent cooperation skills</li>
-<li>Patience and understanding</li>
-<li>Emotional intelligence</li>
-<li>Strong relationship-building abilities</li>
-</ul>
+<p>
+You naturally create harmony and balance in social situations. Others appreciate your ability to listen, mediate conflicts, and provide emotional support.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Over-sensitivity</li>
-<li>Difficulty making decisions</li>
-<li>Avoiding conflict</li>
-<li>Self-doubt</li>
-</ul>
-
-<h2>Career Influence</h2>
 <p>
-You often excel in counseling, teaching, customer service, healthcare, human resources, and partnership-based careers.
+You may sometimes appear overly sensitive, indecisive, shy, or overly dependent on the approval of others.
 </p>
 
 <h2>Relationships</h2>
 <p>
-You value emotional connection, trust, and harmony. People appreciate your caring and supportive nature.
+You value emotional connection, trust, loyalty, and mutual understanding. You are caring and attentive in relationships.
 </p>
 
-<h2>Life Lesson</h2>
+<h2>Career & Social Image</h2>
 <p>
-Your growth comes from developing confidence, setting healthy boundaries, and learning to express your own needs openly.
+People often see you as a team player and peacemaker. Careers in counseling, teaching, healthcare, customer service, and human resources suit your public image.
 </p>
 
-<h2>Conclusion</h2>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 2</li>
+<li><b>Lucky Days:</b> Monday, Friday</li>
+<li><b>Lucky Colors:</b> White, Cream, Light Blue</li>
+<li><b>Best Compatibility:</b> 2, 6, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personality Number Report</h2>
+
 <p>
-Personality Number 2 projects kindness, cooperation, sensitivity, and emotional warmth.
+Get a detailed AI-powered numerology report with deeper personality analysis, relationship insights, career guidance, hidden strengths, challenges, and personalized recommendations.
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p>
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
-
 <h2>परिचय</h2>
 <p>
-पर्सनैलिटी नंबर 2 सहयोग, संवेदनशीलता, कूटनीति और दयालुता का प्रतीक है। लोग आपको मित्रवत और सहयोगी व्यक्ति के रूप में देखते हैं।
+पर्सनैलिटी नंबर 2 कूटनीति, दयालुता, संवेदनशीलता और सहयोग का प्रतीक है। लोग आपको विनम्र, सहयोगी, भरोसेमंद और आसानी से मिलने-जुलने वाले व्यक्ति के रूप में देखते हैं।
 </p>
 
-<h2>पहली छाप</h2>
-<p>
-लोग आपको शांत, धैर्यवान और समझदार व्यक्ति मानते हैं। आपकी उपस्थिति अक्सर सामंजस्य और शांति का वातावरण बनाती है।
-</p>
+<h2>व्यक्तित्व विशेषताएँ</h2>
+<ul>
+<li>मिलनसार और सहयोगी</li>
+<li>कूटनीतिक और समझदारी से काम लेने वाले</li>
+<li>धैर्यवान और समझदार</li>
+<li>भावनात्मक रूप से जागरूक</li>
+<li>शांति पसंद और सहायक</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>कूटनीतिक स्वभाव</li>
-<li>सहयोग की भावना</li>
-<li>धैर्य</li>
-<li>भावनात्मक समझ</li>
-<li>रिश्ते बनाने की क्षमता</li>
-</ul>
+<p>
+आप सामाजिक परिस्थितियों में सामंजस्य और संतुलन स्थापित करने की क्षमता रखते हैं। लोग आपकी सुनने, विवाद सुलझाने और भावनात्मक समर्थन देने की क्षमता की सराहना करते हैं।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>अत्यधिक संवेदनशीलता</li>
-<li>निर्णय लेने में कठिनाई</li>
-<li>टकराव से बचना</li>
-<li>आत्म-संदेह</li>
-</ul>
-
-<h2>करियर</h2>
 <p>
-काउंसलिंग, शिक्षा, स्वास्थ्य सेवा, मानव संसाधन और ग्राहक सेवा जैसे क्षेत्रों में सफलता मिल सकती है।
+कभी-कभी आप अत्यधिक संवेदनशील, निर्णय लेने में धीमे, शर्मीले या दूसरों की स्वीकृति पर अधिक निर्भर दिखाई दे सकते हैं।
 </p>
 
 <h2>रिश्ते</h2>
 <p>
-आप भावनात्मक जुड़ाव, विश्वास और संतुलन को महत्व देते हैं। लोग आपकी देखभाल करने वाली प्रकृति की सराहना करते हैं।
+आप रिश्तों में भावनात्मक जुड़ाव, विश्वास, वफादारी और आपसी समझ को महत्व देते हैं। आप देखभाल करने वाले और समर्पित साथी होते हैं।
 </p>
 
-<h2>जीवन पाठ</h2>
+<h2>करियर और सामाजिक छवि</h2>
 <p>
-आपका विकास आत्मविश्वास बढ़ाने, अपनी सीमाएँ तय करने और अपनी जरूरतों को खुलकर व्यक्त करना सीखने में है।
+लोग आपको टीम प्लेयर और शांति स्थापित करने वाले व्यक्ति के रूप में देखते हैं। परामर्श, शिक्षण, स्वास्थ्य सेवा, ग्राहक सेवा और मानव संसाधन से जुड़े क्षेत्र आपके लिए उपयुक्त हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 2</li>
+<li><b>भाग्यशाली दिन:</b> सोमवार, शुक्रवार</li>
+<li><b>भाग्यशाली रंग:</b> सफेद, क्रीम, हल्का नीला</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 6, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण पर्सनैलिटी नंबर रिपोर्ट अनलॉक करें</h2>
+
 <p>
-पर्सनैलिटी नंबर 2 दयालु, सहयोगी और भावनात्मक रूप से संवेदनशील व्यक्तित्व को दर्शाता है।
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें गहन व्यक्तित्व विश्लेषण, रिश्तों की जानकारी, करियर मार्गदर्शन, छिपी शक्तियाँ, चुनौतियाँ और व्यक्तिगत सुझाव शामिल हैं।
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
+
+</div>
 
 `;
 
-document.getElementById("language").addEventListener("change", function () {
+document.getElementById("language").addEventListener("change", function(){
 
-if (this.value === "hi") {
+if(this.value === "hi"){
+
 document.getElementById("title").innerText = "पर्सनैलिटी नंबर 2";
+
 document.getElementById("content").innerHTML = hindiContent;
+
 }
-else {
+else{
+
 document.getElementById("title").innerText = "Personality Number 2";
+
 document.getElementById("content").innerHTML = englishContent;
+
 }
 
 });
