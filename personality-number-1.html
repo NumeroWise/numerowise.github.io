@@ -4,85 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Personality Number 1 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Personality Number 1 meaning in numerology. Learn about personality traits, strengths, career, relationships, and challenges.">
+<title>Personality Number 1 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Personality Number 1 meaning, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="personality-calculator.html">Calculator</a>
-<a href="what-is-personality-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Personality Number 1</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,123 +32,159 @@ h2 {
 
 <h2>Introduction</h2>
 <p>
-Personality Number 1 reflects confidence, leadership, independence, and determination. People often see you as strong, ambitious, and capable of taking charge.
+Personality Number 1 represents confidence, leadership, independence, and originality. People often see you as strong-willed, ambitious, and capable of taking initiative in any situation.
 </p>
 
-<h2>First Impression</h2>
-<p>
-Others usually view you as self-confident, courageous, and highly motivated. You naturally attract attention and often appear as a leader.
-</p>
+<h2>Personality Traits</h2>
+<ul>
+<li>Confident and self-reliant</li>
+<li>Natural leadership qualities</li>
+<li>Independent thinker</li>
+<li>Ambitious and determined</li>
+<li>Innovative and goal-oriented</li>
+</ul>
 
 <h2>Strengths</h2>
-<ul>
-<li>Leadership abilities</li>
-<li>Strong self-confidence</li>
-<li>Independent mindset</li>
-<li>Determination</li>
-<li>Initiative and ambition</li>
-</ul>
+<p>
+You project confidence, courage, and decisiveness. Others often admire your ability to take charge, solve problems, and lead with determination.
+</p>
 
 <h2>Challenges</h2>
-<ul>
-<li>Can appear stubborn</li>
-<li>May seem overly dominant</li>
-<li>Difficulty accepting advice</li>
-<li>Impatience with others</li>
-</ul>
-
-<h2>Career Influence</h2>
 <p>
-You often excel in management, entrepreneurship, politics, leadership roles, and positions requiring independent decision-making.
+You may sometimes appear stubborn, overly competitive, impatient, or unwilling to accept help from others.
 </p>
 
 <h2>Relationships</h2>
 <p>
-You value loyalty and honesty. Partners appreciate your confidence but may need more emotional openness from you.
+You value honesty, loyalty, and independence in relationships. You are protective of loved ones but prefer maintaining your individuality.
 </p>
 
-<h2>Life Lesson</h2>
+<h2>Career & Social Image</h2>
 <p>
-Your growth comes from balancing independence with cooperation and learning how to lead without controlling others.
+You are often viewed as a leader and achiever. Careers in management, entrepreneurship, politics, sales, and executive roles suit your public image well.
 </p>
 
-<h2>Conclusion</h2>
+<h2>Lucky Insights</h2>
+<ul>
+<li><b>Lucky Number:</b> 1</li>
+<li><b>Lucky Days:</b> Sunday, Monday</li>
+<li><b>Lucky Colors:</b> Gold, Orange, Red</li>
+<li><b>Best Compatibility:</b> 1, 3, 5</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Personality Number Report</h2>
+
 <p>
-Personality Number 1 projects confidence, authority, ambition, and leadership.
+Get a detailed AI-powered numerology report with deeper personality analysis, relationship insights, career guidance, hidden strengths, challenges, and personalized recommendations.
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p>
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
-
 <h2>परिचय</h2>
 <p>
-पर्सनैलिटी नंबर 1 आत्मविश्वास, नेतृत्व, स्वतंत्रता और दृढ़ संकल्प का प्रतीक है। लोग आपको मजबूत और महत्वाकांक्षी व्यक्ति के रूप में देखते हैं।
+पर्सनैलिटी नंबर 1 आत्मविश्वास, नेतृत्व, स्वतंत्रता और मौलिकता का प्रतीक है। लोग आपको मजबूत इच्छाशक्ति वाले, महत्वाकांक्षी और पहल करने वाले व्यक्ति के रूप में देखते हैं।
 </p>
 
-<h2>पहली छाप</h2>
-<p>
-लोग आपको आत्मविश्वासी, साहसी और नेतृत्व करने वाला व्यक्ति मानते हैं। आप स्वाभाविक रूप से ध्यान आकर्षित करते हैं।
-</p>
+<h2>व्यक्तित्व विशेषताएँ</h2>
+<ul>
+<li>आत्मविश्वासी और आत्मनिर्भर</li>
+<li>स्वाभाविक नेतृत्व क्षमता</li>
+<li>स्वतंत्र सोच रखने वाले</li>
+<li>महत्वाकांक्षी और दृढ़निश्चयी</li>
+<li>नवाचारी और लक्ष्य-केंद्रित</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>नेतृत्व क्षमता</li>
-<li>उच्च आत्मविश्वास</li>
-<li>स्वतंत्र सोच</li>
-<li>दृढ़ निश्चय</li>
-<li>महत्वाकांक्षा</li>
-</ul>
+<p>
+आप आत्मविश्वास, साहस और निर्णय लेने की क्षमता प्रदर्शित करते हैं। लोग आपकी नेतृत्व क्षमता और समस्याओं को हल करने के कौशल की प्रशंसा करते हैं।
+</p>
 
 <h2>चुनौतियाँ</h2>
-<ul>
-<li>जिद्दी स्वभाव</li>
-<li>हावी होने की प्रवृत्ति</li>
-<li>सलाह स्वीकारने में कठिनाई</li>
-<li>अधीरता</li>
-</ul>
-
-<h2>करियर</h2>
 <p>
-प्रबंधन, व्यवसाय, राजनीति और नेतृत्व से जुड़े क्षेत्रों में सफलता मिल सकती है।
+कभी-कभी आप जिद्दी, अत्यधिक प्रतिस्पर्धी, अधीर या दूसरों की सहायता स्वीकार करने में अनिच्छुक दिखाई दे सकते हैं।
 </p>
 
 <h2>रिश्ते</h2>
 <p>
-आप ईमानदारी और वफादारी को महत्व देते हैं, लेकिन भावनात्मक अभिव्यक्ति पर भी काम करने की आवश्यकता हो सकती है।
+आप रिश्तों में ईमानदारी, वफादारी और स्वतंत्रता को महत्व देते हैं। आप अपने प्रियजनों की रक्षा करते हैं लेकिन अपनी व्यक्तिगत पहचान भी बनाए रखना चाहते हैं।
 </p>
 
-<h2>जीवन पाठ</h2>
+<h2>करियर और सामाजिक छवि</h2>
 <p>
-आपका विकास स्वतंत्रता और सहयोग के बीच संतुलन बनाना सीखने में है।
+लोग आपको एक नेता और उपलब्धि हासिल करने वाले व्यक्ति के रूप में देखते हैं। प्रबंधन, उद्यमिता, राजनीति, बिक्री और नेतृत्व से जुड़े क्षेत्र आपके लिए उपयुक्त हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 1</li>
+<li><b>भाग्यशाली दिन:</b> रविवार, सोमवार</li>
+<li><b>भाग्यशाली रंग:</b> सुनहरा, नारंगी, लाल</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 1, 3, 5</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण पर्सनैलिटी नंबर रिपोर्ट अनलॉक करें</h2>
+
 <p>
-पर्सनैलिटी नंबर 1 नेतृत्व, आत्मविश्वास और महत्वाकांक्षा की मजबूत छवि प्रस्तुत करता है।
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें गहन व्यक्तित्व विश्लेषण, रिश्तों की जानकारी, करियर मार्गदर्शन, छिपी शक्तियाँ, चुनौतियाँ और व्यक्तिगत सुझाव शामिल हैं।
 </p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
+
+</div>
 
 `;
 
-document.getElementById("language").addEventListener("change", function () {
+document.getElementById("language").addEventListener("change", function(){
 
-if (this.value === "hi") {
+if(this.value === "hi"){
+
 document.getElementById("title").innerText = "पर्सनैलिटी नंबर 1";
+
 document.getElementById("content").innerHTML = hindiContent;
+
 }
-else {
+else{
+
 document.getElementById("title").innerText = "Personality Number 1";
+
 document.getElementById("content").innerHTML = englishContent;
+
 }
 
 });
