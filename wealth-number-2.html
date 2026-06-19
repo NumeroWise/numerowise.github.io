@@ -4,78 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Wealth Number 2 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Wealth Number 2 meaning in numerology. Learn money habits, financial strengths, wealth potential, investment style, challenges, and prosperity guidance.">
+<title>Wealth Number 2 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Wealth Number 2 meaning, wealth mindset, financial strengths, money challenges, wealth opportunities, growth advice, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="wealth-prediction-calculator.html">Calculator</a>
-<a href="what-is-wealth-prediction.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Wealth Number 2</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -85,65 +32,82 @@ h2 {
 
 <h2>Introduction</h2>
 <p>
-Wealth Number 2 represents cooperation, patience, partnerships, and financial harmony.
-People with this number often build wealth through relationships, teamwork, diplomacy, and long-term planning.
+Wealth Number 2 represents cooperation, patience, partnerships, and financial growth through relationships. People with this Wealth Number often achieve prosperity by working harmoniously with others and building strong networks.
 </p>
 
-<h2>Money Personality</h2>
-<p>
-These individuals are careful with money and prefer stability over risky financial decisions.
-They value security and often seek advice before making important financial moves.
-</p>
+<h2>Wealth Mindset</h2>
+<ul>
+<li>Values financial stability and security</li>
+<li>Prefers cooperation over competition</li>
+<li>Patient and thoughtful decision-maker</li>
+<li>Strong relationship builder</li>
+<li>Believes in long-term growth</li>
+</ul>
 
 <h2>Financial Strengths</h2>
-<ul>
-<li>Strong partnership skills</li>
-<li>Patient wealth-building approach</li>
-<li>Good financial planning abilities</li>
-<li>Diplomatic decision-making</li>
-<li>Excellent teamwork and networking</li>
-</ul>
+<p>
+You possess diplomacy, patience, emotional intelligence, and the ability to create beneficial partnerships. Your collaborative nature often attracts opportunities that lead to steady financial progress.
+</p>
 
 <h2>Financial Challenges</h2>
+<p>
+You may sometimes hesitate when making important financial decisions or depend too much on others' opinions. Developing confidence in your own judgment can strengthen your financial success.
+</p>
+
+<h2>Wealth Opportunities</h2>
+<p>
+Partnership-based businesses, consulting, customer relations, human resources, counseling, hospitality, and collaborative ventures often provide favorable financial opportunities.
+</p>
+
+<h2>Wealth Growth Advice</h2>
+<p>
+Trust your intuition while maintaining practical financial planning. Building strong professional relationships and staying consistent with your goals can support long-term prosperity.
+</p>
+
+<h2>Lucky Insights</h2>
 <ul>
-<li>May hesitate when opportunities arise</li>
-<li>Can depend too much on others' opinions</li>
-<li>Difficulty making quick financial decisions</li>
-<li>Sensitive to financial setbacks</li>
+<li><b>Lucky Number:</b> 2</li>
+<li><b>Lucky Days:</b> Monday, Friday</li>
+<li><b>Lucky Colors:</b> White, Cream, Light Blue</li>
+<li><b>Best Compatibility:</b> 2, 6, 8</li>
 </ul>
 
-<h2>Wealth Building Style</h2>
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Wealth Prediction Report</h2>
+
 <p>
-Wealth Number 2 individuals often prosper through partnerships, collaborations, client relationships, and supportive professional networks.
-Their success usually grows steadily over time rather than through sudden gains.
+Get a detailed AI-powered numerology report with wealth potential, money habits, financial opportunities, prosperity cycles, and personalized abundance guidance.
 </p>
 
-<h2>Investment Approach</h2>
-<p>
-They generally prefer safe and stable investments.
-Long-term planning, diversification, and consistent savings often work well for them.
-</p>
-
-<h2>Prosperity Tips</h2>
-<p>
-Trusting their intuition, developing confidence in financial decisions, and avoiding excessive dependence on others can improve prosperity.
-</p>
-
-<h2>Conclusion</h2>
-<p>
-Wealth Number 2 symbolizes financial balance, cooperation, patience, and steady growth.
-These individuals often achieve lasting prosperity through strong relationships and wise planning.
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
-<p>
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
@@ -151,74 +115,86 @@ const hindiContent = `
 
 <h2>परिचय</h2>
 <p>
-वेल्थ नंबर 2 सहयोग, धैर्य, साझेदारी और आर्थिक संतुलन का प्रतीक है।
-इस नंबर वाले लोग अक्सर रिश्तों, टीमवर्क और दीर्घकालिक योजना के माध्यम से धन अर्जित करते हैं।
+वेल्थ नंबर 2 सहयोग, धैर्य, साझेदारी और संबंधों के माध्यम से आर्थिक विकास का प्रतीक है। इस वेल्थ नंबर वाले लोग अक्सर दूसरों के साथ मिलकर कार्य करने और मजबूत संबंध बनाने से समृद्धि प्राप्त करते हैं।
 </p>
 
-<h2>धन संबंधी व्यक्तित्व</h2>
-<p>
-ये लोग धन के मामलों में सावधान रहते हैं और जोखिम लेने के बजाय स्थिरता को प्राथमिकता देते हैं।
-महत्वपूर्ण आर्थिक निर्णयों से पहले सलाह लेना पसंद करते हैं।
-</p>
+<h2>धन संबंधी मानसिकता</h2>
+<ul>
+<li>आर्थिक स्थिरता और सुरक्षा को महत्व देते हैं</li>
+<li>प्रतिस्पर्धा से अधिक सहयोग पसंद करते हैं</li>
+<li>धैर्यवान और विचारशील निर्णय लेने वाले</li>
+<li>मजबूत संबंध बनाने की क्षमता</li>
+<li>दीर्घकालिक विकास में विश्वास रखते हैं</li>
+</ul>
 
 <h2>वित्तीय शक्तियाँ</h2>
-<ul>
-<li>साझेदारी में सफलता</li>
-<li>धैर्यपूर्वक धन निर्माण</li>
-<li>अच्छी आर्थिक योजना क्षमता</li>
-<li>संतुलित निर्णय लेने की योग्यता</li>
-<li>मजबूत नेटवर्किंग कौशल</li>
-</ul>
+<p>
+आपमें कूटनीति, धैर्य, भावनात्मक समझ और लाभदायक साझेदारियाँ बनाने की क्षमता होती है। आपका सहयोगी स्वभाव अक्सर ऐसे अवसर आकर्षित करता है जो स्थिर आर्थिक प्रगति प्रदान कर सकते हैं।
+</p>
 
 <h2>वित्तीय चुनौतियाँ</h2>
+<p>
+कभी-कभी आप महत्वपूर्ण आर्थिक निर्णय लेने में हिचकिचा सकते हैं या दूसरों की राय पर अत्यधिक निर्भर हो सकते हैं। अपने निर्णयों पर विश्वास विकसित करना आपके लिए लाभदायक रहेगा।
+</p>
+
+<h2>धन के अवसर</h2>
+<p>
+साझेदारी आधारित व्यवसाय, कंसल्टिंग, ग्राहक संबंध, मानव संसाधन, परामर्श, आतिथ्य सेवा और सहयोगात्मक कार्यक्षेत्र आपके लिए अच्छे आर्थिक अवसर प्रदान कर सकते हैं।
+</p>
+
+<h2>धन वृद्धि सलाह</h2>
+<p>
+व्यावहारिक वित्तीय योजना के साथ अपनी अंतर्ज्ञान शक्ति पर भी भरोसा रखें। मजबूत पेशेवर संबंध और निरंतर प्रयास दीर्घकालिक समृद्धि में सहायता कर सकते हैं।
+</p>
+
+<h2>भाग्यशाली संकेत</h2>
 <ul>
-<li>अवसर आने पर निर्णय लेने में देरी</li>
-<li>दूसरों की राय पर अधिक निर्भरता</li>
-<li>जल्दी आर्थिक निर्णय लेने में कठिनाई</li>
-<li>आर्थिक असफलताओं से अधिक प्रभावित होना</li>
+<li><b>भाग्यशाली अंक:</b> 2</li>
+<li><b>भाग्यशाली दिन:</b> सोमवार, शुक्रवार</li>
+<li><b>भाग्यशाली रंग:</b> सफेद, क्रीम, हल्का नीला</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 6, 8</li>
 </ul>
 
-<h2>धन निर्माण की शैली</h2>
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण धन भविष्यवाणी रिपोर्ट अनलॉक करें</h2>
+
 <p>
-वेल्थ नंबर 2 वाले लोग साझेदारी, सहयोग, ग्राहकों से संबंध और पेशेवर नेटवर्क के माध्यम से धन अर्जित करते हैं।
-इनकी आर्थिक प्रगति धीरे-धीरे लेकिन स्थिर रूप से होती है।
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें धन संभावनाएँ, वित्तीय आदतें, समृद्धि के अवसर, आर्थिक चक्र और व्यक्तिगत मार्गदर्शन शामिल है।
 </p>
 
-<h2>निवेश दृष्टिकोण</h2>
-<p>
-ये लोग सुरक्षित और स्थिर निवेशों को पसंद करते हैं।
-दीर्घकालिक योजना, विविध निवेश और नियमित बचत इनके लिए लाभदायक रहती है।
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
 
-<h2>समृद्धि के सुझाव</h2>
-<p>
-अपनी अंतर्ज्ञान पर भरोसा करना, निर्णय लेने का आत्मविश्वास बढ़ाना और दूसरों पर अत्यधिक निर्भरता कम करना आर्थिक सफलता बढ़ा सकता है।
-</p>
-
-<h2>निष्कर्ष</h2>
-<p>
-वेल्थ नंबर 2 आर्थिक संतुलन, सहयोग, धैर्य और स्थिर विकास का प्रतीक है।
-ये लोग मजबूत संबंधों और समझदारीपूर्ण योजना के माध्यम से स्थायी समृद्धि प्राप्त करते हैं।
-</p>
+</div>
 
 `;
 
 document.getElementById("language").addEventListener("change", function(){
 
 if(this.value === "hi"){
-document.getElementById("title").innerText = "वेल्थ नंबर 2";
-document.getElementById("content").innerHTML = hindiContent;
+
+document.getElementById("title").innerText =
+"वेल्थ नंबर 2";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
 }
 else{
-document.getElementById("title").innerText = "Wealth Number 2";
-document.getElementById("content").innerHTML = englishContent;
+
+document.getElementById("title").innerText =
+"Wealth Number 2";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
 }
 
 });
 
 </script>
-
-</div>
 
 </body>
 </html>
