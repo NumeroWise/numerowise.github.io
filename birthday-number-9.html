@@ -4,78 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Birthday Number 9 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Birthday Number 9 meaning in numerology. Learn personality traits, strengths, weaknesses, compassion, spirituality, and life purpose.">
+<title>Birthday Number 9 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Birthday Number 9 meaning, natural talents, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="birthday-calculator.html">Calculator</a>
-<a href="what-is-birthday-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Birthday Number 9</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -85,109 +32,169 @@ h2 {
 
 <h2>Introduction</h2>
 <p>
-Birthday Number 9 represents compassion, humanity, wisdom, and spiritual growth.
-People with this number are deeply emotional, generous, and service-oriented.
+Birthday Number 9 represents compassion, wisdom, generosity, and humanitarian values. People born on the 9th, 18th, or 27th of any month often possess a strong desire to help others, make a positive impact, and contribute to the greater good.
 </p>
 
-<h2>Natural Traits</h2>
-<p>
-They are kind-hearted, idealistic, and emotionally intelligent individuals.
-They often feel a strong desire to help others and make a difference in the world.
-</p>
+<h2>Core Traits</h2>
+<ul>
+<li>Compassionate and caring</li>
+<li>Generous and selfless</li>
+<li>Wise and understanding</li>
+<li>Idealistic and inspiring</li>
+<li>Broad-minded and tolerant</li>
+</ul>
 
 <h2>Strengths</h2>
+<p>
+You have a natural ability to understand people, show empathy, and inspire positive change. Your kindness, wisdom, and humanitarian outlook often make you a source of guidance and support for others.
+</p>
+
+<h2>Challenges</h2>
+<p>
+You may sometimes become overly emotional, idealistic, or disappointed when others fail to meet your expectations. Learning emotional balance and healthy boundaries can help you thrive.
+</p>
+
+<h2>Relationships</h2>
+<p>
+You value deep emotional connections, compassion, and mutual understanding. You are loving, supportive, and willing to make sacrifices for the people you care about.
+</p>
+
+<h2>Career & Life Path</h2>
+<p>
+Teaching, counseling, healthcare, social work, charity work, writing, arts, public service, and humanitarian professions often align well with your natural talents.
+</p>
+
+<h2>Lucky Insights</h2>
 <ul>
-<li>Highly compassionate</li>
-<li>Humanitarian mindset</li>
-<li>Strong emotional depth</li>
-<li>Generous nature</li>
-<li>Spiritual awareness</li>
+<li><b>Lucky Number:</b> 9</li>
+<li><b>Lucky Days:</b> Tuesday, Thursday</li>
+<li><b>Lucky Colors:</b> Red, Gold, Purple</li>
+<li><b>Best Compatibility:</b> 3, 6, 9</li>
 </ul>
 
-<h2>Weaknesses</h2>
-<ul>
-<li>Over-emotional</li>
-<li>Can feel misunderstood</li>
-<li>Difficulty letting go</li>
-<li>Over-sacrificing nature</li>
-</ul>
+<div class="premium-cta">
 
-<h2>Personality</h2>
+<h2>Unlock Your Complete Birthday Number Report</h2>
+
 <p>
-They are deeply caring individuals who are driven by emotions, empathy, and a desire to help humanity.
+Get a detailed AI-powered numerology report with deeper personality analysis, natural talents, life opportunities, relationship insights, career guidance, and personalized recommendations.
 </p>
 
-<h2>Life Purpose</h2>
-<p>
-The purpose of Birthday Number 9 is to serve humanity, spread compassion, and evolve spiritually.
-</p>
-
-<h2>Conclusion</h2>
-<p>
-Birthday Number 9 symbolizes compassion, wisdom, humanity, and spiritual growth.
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p> 
-<center>© 2026 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers</center>
-</p>   
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
+
 <h2>परिचय</h2>
 <p>
-बर्थडे नंबर 9 करुणा, मानवता और आध्यात्मिक विकास का प्रतीक है।
+बर्थडे नंबर 9 करुणा, ज्ञान, उदारता और मानवता की भावना का प्रतीक है। किसी भी महीने की 9, 18 या 27 तारीख को जन्मे लोगों में दूसरों की सहायता करने, सकारात्मक बदलाव लाने और समाज के लिए योगदान देने की प्रबल इच्छा होती है।
 </p>
 
-<h2>प्राकृतिक गुण</h2>
-<p>
-ये लोग दयालु, भावनात्मक और दूसरों की मदद करने वाले होते हैं।
-</p>
+<h2>मुख्य विशेषताएँ</h2>
+<ul>
+<li>दयालु और सहानुभूतिशील</li>
+<li>उदार और निस्वार्थ</li>
+<li>बुद्धिमान और समझदार</li>
+<li>आदर्शवादी और प्रेरणादायक</li>
+<li>उदार विचारों वाले और सहिष्णु</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>करुणामय स्वभाव</li>
-<li>मानवता की भावना</li>
-<li>आध्यात्मिक समझ</li>
-<li>भावनात्मक गहराई</li>
-</ul>
-
-<h2>कमज़ोरियाँ</h2>
-<ul>
-<li>अत्यधिक भावुकता</li>
-<li>छोड़ने में कठिनाई</li>
-<li>आत्म-त्याग की प्रवृत्ति</li>
-</ul>
-
-<h2>जीवन उद्देश्य</h2>
 <p>
-इनका उद्देश्य मानवता की सेवा करना और आध्यात्मिक रूप से विकसित होना होता है।
+आपमें लोगों को समझने, सहानुभूति दिखाने और सकारात्मक परिवर्तन के लिए प्रेरित करने की स्वाभाविक क्षमता होती है। आपकी दयालुता, बुद्धिमत्ता और मानवतावादी दृष्टिकोण आपको दूसरों के लिए प्रेरणा का स्रोत बना सकते हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>चुनौतियाँ</h2>
 <p>
-बर्थडे नंबर 9 करुणा और आध्यात्मिकता का प्रतीक है।
+कभी-कभी आप अत्यधिक भावुक, आदर्शवादी या दूसरों से अधिक अपेक्षाएँ रखने वाले हो सकते हैं। भावनात्मक संतुलन और स्वस्थ सीमाएँ विकसित करना आपके लिए लाभदायक रहेगा।
 </p>
-`;
 
-document.getElementById("language").addEventListener("change", function () {
-if (this.value === "hi") {
-document.getElementById("title").innerText = "बर्थडे नंबर 9";
-document.getElementById("content").innerHTML = hindiContent;
-} else {
-document.getElementById("title").innerText = "Birthday Number 9";
-document.getElementById("content").innerHTML = englishContent;
-}
-});
-</script>
+<h2>रिश्ते</h2>
+<p>
+आप गहरे भावनात्मक जुड़ाव, करुणा और आपसी समझ को महत्व देते हैं। आप प्रेमपूर्ण, सहयोगी और अपने प्रियजनों के लिए त्याग करने को तैयार रहने वाले साथी होते हैं।
+</p>
+
+<h2>करियर और जीवन पथ</h2>
+<p>
+शिक्षण, परामर्श, स्वास्थ्य सेवा, सामाजिक कार्य, चैरिटी, लेखन, कला, सार्वजनिक सेवा और मानवतावादी क्षेत्र आपकी प्राकृतिक क्षमताओं के अनुरूप होते हैं।
+</p>
+
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 9</li>
+<li><b>भाग्यशाली दिन:</b> मंगलवार, गुरुवार</li>
+<li><b>भाग्यशाली रंग:</b> लाल, सुनहरा, बैंगनी</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 3, 6, 9</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण बर्थडे नंबर रिपोर्ट अनलॉक करें</h2>
+
+<p>
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें व्यक्तित्व विश्लेषण, प्राकृतिक प्रतिभाएँ, जीवन के अवसर, रिश्तों की जानकारी, करियर मार्गदर्शन और व्यक्तिगत सुझाव शामिल हैं।
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
 
 </div>
+
+`;
+
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("title").innerText =
+"बर्थडे नंबर 9";
+
+document.getElementById("content").innerHTML =
+hindiContent;
+
+}
+else{
+
+document.getElementById("title").innerText =
+"Birthday Number 9";
+
+document.getElementById("content").innerHTML =
+englishContent;
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
