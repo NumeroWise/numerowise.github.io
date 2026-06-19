@@ -4,86 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Birthday Number 3 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Birthday Number 3 meaning in numerology. Learn personality traits, strengths, weaknesses, creativity, and life purpose.">
+<title>Birthday Number 3 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Birthday Number 3 meaning, natural talents, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-  
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="birthday-calculator.html">Calculator</a>
-<a href="what-is-birthday-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Birthday Number 3</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -93,108 +32,164 @@ footer {
 
 <h2>Introduction</h2>
 <p>
-Birthday Number 3 represents creativity, expression, joy, and communication.
-People with this number are naturally artistic, expressive, and socially active.
+Birthday Number 3 represents creativity, communication, self-expression, and optimism. People born on the 3rd, 12th, 21st, or 30th of any month often possess natural artistic abilities and a gift for inspiring others through words and ideas.
 </p>
 
-<h2>Natural Traits</h2>
-<p>
-They are creative thinkers, good communicators, and have a strong imagination.
-They enjoy expressing themselves through words, art, or performance.
-</p>
+<h2>Core Traits</h2>
+<ul>
+<li>Creative and imaginative</li>
+<li>Excellent communicator</li>
+<li>Friendly and sociable</li>
+<li>Optimistic and enthusiastic</li>
+<li>Expressive and entertaining</li>
+</ul>
 
 <h2>Strengths</h2>
+<p>
+You have a natural ability to express yourself, inspire people, and bring joy to those around you. Your creativity and communication skills often help you stand out in both personal and professional life.
+</p>
+
+<h2>Challenges</h2>
+<p>
+You may sometimes become easily distracted, overly emotional, inconsistent, or struggle to stay focused on long-term goals. Discipline can help maximize your talents.
+</p>
+
+<h2>Relationships</h2>
+<p>
+You bring fun, positivity, and excitement into relationships. You value open communication, emotional expression, and shared experiences with loved ones.
+</p>
+
+<h2>Career & Life Path</h2>
+<p>
+Writing, teaching, public speaking, media, marketing, entertainment, design, performing arts, and other creative professions often align with your natural abilities.
+</p>
+
+<h2>Lucky Insights</h2>
 <ul>
-<li>Highly creative</li>
-<li>Excellent communication skills</li>
-<li>Positive and cheerful nature</li>
-<li>Strong imagination</li>
-<li>Social personality</li>
+<li><b>Lucky Number:</b> 3</li>
+<li><b>Lucky Days:</b> Thursday, Sunday</li>
+<li><b>Lucky Colors:</b> Yellow, Purple, Pink</li>
+<li><b>Best Compatibility:</b> 1, 3, 9</li>
 </ul>
 
-<h2>Weaknesses</h2>
-<ul>
-<li>Can be inconsistent</li>
-<li>Sometimes scattered focus</li>
-<li>Overthinking emotions</li>
-<li>Difficulty with discipline</li>
-</ul>
+<div class="premium-cta">
 
-<h2>Personality</h2>
+<h2>Unlock Your Complete Birthday Number Report</h2>
+
 <p>
-They are expressive, energetic, and fun-loving individuals who enjoy social interaction and creative activities.
+Get a detailed AI-powered numerology report with deeper personality analysis, natural talents, life opportunities, relationship insights, career guidance, and personalized recommendations.
 </p>
 
-<h2>Life Purpose</h2>
-<p>
-The purpose of Birthday Number 3 is to express creativity, spread positivity, and inspire others through communication.
-</p>
-
-<h2>Conclusion</h2>
-<p>
-Birthday Number 3 symbolizes creativity, joy, communication, and artistic expression.
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p> 
-© 2026 🔢 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers.
-</p>   
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
 <h2>परिचय</h2>
 <p>
-बर्थडे नंबर 3 रचनात्मकता, अभिव्यक्ति और खुशी का प्रतीक है।
+बर्थडे नंबर 3 रचनात्मकता, संवाद कौशल, आत्म-अभिव्यक्ति और आशावाद का प्रतीक है। किसी भी महीने की 3, 12, 21 या 30 तारीख को जन्मे लोगों में स्वाभाविक कलात्मक प्रतिभा और अपने विचारों से दूसरों को प्रेरित करने की क्षमता होती है।
 </p>
 
-<h2>प्राकृतिक गुण</h2>
-<p>
-ये लोग रचनात्मक, मिलनसार और अच्छे संवादकर्ता होते हैं।
-</p>
+<h2>मुख्य विशेषताएँ</h2>
+<ul>
+<li>रचनात्मक और कल्पनाशील</li>
+<li>उत्कृष्ट संवाद कौशल</li>
+<li>मिलनसार और मित्रवत</li>
+<li>आशावादी और उत्साही</li>
+<li>अभिव्यक्तिशील और मनोरंजक</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>रचनात्मक सोच</li>
-<li>अच्छी संवाद क्षमता</li>
-<li>खुशमिजाज स्वभाव</li>
-<li>कल्पनाशीलता</li>
-</ul>
-
-<h2>कमज़ोरियाँ</h2>
-<ul>
-<li>अस्थिरता</li>
-<li>ध्यान की कमी</li>
-<li>भावनात्मक अति सोच</li>
-</ul>
-
-<h2>जीवन उद्देश्य</h2>
 <p>
-इनका उद्देश्य रचनात्मकता और खुशी फैलाना होता है।
+आपमें स्वयं को प्रभावी ढंग से व्यक्त करने, लोगों को प्रेरित करने और अपने आसपास खुशी फैलाने की स्वाभाविक क्षमता होती है। आपकी रचनात्मकता और संवाद कौशल आपको विशेष पहचान दिला सकते हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>चुनौतियाँ</h2>
 <p>
-बर्थडे नंबर 3 रचनात्मकता और अभिव्यक्ति का प्रतीक है।
+कभी-कभी आप आसानी से विचलित हो सकते हैं, भावनात्मक उतार-चढ़ाव का अनुभव कर सकते हैं या दीर्घकालिक लक्ष्यों पर ध्यान बनाए रखने में कठिनाई महसूस कर सकते हैं। अनुशासन आपकी प्रतिभा को और बेहतर बना सकता है।
 </p>
-`;
 
-document.getElementById("language").addEventListener("change", function () {
-if (this.value === "hi") {
-document.getElementById("title").innerText = "बर्थडे नंबर 3";
-document.getElementById("content").innerHTML = hindiContent;
-} else {
-document.getElementById("title").innerText = "Birthday Number 3";
-document.getElementById("content").innerHTML = englishContent;
-}
-});
-</script>
+<h2>रिश्ते</h2>
+<p>
+आप रिश्तों में खुशी, उत्साह और सकारात्मक ऊर्जा लाते हैं। आप खुला संवाद, भावनात्मक अभिव्यक्ति और यादगार अनुभवों को महत्व देते हैं।
+</p>
+
+<h2>करियर और जीवन पथ</h2>
+<p>
+लेखन, शिक्षण, सार्वजनिक भाषण, मीडिया, मार्केटिंग, मनोरंजन, डिज़ाइन, प्रदर्शन कला और अन्य रचनात्मक क्षेत्र आपकी प्राकृतिक क्षमताओं के अनुरूप होते हैं।
+</p>
+
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 3</li>
+<li><b>भाग्यशाली दिन:</b> गुरुवार, रविवार</li>
+<li><b>भाग्यशाली रंग:</b> पीला, बैंगनी, गुलाबी</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 1, 3, 9</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण बर्थडे नंबर रिपोर्ट अनलॉक करें</h2>
+
+<p>
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें व्यक्तित्व विश्लेषण, प्राकृतिक प्रतिभाएँ, जीवन के अवसर, रिश्तों की जानकारी, करियर मार्गदर्शन और व्यक्तिगत सुझाव शामिल हैं।
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
 
 </div>
+
+`;
+
+document.getElementById("language").addEventListener("change", function(){
+
+if(this.value === "hi"){
+
+document.getElementById("title").innerText = "बर्थडे नंबर 3";
+
+document.getElementById("content").innerHTML = hindiContent;
+
+}
+else{
+
+document.getElementById("title").innerText = "Birthday Number 3";
+
+document.getElementById("content").innerHTML = englishContent;
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
