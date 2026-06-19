@@ -4,85 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Birthday Number 2 Meaning | NumeroWise</title>
-<meta name="description" content="Discover Birthday Number 2 meaning in numerology. Learn personality traits, strengths, weaknesses, and life purpose.">
+<title>Birthday Number 2 | NumeroWise</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0c29, #000);
-  color: white;
-}
+<meta name="description" content="Discover Birthday Number 2 meaning, natural talents, personality traits, strengths, challenges, relationships, career insights, and lucky insights in English and Hindi.">
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-}
+<link rel="stylesheet" href="css/style.css">
 
-.nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nav a {
-  color: #00e5ff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  color: #ffd700;
-}
-
-.language-box {
-  text-align: center;
-  margin: 15px 0;
-}
-
-select {
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 25px;
-  line-height: 1.8;
-}
-
-h2 {
-  color: #00e5ff;
-}
-
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-  opacity: 0.6;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- HEADER -->
+<div id="header"></div>
 
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="birthday-calculator.html">Calculator</a>
-<a href="what-is-birthday-number.html">Guide</a>
-</div>
+<div class="container">
 
 <h1 id="title">Birthday Number 2</h1>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
@@ -92,114 +32,164 @@ footer {
 
 <h2>Introduction</h2>
 <p>
-Birthday Number 2 represents sensitivity, cooperation, harmony, and emotional intelligence.
-People with this number are peaceful, supportive, and naturally diplomatic.
+Birthday Number 2 represents cooperation, diplomacy, sensitivity, and emotional intelligence. People born on the 2nd, 11th, 20th, or 29th of any month often possess natural peacemaking abilities and a strong desire to build harmonious relationships.
 </p>
 
-<h2>Natural Traits</h2>
-<p>
-They are caring, intuitive, patient, and relationship-oriented individuals.
-They prefer balance and avoid conflicts whenever possible.
-</p>
+<h2>Core Traits</h2>
+<ul>
+<li>Cooperative and supportive</li>
+<li>Diplomatic and tactful</li>
+<li>Sensitive and caring</li>
+<li>Patient and understanding</li>
+<li>Emotionally aware</li>
+</ul>
 
 <h2>Strengths</h2>
+<p>
+You have a natural ability to understand others, create harmony, and work effectively in partnerships. Your empathy and patience help you build strong personal and professional relationships.
+</p>
+
+<h2>Challenges</h2>
+<p>
+You may sometimes become overly sensitive, indecisive, shy, or too dependent on the opinions of others. Developing confidence in your own decisions can help you grow.
+</p>
+
+<h2>Relationships</h2>
+<p>
+You value trust, emotional connection, loyalty, and mutual understanding. You are a caring and devoted partner who seeks peace and stability in relationships.
+</p>
+
+<h2>Career & Life Path</h2>
+<p>
+Counseling, teaching, healthcare, human resources, customer service, diplomacy, mediation, and teamwork-oriented professions often align well with your natural abilities.
+</p>
+
+<h2>Lucky Insights</h2>
 <ul>
-<li>Highly cooperative</li>
-<li>Emotionally intelligent</li>
-<li>Supportive nature</li>
-<li>Peaceful personality</li>
-<li>Strong intuition</li>
+<li><b>Lucky Number:</b> 2</li>
+<li><b>Lucky Days:</b> Monday, Friday</li>
+<li><b>Lucky Colors:</b> White, Cream, Light Blue</li>
+<li><b>Best Compatibility:</b> 2, 6, 8</li>
 </ul>
 
-<h2>Weaknesses</h2>
-<ul>
-<li>Over-sensitive</li>
-<li>Indecisive at times</li>
-<li>Avoid confrontation</li>
-<li>Can depend on others emotionally</li>
-</ul>
+<div class="premium-cta">
 
-<h2>Personality</h2>
+<h2>Unlock Your Complete Birthday Number Report</h2>
+
 <p>
-They are gentle, calm, and empathetic individuals who value emotional connections and harmony in life.
+Get a detailed AI-powered numerology report with deeper personality analysis, natural talents, life opportunities, relationship insights, career guidance, and personalized recommendations.
 </p>
 
-<h2>Life Purpose</h2>
-<p>
-The purpose of Birthday Number 2 is to create peace, support others, and build strong emotional relationships.
-</p>
-
-<h2>Conclusion</h2>
-<p>
-Birthday Number 2 symbolizes harmony, sensitivity, cooperation, and emotional strength.
-</p>
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
 
 </div>
 
-<div class="footer">
- <p> 
-© 2026 🔢 NumeroWise | AI Powered Numerology Calculator for Life Path, Destiny, Soul Urge & Personality Numbers.
-</p>   
 </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
+
+// HEADER LOAD
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+// FOOTER LOAD
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
 
 const englishContent = document.getElementById("content").innerHTML;
 
 const hindiContent = `
-
 <h2>परिचय</h2>
 <p>
-बर्थडे नंबर 2 संवेदनशीलता, सहयोग और शांति का प्रतीक है।
+बर्थडे नंबर 2 सहयोग, कूटनीति, संवेदनशीलता और भावनात्मक बुद्धिमत्ता का प्रतीक है। किसी भी महीने की 2, 11, 20 या 29 तारीख को जन्मे लोगों में स्वाभाविक रूप से शांति स्थापित करने और सामंजस्यपूर्ण रिश्ते बनाने की क्षमता होती है।
 </p>
 
-<h2>प्राकृतिक गुण</h2>
-<p>
-ये लोग भावनात्मक रूप से समझदार, सहयोगी और शांत स्वभाव के होते हैं।
-</p>
+<h2>मुख्य विशेषताएँ</h2>
+<ul>
+<li>सहयोगी और सहायक</li>
+<li>कूटनीतिक और समझदार</li>
+<li>संवेदनशील और दयालु</li>
+<li>धैर्यवान और समझदार</li>
+<li>भावनात्मक रूप से जागरूक</li>
+</ul>
 
 <h2>शक्तियाँ</h2>
-<ul>
-<li>सहयोगी स्वभाव</li>
-<li>भावनात्मक समझ</li>
-<li>शांत व्यक्तित्व</li>
-<li>मजबूत अंतर्ज्ञान</li>
-</ul>
-
-<h2>कमज़ोरियाँ</h2>
-<ul>
-<li>अत्यधिक संवेदनशीलता</li>
-<li>निर्णय लेने में कठिनाई</li>
-<li>टकराव से बचना</li>
-</ul>
-
-<h2>जीवन उद्देश्य</h2>
 <p>
-इनका उद्देश्य शांति बनाना और दूसरों की मदद करना होता है।
+आपमें दूसरों को समझने, सामंजस्य स्थापित करने और साझेदारी में सफलतापूर्वक कार्य करने की स्वाभाविक क्षमता होती है। आपकी सहानुभूति और धैर्य मजबूत रिश्ते बनाने में मदद करते हैं।
 </p>
 
-<h2>निष्कर्ष</h2>
+<h2>चुनौतियाँ</h2>
 <p>
-बर्थडे नंबर 2 शांति और सहयोग का प्रतीक है।
+कभी-कभी आप अत्यधिक संवेदनशील, निर्णय लेने में कमजोर, शर्मीले या दूसरों की राय पर अधिक निर्भर हो सकते हैं। आत्मविश्वास विकसित करना आपके लिए लाभदायक रहेगा।
 </p>
+
+<h2>रिश्ते</h2>
+<p>
+आप विश्वास, भावनात्मक जुड़ाव, वफादारी और आपसी समझ को महत्व देते हैं। आप एक देखभाल करने वाले और समर्पित साथी होते हैं जो रिश्तों में शांति और स्थिरता चाहते हैं।
+</p>
+
+<h2>करियर और जीवन पथ</h2>
+<p>
+परामर्श, शिक्षण, स्वास्थ्य सेवा, मानव संसाधन, ग्राहक सेवा, कूटनीति, मध्यस्थता और टीमवर्क आधारित पेशे आपकी प्राकृतिक क्षमताओं के अनुरूप होते हैं।
+</p>
+
+<h2>भाग्यशाली संकेत</h2>
+<ul>
+<li><b>भाग्यशाली अंक:</b> 2</li>
+<li><b>भाग्यशाली दिन:</b> सोमवार, शुक्रवार</li>
+<li><b>भाग्यशाली रंग:</b> सफेद, क्रीम, हल्का नीला</li>
+<li><b>सर्वश्रेष्ठ अनुकूलता:</b> 2, 6, 8</li>
+</ul>
+
+<div class="premium-cta">
+
+<h2>अपनी सम्पूर्ण बर्थडे नंबर रिपोर्ट अनलॉक करें</h2>
+
+<p>
+विस्तृत एआई-आधारित न्यूमरोलॉजी रिपोर्ट प्राप्त करें जिसमें व्यक्तित्व विश्लेषण, प्राकृतिक प्रतिभाएँ, जीवन के अवसर, रिश्तों की जानकारी, करियर मार्गदर्शन और व्यक्तिगत सुझाव शामिल हैं।
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 सम्पूर्ण प्रीमियम रिपोर्ट अनलॉक करें
+</a>
+
+</div>
 
 `;
 
-document.getElementById("language").addEventListener("change", function () {
+document.getElementById("language").addEventListener("change", function(){
 
-if (this.value === "hi") {
+if(this.value === "hi"){
+
 document.getElementById("title").innerText = "बर्थडे नंबर 2";
+
 document.getElementById("content").innerHTML = hindiContent;
+
 }
-else {
+else{
+
 document.getElementById("title").innerText = "Birthday Number 2";
+
 document.getElementById("content").innerHTML = englishContent;
+
 }
 
 });
-</script>
 
-</div>
+</script>
 
 </body>
 </html>
