@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Name Numerology Calculator | NumeroWise</title>
+
+<meta name="description" content="Calculate your Name Number using Numerology. Discover personality traits, strengths, opportunities, communication style, and life influences with NumeroWise.">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div class="container">
+
+<h1>Name Numerology Calculator</h1>
+
+<div class="subtitle">
+Discover how your name influences your personality, opportunities, communication style, and life direction
+</div>
+
+<div class="card">
+
+<input
+type="text"
+id="fullName"
+placeholder="Enter Full Name">
+
+<button onclick="calculateNameNumber()">
+Calculate Name Number
+</button>
+
+<div class="result" id="resultBox">
+
+<div class="label">
+Your Name Number
+</div>
+
+<div
+class="number"
+id="nameNumber"
+onclick="goDetail()">
+</div>
+
+<div class="result-summary" id="summary">
+Your Name Number reveals the energetic vibration of your name and how it influences your personality, opportunities, communication style, and public image. CLICK Name Number to Know More...
+</div>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Name Numerology Report</h2>
+
+<p>
+Get a detailed AI-powered numerology report including personality analysis, strengths, challenges, communication style, life opportunities, and personalized guidance.
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+<script>
+
+let finalNumber = null;
+
+/* REDUCE TO SINGLE DIGIT */
+
+function reduceToSingleDigit(num){
+
+while(num > 9){
+
+num = num
+.toString()
+.split('')
+.reduce(
+(sum, digit) => sum + Number(digit),
+0
+);
+
+}
+
+return num;
+
+}
+
+/* PYTHAGOREAN VALUES */
+
+const letterValues = {
+
+A:1, J:1, S:1,
+
+B:2, K:2, T:2,
+
+C:3, L:3, U:3,
+
+D:4, M:4, V:4,
+
+E:5, N:5, W:5,
+
+F:6, O:6, X:6,
+
+G:7, P:7, Y:7,
+
+H:8, Q:8, Z:8,
+
+I:9, R:9
+
+};
+
+/* NAME NUMBER CALCULATION */
+
+function calculateNameNumber(){
+
+let name =
+document
+.getElementById("fullName")
+.value
+.toUpperCase()
+.trim();
+
+if(!name){
+
+alert("Please enter your Full Name");
+
+return;
+
+}
+
+let total = 0;
+
+for(let char of name){
+
+if(letterValues[char]){
+
+total += letterValues[char];
+
+}
+
+}
+
+if(total === 0){
+
+alert("Please enter a valid name");
+
+return;
+
+}
+
+finalNumber =
+reduceToSingleDigit(total);
+
+document
+.getElementById("nameNumber")
+.innerText =
+finalNumber;
+
+document
+.getElementById("resultBox")
+.style.display =
+"block";
+
+}
+
+/* OPEN REPORT PAGE */
+
+function goDetail(){
+
+if(finalNumber !== null){
+
+window.location.href =
+"name-numerology-number-" +
+finalNumber +
+".html";
+
+}
+
+}
+
+/* HEADER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
+</script>
+
+</body>
+</html>
