@@ -1,0 +1,282 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Relationship Compatibility Calculator | NumeroWise</title>
+
+<meta name="description" content="Calculate relationship compatibility using numerology. Discover your Life Path Numbers, compatibility score, relationship strengths, challenges, and love potential with NumeroWise.">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div class="container">
+
+<h1>Relationship Compatibility Calculator</h1>
+
+<div class="subtitle">
+Discover your relationship potential, emotional connection, and compatibility through numerology
+</div>
+
+<div class="card">
+
+<input
+type="text"
+id="yourName"
+placeholder="Your Name">
+
+<input
+type="date"
+id="yourDob">
+
+<input
+type="text"
+id="partnerName"
+placeholder="Partner Name">
+
+<input
+type="date"
+id="partnerDob">
+
+<button onclick="calculateCompatibility()">
+Calculate Compatibility
+</button>
+
+<div class="result" id="resultBox">
+
+<div class="label">
+Your Life Path Number
+</div>
+
+<div
+class="number"
+id="yourLifePath">
+</div>
+
+<div class="label" style="margin-top:20px;">
+Partner Life Path Number
+</div>
+
+<div
+class="number"
+id="partnerLifePath">
+</div>
+
+<div class="label" style="margin-top:20px;">
+Compatibility Score
+</div>
+
+<div
+class="number"
+id="compatibilityScore">
+</div>
+
+<div class="label" style="margin-top:20px;">
+Compatibility Level
+</div>
+
+<div
+class="number"
+id="compatibilityLevel"
+style="font-size:24px;">
+</div>
+
+<div class="result-summary" id="summary">
+This compatibility score indicates the potential strengths, challenges, emotional connection, and relationship dynamics between both partners. Explore your detailed compatibility insights below.
+</div>
+
+<div class="premium-cta">
+
+<h2>Unlock Your Complete Relationship Report</h2>
+
+<p>
+Get a detailed AI-powered compatibility report including love compatibility, marriage potential, communication style, emotional connection, relationship strengths, challenges, and personalized guidance.
+</p>
+
+<a href="premium-reports.html" class="back-btn">
+🔓 Unlock Full Premium Report
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+<script>
+
+function reduceToSingleDigit(num){
+
+while(num > 9){
+
+num = num
+.toString()
+.split('')
+.reduce(
+(sum, digit) => sum + Number(digit),
+0
+);
+
+}
+
+return num;
+
+}
+
+function calculateLifePath(dob){
+
+const digits =
+dob.replaceAll('-', '');
+
+let total = 0;
+
+for(let digit of digits){
+
+total += Number(digit);
+
+}
+
+return reduceToSingleDigit(total);
+
+}
+
+function calculateCompatibility(){
+
+let yourName =
+document
+.getElementById("yourName")
+.value
+.trim();
+
+let partnerName =
+document
+.getElementById("partnerName")
+.value
+.trim();
+
+let yourDob =
+document
+.getElementById("yourDob")
+.value;
+
+let partnerDob =
+document
+.getElementById("partnerDob")
+.value;
+
+if(
+!yourName ||
+!partnerName ||
+!yourDob ||
+!partnerDob
+){
+
+alert("Please fill all fields");
+
+return;
+
+}
+
+const yourNumber =
+calculateLifePath(yourDob);
+
+const partnerNumber =
+calculateLifePath(partnerDob);
+
+let difference =
+Math.abs(
+yourNumber -
+partnerNumber
+);
+
+let score =
+100 - (difference * 8);
+
+if(score < 60){
+
+score = 60;
+
+}
+
+let level = "";
+
+if(score >= 90){
+
+level = "Excellent Match";
+
+}
+else if(score >= 80){
+
+level = "Very Good Match";
+
+}
+else if(score >= 70){
+
+level = "Good Match";
+
+}
+else{
+
+level = "Average Match";
+
+}
+
+document
+.getElementById("yourLifePath")
+.innerText =
+yourNumber;
+
+document
+.getElementById("partnerLifePath")
+.innerText =
+partnerNumber;
+
+document
+.getElementById("compatibilityScore")
+.innerText =
+score + "%";
+
+document
+.getElementById("compatibilityLevel")
+.innerText =
+level;
+
+document
+.getElementById("resultBox")
+.style.display =
+"block";
+
+}
+
+/* HEADER */
+
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
+</script>
+
+</body>
+</html>
+```
