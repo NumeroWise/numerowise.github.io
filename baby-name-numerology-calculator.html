@@ -7,7 +7,7 @@
 
 <title>Baby Name Numerology Calculator | NumeroWise</title>
 
-<meta name="description" content="Find suitable name starting letters for your baby based on Date of Birth using numerology. Discover favorable alphabets and naming guidance with NumeroWise.">
+<meta name="description" content="Calculate your Baby Birth Number using Date of Birth and discover suitable naming vibrations through numerology with NumeroWise.">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -22,7 +22,7 @@
 <h1>Baby Name Numerology Calculator</h1>
 
 <div class="subtitle">
-Enter your baby's Date of Birth to discover favorable starting letters for naming according to numerology
+Enter your baby's Date of Birth to discover the numerological number that can help guide favorable naming vibrations
 </div>
 
 <div class="card">
@@ -32,7 +32,7 @@ type="date"
 id="babyDob">
 
 <button onclick="calculateBabyNumber()">
-Find Suitable Name Letters
+Calculate Baby Birth Number
 </button>
 
 <div class="result" id="resultBox">
@@ -43,22 +43,12 @@ Baby Birth Number
 
 <div
 class="number"
-id="birthNumber"
+id="babyNumber"
 onclick="goDetail()">
 </div>
 
-<div class="label" style="margin-top:20px;">
-Recommended Starting Alphabets
-</div>
-
-<div
-class="number"
-id="letters"
-style="font-size:24px;">
-</div>
-
-<div class="result-summary">
-These starting letters may be favorable for naming your baby according to numerology principles. CLICK Birth Number to Know More...
+<div class="result-summary" id="summary">
+Your Baby Birth Number reveals favorable naming vibrations and suitable starting letters. CLICK Baby Birth Number to Know More...
 </div>
 
 <div class="premium-cta">
@@ -66,7 +56,7 @@ These starting letters may be favorable for naming your baby according to numero
 <h2>Unlock Your Complete Baby Name Numerology Report</h2>
 
 <p>
-Get a detailed AI-powered numerology report including birth number analysis, favorable name vibrations, personality potential, strengths, challenges, and personalized naming guidance.
+Get a detailed AI-powered numerology report including suitable naming vibrations, personality potential, strengths, challenges, life opportunities, and personalized naming guidance.
 </p>
 
 <a href="premium-reports.html" class="back-btn">
@@ -107,23 +97,7 @@ return num;
 
 }
 
-/* NUMBER → ALPHABET MAPPING */
-
-const alphabetMap = {
-
-1:"A, I, J, Q, Y",
-2:"B, K, R",
-3:"C, G, L, S",
-4:"D, M, T",
-5:"E, H, N, X",
-6:"U, V, W",
-7:"O, Z",
-8:"F, P",
-9:"No Specific Preference"
-
-};
-
-/* CALCULATE BABY NUMBER */
+/* BABY BIRTH NUMBER CALCULATION */
 
 function calculateBabyNumber(){
 
@@ -155,14 +129,9 @@ finalNumber =
 reduceToSingleDigit(total);
 
 document
-.getElementById("birthNumber")
+.getElementById("babyNumber")
 .innerText =
 finalNumber;
-
-document
-.getElementById("letters")
-.innerText =
-alphabetMap[finalNumber];
 
 document
 .getElementById("resultBox")
