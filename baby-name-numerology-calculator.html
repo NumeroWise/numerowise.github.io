@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,7 +8,7 @@
 
 <title>Baby Name Numerology Calculator | NumeroWise</title>
 
-<meta name="description" content="Calculate the Numerology Number of a baby name. Discover name vibrations, personality potential, strengths, opportunities, and numerology insights with NumeroWise.">
+<meta name="description" content="Find suitable name starting letters for your baby based on Date of Birth using numerology. Discover favorable alphabets and naming guidance with NumeroWise.">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -22,34 +23,43 @@
 <h1>Baby Name Numerology Calculator</h1>
 
 <div class="subtitle">
-Discover the numerological vibration of a baby name and explore its potential influence on personality, growth, and life opportunities
+Enter your baby's Date of Birth to discover favorable starting letters for naming according to numerology
 </div>
 
 <div class="card">
 
 <input
-type="text"
-id="babyName"
-placeholder="Enter Baby Name">
+type="date"
+id="babyDob">
 
-<button onclick="calculateBabyNameNumber()">
-Calculate Baby Name Number
+<button onclick="calculateBabyNumber()">
+Find Suitable Name Letters
 </button>
 
 <div class="result" id="resultBox">
 
 <div class="label">
-Baby Name Number
+Baby Birth Number
 </div>
 
 <div
 class="number"
-id="babyNameNumber"
+id="birthNumber"
 onclick="goDetail()">
 </div>
 
-<div class="result-summary" id="summary">
-This number represents the energetic vibration of the selected baby name. CLICK Baby Name Number to Know More...
+<div class="label" style="margin-top:20px;">
+Recommended Starting Alphabets
+</div>
+
+<div
+class="number"
+id="letters"
+style="font-size:24px;">
+</div>
+
+<div class="result-summary">
+These starting letters may be favorable for naming your baby according to numerology principles. CLICK Birth Number to Know More...
 </div>
 
 <div class="premium-cta">
@@ -57,7 +67,7 @@ This number represents the energetic vibration of the selected baby name. CLICK 
 <h2>Unlock Your Complete Baby Name Numerology Report</h2>
 
 <p>
-Get a detailed AI-powered numerology report including name vibration analysis, personality potential, strengths, challenges, growth opportunities, and personalized guidance.
+Get a detailed AI-powered numerology report including birth number analysis, favorable name vibrations, personality potential, strengths, challenges, and personalized naming guidance.
 </p>
 
 <a href="premium-reports.html" class="back-btn">
@@ -98,66 +108,47 @@ return num;
 
 }
 
-/* PYTHAGOREAN VALUES */
+/* NUMBER → ALPHABET MAPPING */
 
-const letterValues = {
+const alphabetMap = {
 
-A:1, J:1, S:1,
-
-B:2, K:2, T:2,
-
-C:3, L:3, U:3,
-
-D:4, M:4, V:4,
-
-E:5, N:5, W:5,
-
-F:6, O:6, X:6,
-
-G:7, P:7, Y:7,
-
-H:8, Q:8, Z:8,
-
-I:9, R:9
+1:"A, I, J, Q, Y",
+2:"B, K, R",
+3:"C, G, L, S",
+4:"D, M, T",
+5:"E, H, N, X",
+6:"U, V, W",
+7:"O, Z",
+8:"F, P",
+9:"No Specific Preference"
 
 };
 
-/* BABY NAME NUMBER CALCULATION */
+/* CALCULATE BABY NUMBER */
 
-function calculateBabyNameNumber(){
+function calculateBabyNumber(){
 
-let name =
+let dob =
 document
-.getElementById("babyName")
-.value
-.toUpperCase()
-.trim();
+.getElementById("babyDob")
+.value;
 
-if(!name){
+if(!dob){
 
-alert("Please enter a Baby Name");
+alert("Please select Baby Date of Birth");
 
 return;
 
 }
+
+const digits =
+dob.replaceAll('-', '');
 
 let total = 0;
 
-for(let char of name){
+for(let digit of digits){
 
-if(letterValues[char]){
-
-total += letterValues[char];
-
-}
-
-}
-
-if(total === 0){
-
-alert("Please enter a valid name");
-
-return;
+total += Number(digit);
 
 }
 
@@ -165,9 +156,14 @@ finalNumber =
 reduceToSingleDigit(total);
 
 document
-.getElementById("babyNameNumber")
+.getElementById("birthNumber")
 .innerText =
 finalNumber;
+
+document
+.getElementById("letters")
+.innerText =
+alphabetMap[finalNumber];
 
 document
 .getElementById("resultBox")
@@ -211,3 +207,4 @@ document.getElementById('footer').innerHTML = data;
 
 </body>
 </html>
+```
