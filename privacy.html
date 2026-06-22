@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,182 +8,194 @@
 
 <meta name="description" content="Read the Privacy Policy of NumeroWise to understand how we collect, use, and protect your information.">
 
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#f5f7fb;
-margin:0;
-padding:20px;
-color:#333;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-
-h1{
-text-align:center;
-color:#2c3e50;
-}
-
-.nav{
-text-align:center;
-margin-bottom:20px;
-}
-
-.nav a{
-text-decoration:none;
-color:#4f46e5;
-font-weight:bold;
-margin:0 10px;
-}
-
-.language-box{
-text-align:center;
-margin-bottom:20px;
-}
-
-select{
-padding:10px;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:16px;
-}
-
-.content{
-line-height:1.9;
-font-size:17px;
-}
-
-h2{
-color:#2c3e50;
-margin-top:25px;
-}
-
-footer{
-text-align:center;
-margin-top:30px;
-font-size:14px;
-color:#777;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
+<!-- HEADER -->
+<div id="header"></div>
+
 <div class="container">
 
-<div class="nav">
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a> |
-<a href="privacy-policy.html">Privacy Policy</a>
+<h1 id="pageTitle">Privacy Policy</h1>
+
+<div class="subtitle">
+Learn how NumeroWise collects, uses, and protects your information while using our numerology calculators, guides, and services.
 </div>
 
-<div class="language-box">
-<select id="language">
+<div class="language-box" style="text-align:center; margin-bottom:20px;">
+<select id="language" style="padding:10px; border-radius:8px;">
 <option value="en">English</option>
 <option value="hi">हिन्दी</option>
 </select>
 </div>
 
-<h1 id="pageTitle">Privacy Policy</h1>
-
-<div class="content" id="content">
+<div class="card" id="content">
 
 <h2>Information We Collect</h2>
+
 <p>
 NumeroWise may collect basic information that users voluntarily provide through contact emails or website interactions.
 </p>
 
 <h2>How We Use Information</h2>
+
 <p>
 The information we receive is used to improve our services, respond to inquiries, and provide a better user experience.
 </p>
 
 <h2>Cookies</h2>
+
 <p>
 Our website may use cookies and similar technologies to enhance user experience and analyze website performance.
 </p>
 
 <h2>Third-Party Services</h2>
+
 <p>
 We may use third-party tools such as analytics and advertising services that may collect information according to their own privacy policies.
 </p>
 
-<h2>Contact</h2>
+<h2>Data Security</h2>
+
 <p>
-For privacy-related questions, please contact us at: businessquery2024@gmail.com
+We take reasonable measures to protect information provided by users. However, no method of online transmission or storage is completely secure.
+</p>
+
+<h2>Policy Updates</h2>
+
+<p>
+This Privacy Policy may be updated from time to time. Any changes will be reflected on this page.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+For privacy-related questions, please contact us at:
+<b>businessquery2024@gmail.com</b>
 </p>
 
 </div>
 
+<a href="index.html" class="back-btn">
+⬅ Back to Dashboard
+</a>
+
 </div>
 
-<footer>
-© 2026 NumeroWise. All Rights Reserved.
-</footer>
+<!-- FOOTER -->
+<div id="footer"></div>
 
 <script>
 
+/* HEADER */
+fetch('components/header.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('header').innerHTML = data;
+});
+
+/* FOOTER */
+fetch('components/footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+
 const englishContent = `
+
 <h2>Information We Collect</h2>
+
 <p>
 NumeroWise may collect basic information that users voluntarily provide through contact emails or website interactions.
 </p>
 
 <h2>How We Use Information</h2>
+
 <p>
 The information we receive is used to improve our services, respond to inquiries, and provide a better user experience.
 </p>
 
 <h2>Cookies</h2>
+
 <p>
 Our website may use cookies and similar technologies to enhance user experience and analyze website performance.
 </p>
 
 <h2>Third-Party Services</h2>
+
 <p>
 We may use third-party tools such as analytics and advertising services that may collect information according to their own privacy policies.
 </p>
 
-<h2>Contact</h2>
+<h2>Data Security</h2>
+
 <p>
-For privacy-related questions, please contact us at: businessquery2024@gmail.com
+We take reasonable measures to protect information provided by users. However, no method of online transmission or storage is completely secure.
 </p>
+
+<h2>Policy Updates</h2>
+
+<p>
+This Privacy Policy may be updated from time to time. Any changes will be reflected on this page.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+For privacy-related questions, please contact us at:
+<b>businessquery2024@gmail.com</b>
+</p>
+
 `;
 
 const hindiContent = `
+
 <h2>हम कौन सी जानकारी एकत्र करते हैं</h2>
+
 <p>
 NumeroWise उन मूलभूत जानकारियों को एकत्र कर सकता है जो उपयोगकर्ता स्वेच्छा से ईमेल या वेबसाइट के माध्यम से प्रदान करते हैं।
 </p>
 
 <h2>जानकारी का उपयोग</h2>
+
 <p>
 प्राप्त जानकारी का उपयोग हमारी सेवाओं को बेहतर बनाने, प्रश्नों का उत्तर देने और उपयोगकर्ता अनुभव को सुधारने के लिए किया जाता है।
 </p>
 
 <h2>कुकीज़</h2>
+
 <p>
 हमारी वेबसाइट उपयोगकर्ता अनुभव को बेहतर बनाने और वेबसाइट प्रदर्शन का विश्लेषण करने के लिए कुकीज़ तथा समान तकनीकों का उपयोग कर सकती है।
 </p>
 
 <h2>तृतीय-पक्ष सेवाएँ</h2>
+
 <p>
 हम विश्लेषण और विज्ञापन सेवाओं जैसे तृतीय-पक्ष उपकरणों का उपयोग कर सकते हैं, जिनकी अपनी गोपनीयता नीतियाँ होती हैं।
 </p>
 
-<h2>संपर्क</h2>
+<h2>डेटा सुरक्षा</h2>
+
 <p>
-गोपनीयता संबंधी प्रश्नों के लिए कृपया हमें ईमेल करें: businessquery2024@gmail.com
+हम उपयोगकर्ताओं द्वारा प्रदान की गई जानकारी की सुरक्षा के लिए उचित कदम उठाते हैं। हालांकि, इंटरनेट पर कोई भी प्रणाली पूरी तरह सुरक्षित नहीं मानी जा सकती।
 </p>
+
+<h2>नीति में परिवर्तन</h2>
+
+<p>
+यह गोपनीयता नीति समय-समय पर अपडेट की जा सकती है। किसी भी परिवर्तन को इसी पृष्ठ पर प्रकाशित किया जाएगा।
+</p>
+
+<h2>संपर्क</h2>
+
+<p>
+गोपनीयता संबंधी प्रश्नों के लिए कृपया हमें ईमेल करें:
+<b>businessquery2024@gmail.com</b>
+</p>
+
 `;
 
 document.getElementById("language").addEventListener("change", function(){
@@ -213,3 +224,4 @@ englishContent;
 
 </body>
 </html>
+```
