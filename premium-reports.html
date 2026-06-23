@@ -1,59 +1,154 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Premium Numerology Reports | NumeroWise</title>
+<title>Premium Reports | NumeroWise</title>
 
-<meta name="description" content="Unlock detailed AI-powered Premium Numerology Reports with personalized insights on personality, career, wealth, relationships, and life purpose.">
+<meta name="description" content="Unlock premium AI-powered numerology reports, relationship insights, business guidance, and personalized numerology answers with NumeroWise.">
 
 <link rel="stylesheet" href="css/style.css">
 
 <style>
 
-.premium-container{
-max-width:750px;
-margin:auto;
-padding:30px 20px;
+.hero{
+text-align:center;
+padding:40px 20px;
+background:linear-gradient(135deg,#4f46e5,#7c3aed);
+color:#fff;
+border-radius:20px;
+margin-bottom:30px;
 }
 
-.premium-box{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.15);
-border-radius:12px;
-padding:25px;
+.hero h1{
+margin-bottom:15px;
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.language-box{
+text-align:center;
+margin:25px 0;
+}
+
+.section-title{
+text-align:center;
+margin-top:40px;
+margin-bottom:20px;
+}
+
+.comparison-table{
+width:100%;
+border-collapse:collapse;
 margin-top:20px;
+}
+
+.comparison-table th,
+.comparison-table td{
+border:1px solid #ddd;
+padding:12px;
 text-align:center;
 }
 
-.coming-soon{
-font-size:26px;
+.comparison-table th{
+background:#4f46e5;
+color:#fff;
+}
+
+.product-card{
+background:#fff;
+border:2px solid #e5e7eb;
+border-radius:16px;
+padding:25px;
+margin:25px 0;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.product-card h2{
+margin-top:0;
+}
+
+.price{
+font-size:30px;
 font-weight:bold;
-color:#00e5ff;
+color:#4f46e5;
+margin:15px 0;
+}
+
+.product-card ul{
+line-height:2;
+}
+
+.featured{
+border:3px solid #f59e0b;
+background:#fffbeb;
+position:relative;
+}
+
+.badge{
+position:absolute;
+top:-15px;
+right:20px;
+background:#f59e0b;
+color:#fff;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+font-weight:bold;
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.benefit-box{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.faq-item{
+margin-bottom:20px;
+}
+
+.final-cta{
+text-align:center;
+background:#4f46e5;
+color:white;
+padding:40px 20px;
+border-radius:20px;
+margin-top:40px;
+}
+
+.final-cta h2{
 margin-bottom:15px;
 }
 
-.premium-box ul{
-text-align:left;
-max-width:450px;
-margin:20px auto;
-padding-left:20px;
-}
-
-.premium-box li{
-margin-bottom:10px;
-}
-
-.highlight{
-color:#ffd700;
+.premium-btn{
+display:inline-block;
+padding:12px 25px;
+background:#4f46e5;
+color:white;
+text-decoration:none;
+border-radius:8px;
 font-weight:bold;
+margin-top:15px;
 }
 
-.notice{
-margin-top:20px;
-opacity:0.9;
+.featured .premium-btn{
+background:#f59e0b;
 }
 
 </style>
@@ -62,71 +157,295 @@ opacity:0.9;
 
 <body>
 
-<!-- HEADER -->
-
 <div id="header"></div>
 
-<div class="premium-container">
+<div class="container">
 
-<h1>🔓 Premium Numerology Reports</h1>
-
-<div class="subtitle">
-Get deeper AI-powered numerology insights designed to help you understand your personality, destiny, career, wealth potential, relationships, and life purpose.
+<div class="language-box">
+<select id="language" style="padding:10px;border-radius:8px;">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select>
 </div>
 
-<div class="premium-box">
+<div class="hero">
+<h1 id="heroTitle">🌟 Unlock Your Complete Numerology Potential</h1>
 
-<div class="coming-soon">
-🚀 Premium Reports Coming Soon
-</div>
-
-<p>
-We are currently building our next-generation premium report system.
+<p id="heroText">
+Get personalized AI-powered numerology reports, relationship insights, business guidance, and answers to your most important life questions.
 </p>
+</div>
+
+<div id="content">
+
+<h2 class="section-title">Why Upgrade?</h2>
+
+<table class="comparison-table">
+
+<tr>
+<th>Free</th>
+<th>Premium</th>
+</tr>
+
+<tr>
+<td>Basic Numbers</td>
+<td>Detailed Analysis</td>
+</tr>
+
+<tr>
+<td>General Guidance</td>
+<td>Personalized Guidance</td>
+</tr>
+
+<tr>
+<td>Calculator Results</td>
+<td>Action Plan</td>
+</tr>
+
+<tr>
+<td>Limited Insights</td>
+<td>AI-Powered Insights</td>
+</tr>
+
+</table>
+
+<h2 class="section-title">Premium Products</h2>
+
+<div class="product-card">
+
+<h2>🤖 Ask Numerology AI</h2>
+
+<div class="price">
+₹51 - ₹201
+</div>
 
 <p>
-Unlike the free reports, these premium reports will provide highly detailed and personalized insights.
+Ask personal numerology questions and receive AI-powered answers based on your numerology profile.
 </p>
 
 <ul>
-<li>✔ Complete Personality Analysis</li>
-<li>✔ Career & Wealth Guidance</li>
-<li>✔ Relationship Compatibility Insights</li>
-<li>✔ Hidden Strengths & Challenges</li>
-<li>✔ Personal Growth Recommendations</li>
-<li>✔ Professionally Designed PDF Report</li>
-<li>✔ AI-Powered Deep Analysis</li>
-<li>✔ Future Numerology Predictions</li>
+<li>Career Guidance</li>
+<li>Relationship Questions</li>
+<li>Money & Prosperity Questions</li>
+<li>Life Direction Guidance</li>
+<li>Personalized Numerology Insights</li>
 </ul>
 
-<div class="notice">
-<span class="highlight">
-Launch Phase Currently Under Development
-</span>
+<a href="ask-numerology-ai.html" class="premium-btn">
+Ask Now
+</a>
+
 </div>
 
-<a href="index.html" class="back-btn">
-⬅ Back to Dashboard
+<div class="product-card">
+
+<h2>🔤 Name Numerology Report</h2>
+
+<div class="price">
+₹101
+</div>
+
+<p>
+Discover the hidden vibration of your name and how it influences your personality, success, relationships, and opportunities.
+</p>
+
+<ul>
+<li>Name Number Analysis</li>
+<li>Strengths & Weaknesses</li>
+<li>Career Tendencies</li>
+<li>Relationship Traits</li>
+<li>Lucky Numbers & Colors</li>
+</ul>
+
+<a href="name-numerology-report.html" class="premium-btn">
+View Report
+</a>
+
+</div>
+
+<div class="product-card">
+
+<h2>❤️ Relationship Compatibility Report</h2>
+
+<div class="price">
+₹151
+</div>
+
+<p>
+Explore emotional compatibility, communication style, relationship strengths, challenges, and long-term potential.
+</p>
+
+<ul>
+<li>Compatibility Score</li>
+<li>Emotional Connection</li>
+<li>Communication Style</li>
+<li>Marriage Potential</li>
+<li>Personalized Advice</li>
+</ul>
+
+<a href="relationship-report.html" class="premium-btn">
+View Report
+</a>
+
+</div>
+
+<div class="product-card">
+
+<h2>💼 Business Success Report</h2>
+
+<div class="price">
+₹201
+</div>
+
+<p>
+Analyze your business potential, entrepreneurial strengths, growth opportunities, and business name vibration.
+</p>
+
+<ul>
+<li>Business Potential</li>
+<li>Success Strategy</li>
+<li>Growth Opportunities</li>
+<li>Risk Areas</li>
+<li>Business Name Analysis</li>
+</ul>
+
+<a href="business-success-report.html" class="premium-btn">
+View Report
+</a>
+
+</div>
+
+<div class="product-card featured">
+
+<div class="badge">
+⭐ BEST VALUE
+</div>
+
+<h2>🌟 Complete Numerology Blueprint</h2>
+
+<div class="price">
+₹501
+</div>
+
+<p>
+The most comprehensive numerology report covering all major numbers, career, relationships, finances, strengths, challenges, and future guidance.
+</p>
+
+<ul>
+<li>Life Path Analysis</li>
+<li>Destiny Analysis</li>
+<li>Soul Urge Analysis</li>
+<li>Personality Analysis</li>
+<li>Birthday Analysis</li>
+<li>Career Guidance</li>
+<li>Financial Guidance</li>
+<li>Relationship Guidance</li>
+<li>Lucky Numbers & Colors</li>
+<li>12-Month Forecast</li>
+<li>Action Plan</li>
+<li>🎁 5 FREE AI Questions Included</li>
+</ul>
+
+<a href="complete-numerology-blueprint.html" class="premium-btn">
+Unlock Blueprint
+</a>
+
+</div>
+
+<h2 class="section-title">What You Will Receive</h2>
+
+<div class="benefits">
+
+<div class="benefit-box">
+✓ Personalized Analysis
+</div>
+
+<div class="benefit-box">
+✓ AI-Powered Insights
+</div>
+
+<div class="benefit-box">
+✓ Career Guidance
+</div>
+
+<div class="benefit-box">
+✓ Relationship Guidance
+</div>
+
+<div class="benefit-box">
+✓ Wealth Guidance
+</div>
+
+<div class="benefit-box">
+✓ Lucky Numbers & Colors
+</div>
+
+<div class="benefit-box">
+✓ Actionable Recommendations
+</div>
+
+<div class="benefit-box">
+✓ Future Forecasts
+</div>
+
+</div>
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>Are reports personalized?</h3>
+<p>Yes. Reports are generated using your numerology profile and personal information.</p>
+</div>
+
+<div class="faq-item">
+<h3>Will reports be downloadable?</h3>
+<p>Yes. PDF download support will be available.</p>
+</div>
+
+<div class="faq-item">
+<h3>How quickly will I get access?</h3>
+<p>Instantly after purchase.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I ask follow-up questions?</h3>
+<p>Yes. Ask Numerology AI packages allow multiple questions.</p>
+</div>
+
+<div class="final-cta">
+
+<h2>
+Your Numbers Tell A Story
+</h2>
+
+<p>
+Discover what they reveal about your future, opportunities, strengths, and life path.
+</p>
+
+<a href="complete-numerology-blueprint.html" class="premium-btn" style="background:#ffffff;color:#4f46e5;">
+Unlock Premium Reports
 </a>
 
 </div>
 
 </div>
 
-<!-- FOOTER -->
+</div>
 
 <div id="footer"></div>
 
 <script>
 
-// Load Header
+/* HEADER */
+
 fetch('components/header.html')
 .then(response => response.text())
 .then(data => {
 document.getElementById('header').innerHTML = data;
 });
 
-// Load Footer
+/* FOOTER */
+
 fetch('components/footer.html')
 .then(response => response.text())
 .then(data => {
@@ -137,3 +456,4 @@ document.getElementById('footer').innerHTML = data;
 
 </body>
 </html>
+```
