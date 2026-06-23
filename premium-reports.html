@@ -4,57 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Premium Reports | NumeroWise</title>
-<meta name="description" content="Unlock premium AI-powered numerology reports, relationship insights, business guidance, and personalized numerology answers with NumeroWise.">
+<meta name="description" content="Premium AI-powered numerology reports by NumeroWise.">
 <link rel="stylesheet" href="css/style.css">
 
 <style>
 .hero{
 text-align:center;
-padding:50px 20px;
+padding:50px 25px;
 background:linear-gradient(135deg,#4f46e5,#7c3aed);
 color:#fff;
 border-radius:20px;
-margin-bottom:30px;
+margin-bottom:35px;
 }
-
-.hero h1{font-size:40px;margin-bottom:15px;}
+.hero h1{font-size:42px;margin-bottom:15px;}
+.hero p{max-width:900px;margin:auto;line-height:1.8;}
 
 .section-title{
 text-align:center;
-margin:40px 0 20px;
+margin:45px 0 20px;
 }
 
 .comparison-table{
 width:100%;
 border-collapse:collapse;
-margin-top:20px;
 }
-
-.comparison-table th,
-.comparison-table td{
+.comparison-table th,.comparison-table td{
 border:1px solid #ddd;
 padding:12px;
 text-align:center;
 }
-
 .comparison-table th{
 background:#4f46e5;
 color:#fff;
 }
 
 .product-card{
-border-radius:16px;
-padding:25px;
-margin:25px 0;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
+padding:28px;
+border-radius:18px;
+margin:28px 0;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 color:#222;
 }
-
 .ai-card{background:#eef6ff;}
 .name-card{background:#f4efff;}
 .relationship-card{background:#fff0f5;}
 .business-card{background:#eefcf1;}
-
 .featured{
 background:#fff7ed;
 border:3px solid #f59e0b;
@@ -69,19 +63,25 @@ background:#f59e0b;
 color:#fff;
 padding:8px 14px;
 border-radius:20px;
-font-size:13px;
 font-weight:bold;
 }
 
 .price{
-font-size:30px;
+font-size:32px;
 font-weight:bold;
 color:#4f46e5;
 margin:15px 0;
 }
 
-.product-card ul{
+.en-desc,.hi-desc{
 line-height:1.9;
+margin-bottom:14px;
+}
+.en-desc{font-weight:500;}
+
+.product-card ul{
+line-height:2;
+padding-left:22px;
 }
 
 .premium-btn{
@@ -100,30 +100,33 @@ background:#f59e0b;
 
 .benefits{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:18px;
 }
 
 .benefit-box{
 background:#fff;
+color:#222 !important;
 padding:18px;
 border-radius:12px;
 box-shadow:0 4px 10px rgba(0,0,0,.05);
+font-weight:600;
 }
 
-.faq-item{margin-bottom:20px;}
+.faq-item{
+margin-bottom:24px;
+}
 
 .final-cta{
 text-align:center;
 background:#4f46e5;
-color:white;
+color:#fff;
 padding:40px 20px;
 border-radius:20px;
 margin-top:40px;
 }
 </style>
 </head>
-
 <body>
 
 <div id="header"></div>
@@ -132,37 +135,18 @@ margin-top:40px;
 
 <div class="hero">
 <h1>🌟 Premium Numerology Reports</h1>
-<p>
-Unlock deeper insights, personalized guidance, relationship compatibility, business success strategies, and complete numerology blueprints.
-</p>
-<p>
-व्यक्तिगत मार्गदर्शन, रिश्तों की अनुकूलता, व्यवसायिक सफलता और विस्तृत अंक ज्योतिष रिपोर्ट प्राप्त करें।
-</p>
+<p>Unlock deeper insights, personalized guidance, relationship compatibility, business success strategies and complete numerology blueprints.</p>
+<p>व्यक्तिगत मार्गदर्शन, रिश्तों की अनुकूलता, व्यवसायिक सफलता और विस्तृत अंक ज्योतिष रिपोर्ट प्राप्त करें।</p>
 </div>
 
-<h2 class="section-title">Why Upgrade? / Premium Kyon?</h2>
+<h2 class="section-title">Why Upgrade?</h2>
 
 <table class="comparison-table">
-<tr>
-<th>Free</th>
-<th>Premium</th>
-</tr>
-<tr>
-<td>Basic Numbers</td>
-<td>Detailed Analysis</td>
-</tr>
-<tr>
-<td>General Guidance</td>
-<td>Personalized Guidance</td>
-</tr>
-<tr>
-<td>Calculator Results</td>
-<td>Action Plans</td>
-</tr>
-<tr>
-<td>Limited Insights</td>
-<td>AI-Powered Insights</td>
-</tr>
+<tr><th>Free</th><th>Premium</th></tr>
+<tr><td>Basic Numbers</td><td>Detailed Analysis</td></tr>
+<tr><td>General Guidance</td><td>Personalized Guidance</td></tr>
+<tr><td>Calculator Results</td><td>Action Plans</td></tr>
+<tr><td>Limited Insights</td><td>AI-Powered Insights</td></tr>
 </table>
 
 <h2 class="section-title">Premium Products</h2>
@@ -170,8 +154,8 @@ Unlock deeper insights, personalized guidance, relationship compatibility, busin
 <div class="product-card ai-card">
 <h2>🤖 Ask Numerology AI</h2>
 <div class="price">2 Questions ₹51 | 5 Questions ₹101</div>
-<p>Ask personal numerology questions and receive AI-powered answers based on your numerology profile.</p>
-<p><strong>हिन्दी:</strong> अपने व्यक्तिगत अंक ज्योतिष संबंधी प्रश्न पूछें और AI आधारित उत्तर प्राप्त करें।</p>
+<p class="en-desc">Ask personal numerology questions and receive AI-powered answers based on your numerology profile, life path and current challenges.</p>
+<p class="hi-desc">अपने व्यक्तिगत अंक ज्योतिष संबंधी प्रश्न पूछें और अपनी अंक प्रोफ़ाइल, लाइफ पाथ तथा वर्तमान परिस्थितियों के आधार पर AI द्वारा तैयार उत्तर प्राप्त करें।</p>
 <ul>
 <li>Career Guidance / करियर मार्गदर्शन</li>
 <li>Relationship Questions / रिश्तों से जुड़े प्रश्न</li>
@@ -184,8 +168,8 @@ Unlock deeper insights, personalized guidance, relationship compatibility, busin
 <div class="product-card name-card">
 <h2>🔤 Name Numerology Report</h2>
 <div class="price">₹101</div>
-<p>Discover the hidden vibration of your name and its impact on success, personality and opportunities.</p>
-<p><strong>हिन्दी:</strong> अपने नाम की अंक ऊर्जा को जानें और समझें कि यह आपके व्यक्तित्व एवं सफलता को कैसे प्रभावित करती है।</p>
+<p class="en-desc">Discover the hidden vibration of your name and understand how it influences your personality, career, relationships and success opportunities.</p>
+<p class="hi-desc">अपने नाम की छिपी हुई अंक ऊर्जा को जानें और समझें कि यह आपके व्यक्तित्व, करियर, रिश्तों और सफलता के अवसरों को कैसे प्रभावित करती है।</p>
 <ul>
 <li>Name Analysis / नाम विश्लेषण</li>
 <li>Strengths & Weaknesses / ताकत एवं कमजोरियाँ</li>
@@ -198,8 +182,8 @@ Unlock deeper insights, personalized guidance, relationship compatibility, busin
 <div class="product-card relationship-card">
 <h2>❤️ Relationship Compatibility Report</h2>
 <div class="price">₹151</div>
-<p>Understand emotional compatibility, communication style and long-term relationship potential.</p>
-<p><strong>हिन्दी:</strong> भावनात्मक अनुकूलता, संवाद शैली और दीर्घकालिक रिश्ते की संभावनाओं को समझें।</p>
+<p class="en-desc">Understand emotional compatibility, communication patterns, strengths, challenges and long-term relationship potential.</p>
+<p class="hi-desc">भावनात्मक अनुकूलता, संवाद शैली, रिश्ते की ताकत, चुनौतियों और दीर्घकालिक संभावनाओं को विस्तार से समझें।</p>
 <ul>
 <li>Compatibility Score / अनुकूलता स्कोर</li>
 <li>Emotional Connection / भावनात्मक जुड़ाव</li>
@@ -212,8 +196,8 @@ Unlock deeper insights, personalized guidance, relationship compatibility, busin
 <div class="product-card business-card">
 <h2>💼 Business Success Report</h2>
 <div class="price">₹201</div>
-<p>Analyze your business potential, growth opportunities and business name vibration.</p>
-<p><strong>हिन्दी:</strong> व्यवसायिक सफलता, विकास के अवसर और बिजनेस नाम की ऊर्जा का विश्लेषण प्राप्त करें।</p>
+<p class="en-desc">Analyze your business potential, growth opportunities, entrepreneurial strengths and business name vibration.</p>
+<p class="hi-desc">व्यवसायिक सफलता, विकास के अवसर, उद्यमी क्षमताओं और बिजनेस नाम की अंक ऊर्जा का विश्लेषण प्राप्त करें।</p>
 <ul>
 <li>Business Potential / व्यवसायिक क्षमता</li>
 <li>Success Strategy / सफलता रणनीति</li>
@@ -227,55 +211,55 @@ Unlock deeper insights, personalized guidance, relationship compatibility, busin
 <div class="badge">⭐ BEST VALUE</div>
 <h2>🌟 Complete Numerology Blueprint</h2>
 <div class="price">₹501</div>
-<p>The most comprehensive numerology package covering all major numbers, career, money, relationships and future guidance.</p>
-<p><strong>हिन्दी:</strong> सभी प्रमुख अंक, करियर, धन, रिश्तों और भविष्य मार्गदर्शन को शामिल करने वाली सबसे विस्तृत रिपोर्ट।</p>
+<p class="en-desc">The most comprehensive numerology package covering Life Path, Destiny, Soul Urge, Personality, Career, Relationships, Money, Lucky Numbers, Action Plans and a 12‑Month Forecast.</p>
+<p class="hi-desc">यह हमारी सबसे विस्तृत अंक ज्योतिष रिपोर्ट है जिसमें लाइफ पाथ, डेस्टिनी, सोल अर्ज, पर्सनैलिटी, करियर, रिश्ते, धन, शुभ अंक, कार्ययोजना और 12‑महीने का पूर्वानुमान शामिल है।</p>
 <ul>
-<li>Life Path Analysis</li>
-<li>Destiny Analysis</li>
-<li>Soul Urge Analysis</li>
-<li>Personality Analysis</li>
-<li>Career & Finance Guidance</li>
-<li>12-Month Forecast</li>
-<li>🎁 5 FREE AI Questions Included</li>
+<li>Life Path Analysis / लाइफ पाथ विश्लेषण</li>
+<li>Destiny Analysis / डेस्टिनी विश्लेषण</li>
+<li>Soul Urge Analysis / सोल अर्ज विश्लेषण</li>
+<li>Personality Analysis / व्यक्तित्व विश्लेषण</li>
+<li>Career & Finance Guidance / करियर एवं वित्त मार्गदर्शन</li>
+<li>12‑Month Forecast / 12 महीने का पूर्वानुमान</li>
+<li>🎁 5 FREE AI Questions Included / 5 निःशुल्क AI प्रश्न</li>
 </ul>
 <a href="complete-numerology-blueprint.html" class="premium-btn">Unlock Blueprint</a>
 </div>
 
-<h2 class="section-title">Benefits / आपको क्या मिलेगा</h2>
+<h2 class="section-title">What You Will Receive</h2>
 
 <div class="benefits">
-<div class="benefit-box">✓ Personalized Analysis / व्यक्तिगत विश्लेषण</div>
-<div class="benefit-box">✓ AI-Powered Insights / AI आधारित सुझाव</div>
-<div class="benefit-box">✓ Career Guidance / करियर मार्गदर्शन</div>
-<div class="benefit-box">✓ Relationship Guidance / रिश्तों का मार्गदर्शन</div>
-<div class="benefit-box">✓ Wealth Guidance / धन मार्गदर्शन</div>
-<div class="benefit-box">✓ Lucky Numbers & Colors / शुभ अंक एवं रंग</div>
+<div class="benefit-box">✓ Personalized Analysis<br>✓ व्यक्तिगत विश्लेषण</div>
+<div class="benefit-box">✓ AI-Powered Insights<br>✓ AI आधारित सुझाव</div>
+<div class="benefit-box">✓ Career Guidance<br>✓ करियर मार्गदर्शन</div>
+<div class="benefit-box">✓ Relationship Guidance<br>✓ रिश्तों का मार्गदर्शन</div>
+<div class="benefit-box">✓ Wealth Guidance<br>✓ धन मार्गदर्शन</div>
+<div class="benefit-box">✓ Lucky Numbers & Colors<br>✓ शुभ अंक एवं रंग</div>
 </div>
 
-<h2 class="section-title">FAQ</h2>
+<h2 class="section-title">Frequently Asked Questions</h2>
 
 <div class="faq-item">
 <h3>Are reports personalized?</h3>
 <p>Yes. Reports are generated using your details and numerology profile.</p>
-<p><strong>हिन्दी:</strong> हाँ, रिपोर्ट आपकी जानकारी और अंक प्रोफ़ाइल के आधार पर तैयार की जाती है।</p>
+<p>हाँ। रिपोर्ट आपकी जानकारी और अंक प्रोफ़ाइल के आधार पर तैयार की जाती है।</p>
 </div>
 
 <div class="faq-item">
 <h3>Will reports be downloadable?</h3>
 <p>Yes, PDF delivery will be available.</p>
-<p><strong>हिन्दी:</strong> हाँ, PDF रिपोर्ट उपलब्ध कराई जाएगी।</p>
+<p>हाँ, PDF रिपोर्ट उपलब्ध कराई जाएगी।</p>
 </div>
 
 <div class="faq-item">
 <h3>Can I choose Hindi or English?</h3>
-<p>Yes, language selection will be available in the order form.</p>
-<p><strong>हिन्दी:</strong> हाँ, ऑर्डर फॉर्म में भाषा चुनने का विकल्प होगा।</p>
+<p>Yes. Language selection will be available in the order form.</p>
+<p>हाँ। ऑर्डर फॉर्म में भाषा चुनने का विकल्प उपलब्ध होगा।</p>
 </div>
 
 <div class="final-cta">
 <h2>Your Numbers Tell A Story</h2>
 <p>Discover what they reveal about your future, opportunities and life path.</p>
-<p>जानिए आपके अंक आपके भविष्य और जीवन पथ के बारे में क्या बताते हैं।</p>
+<p>जानिए आपके अंक आपके भविष्य, अवसरों और जीवन पथ के बारे में क्या बताते हैं।</p>
 <a href="complete-numerology-blueprint.html" class="premium-btn" style="background:#fff;color:#4f46e5;">Unlock Premium Reports</a>
 </div>
 
@@ -284,17 +268,8 @@ Unlock deeper insights, personalized guidance, relationship compatibility, busin
 <div id="footer"></div>
 
 <script>
-fetch('components/header.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('header').innerHTML = data;
-});
-
-fetch('components/footer.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('footer').innerHTML = data;
-});
+fetch('components/header.html').then(r=>r.text()).then(d=>document.getElementById('header').innerHTML=d);
+fetch('components/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer').innerHTML=d);
 </script>
 
 </body>
