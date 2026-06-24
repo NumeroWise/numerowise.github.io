@@ -407,4 +407,46 @@ document
 .getElementById("errorMessage")
 .style.display = "none";
 
-  
+  document
+.getElementById("numerologyForm")
+.reset();
+
+}
+else{
+
+document
+.getElementById("errorMessage")
+.style.display = "block";
+
+document
+.getElementById("successMessage")
+.style.display = "none";
+
+}
+
+}
+catch(error){
+
+document
+.getElementById("errorMessage")
+.style.display = "block";
+
+document
+.getElementById("successMessage")
+.style.display = "none";
+
+console.error(error);
+
+}
+
+submitButton.disabled = false;
+submitButton.innerText =
+"Submit & Generate Report";
+
+});
+
+</script>
+
+</body>
+</html>
+
