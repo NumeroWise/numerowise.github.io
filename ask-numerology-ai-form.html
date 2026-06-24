@@ -383,16 +383,29 @@ document.getElementById("paymentId").value
 
 try {
 
+const formData = new FormData();
+
+formData.append("fullName", data.fullName);
+formData.append("dob", data.dob);
+formData.append("email", data.email);
+formData.append("country", data.country);
+formData.append("language", data.language);
+formData.append("question1", data.question1);
+formData.append("question2", data.question2);
+formData.append("paymentId", data.paymentId);
+
 const response = await fetch(
 SCRIPT_URL,
 {
 method: "POST",
-headers: {
-"Content-Type":"application/json"
-},
-body: JSON.stringify(data)
+body: formData
 }
 );
+
+const result = await response.text();
+
+console.log(result);
+
 
 const result =
 await response.json();
