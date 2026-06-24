@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ask Numerology AI | NumeroWise</title>
+
+<meta name="description" content="Get personalized AI-powered numerology guidance from NumeroWise.">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f8fafc;
+color:#1f2937;
+line-height:1.6;
+}
+
+.container{
+max-width:900px;
+margin:40px auto;
+padding:20px;
+}
+
+.card{
+background:#ffffff;
+border-radius:16px;
+padding:35px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.logo{
+text-align:center;
+margin-bottom:10px;
+font-size:2rem;
+font-weight:700;
+color:#6d28d9;
+}
+
+.subtitle{
+text-align:center;
+color:#64748b;
+margin-bottom:30px;
+}
+
+.info-box{
+background:#f5f3ff;
+border-left:5px solid #6d28d9;
+padding:20px;
+border-radius:10px;
+margin-bottom:30px;
+}
+
+.info-box h3{
+color:#4c1d95;
+margin-bottom:10px;
+}
+
+.info-box ul{
+padding-left:20px;
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+label{
+display:block;
+font-weight:600;
+margin-bottom:8px;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:14px;
+border:1px solid #d1d5db;
+border-radius:10px;
+font-size:15px;
+}
+
+textarea{
+resize:vertical;
+min-height:140px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+outline:none;
+border-color:#6d28d9;
+}
+
+.submit-btn{
+width:100%;
+background:#6d28d9;
+color:#fff;
+border:none;
+padding:16px;
+font-size:18px;
+font-weight:700;
+border-radius:10px;
+cursor:pointer;
+}
+
+.submit-btn:hover{
+background:#5b21b6;
+}
+
+.success-message{
+display:none;
+background:#dcfce7;
+color:#166534;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+font-weight:600;
+}
+
+.error-message{
+display:none;
+background:#fee2e2;
+color:#991b1b;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+font-weight:600;
+}
+
+.footer-note{
+margin-top:25px;
+font-size:14px;
+color:#64748b;
+text-align:center;
+}
+
+.required{
+color:red;
+}
+
+@media(max-width:768px){
+
+.card{
+padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+🔢 NumeroWise
+</div>
+
+<p class="subtitle">
+Ask Numerology AI – 2 Question Package
+</p>
+
+<div class="info-box">
+
+<h3>Before You Submit</h3>
+
+<ul>
+
+<li>Please complete payment before filling this form.</li>
+
+<li>Enter the correct Razorpay Payment ID.</li>
+
+<li>Reports are available in English or Hindi.</li>
+
+<li>Questions related to lottery, gambling, stock predictions, medical treatment or legal advice are not supported.</li>
+
+<li>Your personalized report is usually delivered within a few minutes and may take up to 24 hours during high demand periods.</li>
+
+</ul>
+
+</div>
+
+<form id="numerologyForm">
+
+<div class="form-group">
+<label>Full Name <span class="required">*</span></label>
+<input type="text" id="fullName" required>
+</div>
+
+<div class="form-group">
+<label>Date of Birth <span class="required">*</span></label>
+<input type="date" id="dob" required>
+</div>
+
+<div class="form-group">
+<label>E-mail Address <span class="required">*</span></label>
+<input type="email" id="email" required>
+</div>
+<div class="form-group">
+<label>Country <span class="required">*</span></label>
+
+<select id="country" required>
+
+<option value="">Select Country</option>
+
+<option>India</option>
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Canada</option>
+<option>Australia</option>
+<option>United Arab Emirates</option>
+<option>Singapore</option>
+<option>New Zealand</option>
+<option>South Africa</option>
+<option>Germany</option>
+<option>France</option>
+<option>Netherlands</option>
+<option>Malaysia</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Preferred Language <span class="required">*</span></label>
+
+<select id="language" required>
+
+<option value="">Select Language</option>
+
+<option value="English">English</option>
+
+<option value="Hindi">Hindi</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Question 1
+<span class="required">*</span>
+</label>
+
+<textarea
+id="question1"
+placeholder="Enter your first question"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Question 2
+<span class="required">*</span>
+</label>
+
+<textarea
+id="question2"
+placeholder="Enter your second question"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Razorpay Payment ID
+<span class="required">*</span>
+</label>
+
+<input
+type="text"
+id="paymentId"
+placeholder="Example: pay_QXxxxxxxxxxxxx"
+required>
+
+</div>
+
+<button
+type="submit"
+class="submit-btn">
+
+Submit & Generate Report
+
+</button>
+
+<div
+id="successMessage"
+class="success-message">
+
+✅ Thank you.
+
+Your information has been submitted successfully.
+
+Please check your email for report delivery updates.
+
+</div>
+
+<div
+id="errorMessage"
+class="error-message">
+
+❌ Something went wrong.
+
+Please try again or contact support.
+
+</div>
+
+<p class="footer-note">
+
+By submitting this form you agree to the NumeroWise Disclaimer and Terms.
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+<script>
+
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycby88ecc8R0FCASTp1EZW9BrWS2FqNGaTLbdpIwWbkp1nYHX3XynXy9r-M3wcBLfxr4b/exec";
+
+document
+.getElementById("numerologyForm")
+.addEventListener("submit", async function(e){
+
+e.preventDefault();
+
+const submitButton =
+document.querySelector(".submit-btn");
+
+submitButton.disabled = true;
+submitButton.innerText = "Submitting...";
+
+const data = {
+
+fullName:
+document.getElementById("fullName").value,
+
+dob:
+document.getElementById("dob").value,
+
+email:
+document.getElementById("email").value,
+
+country:
+document.getElementById("country").value,
+
+language:
+document.getElementById("language").value,
+
+question1:
+document.getElementById("question1").value,
+
+question2:
+document.getElementById("question2").value,
+
+paymentId:
+document.getElementById("paymentId").value
+
+};
+
+try {
+
+const response = await fetch(
+SCRIPT_URL,
+{
+method: "POST",
+headers: {
+"Content-Type":"application/json"
+},
+body: JSON.stringify(data)
+}
+);
+
+const result =
+await response.json();
+
+if(result.status === "success"){
+
+document
+.getElementById("successMessage")
+.style.display = "block";
+
+document
+.getElementById("errorMessage")
+.style.display = "none";
+
+  
