@@ -406,11 +406,7 @@ const result = await response.text();
 
 console.log(result);
 
-
-const result =
-await response.json();
-
-if(result.status === "success"){
+if(result.includes("SUCCESS")){
 
 document
 .getElementById("successMessage")
@@ -420,7 +416,7 @@ document
 .getElementById("errorMessage")
 .style.display = "none";
 
-  document
+document
 .getElementById("numerologyForm")
 .reset();
 
