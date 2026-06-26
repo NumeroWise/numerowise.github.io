@@ -35,6 +35,9 @@ document.getElementById("dob").value;
 const language =
 document.getElementById("language").value;
 
+const country =
+document.getElementById("country").value;  
+
 if(name===""){
 
 alert("Please enter your full name.");
@@ -72,7 +75,9 @@ name:name,
 
 dob:dob,
 
-language:language
+language:language,
+
+country: country  
 
 })
 
