@@ -65,15 +65,18 @@ headers:{
 "Content-Type":"application/json"
 },
 
-body:JSON.stringify({
+const formData = new URLSearchParams();
 
-name:name,
-dob:dob,
-email:email,
-language:language,
-country:country
+formData.append("name", name);
+formData.append("dob", dob);
+formData.append("email", email);
+formData.append("language", language);
+formData.append("country", country);
 
-})
+const response = await fetch(API_URL, {
+    method: "POST",
+    body: formData
+});
 
 });
 
