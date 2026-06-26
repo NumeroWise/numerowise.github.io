@@ -11,15 +11,6 @@ document.getElementById("blueprintForm");
 const loading =
 document.getElementById("loadingSection");
 
-const reportSection =
-document.getElementById("reportSection");
-
-const reportContent =
-document.getElementById("reportContent");
-
-const copyBtn =
-document.getElementById("copyBtn");
-
 form.addEventListener("submit", generateReport);
 
 async function generateReport(e){
@@ -32,31 +23,36 @@ document.getElementById("name").value.trim();
 const dob =
 document.getElementById("dob").value;
 
+const email =
+document.getElementById("email").value.trim();
+
 const language =
 document.getElementById("language").value;
 
 const country =
-document.getElementById("country").value;  
+document.getElementById("country").value;
 
 if(name===""){
-
 alert("Please enter your full name.");
-
 return;
-
 }
 
 if(dob===""){
-
 alert("Please select your Date of Birth.");
-
 return;
+}
 
+if(email===""){
+alert("Please enter your email address.");
+return;
+}
+
+if(country===""){
+alert("Please select your country.");
+return;
 }
 
 loading.style.display="block";
-
-reportSection.style.display="none";
 
 try{
 
@@ -72,12 +68,10 @@ headers:{
 body:JSON.stringify({
 
 name:name,
-
 dob:dob,
-
+email:email,
 language:language,
-
-country: country  
+country:country
 
 })
 
@@ -90,26 +84,29 @@ loading.style.display="none";
 
 if(data.success){
 
-reportContent.innerHTML =
-formatReport(data.report);
+alert(
+"✅ Your Premium Blueprint has been generated successfully.\n\nPlease check your Email Inbox (and Spam folder if needed)."
+);
 
-reportSection.style.display="block";
+// Reset form
+form.reset();
 
-window.scrollTo({
+// Redirect after 2 seconds
+setTimeout(function(){
 
-top:reportSection.offsetTop,
+window.location.href="premium-reports.html";
 
-behavior:"smooth"
+},2000);
 
-});
-
-}else{
+}
+else{
 
 alert(data.message);
 
 }
 
-}catch(error){
+}
+catch(error){
 
 loading.style.display="none";
 
@@ -120,22 +117,3 @@ console.log(error);
 }
 
 }
-
-function formatReport(report){
-
-return report
-
-.replace(/\n/g,"<br>");
-
-}
-
-copyBtn.addEventListener("click",function(){
-
-const text =
-reportContent.innerText;
-
-navigator.clipboard.writeText(text);
-
-alert("Report copied successfully.");
-
-});
