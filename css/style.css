@@ -366,3 +366,65 @@ button:hover {
   font-size: 14px;
   opacity: 0.9;
 }
+
+/* =====================================================
+   Complete Numerology Blueprint Hero
+===================================================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:60px 25px;
+
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+
+    color:#ffffff;
+
+    border-radius:20px;
+
+    margin-bottom:40px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    max-width:900px;
+
+    margin:15px auto;
+
+    line-height:1.9;
+
+    text-align:center;
+
+    color:#ffffff;
+
+}
+
+/* =====================================================
+   Select Dropdown Fix
+===================================================== */
+
+select{
+
+    background:#ffffff;
+
+    color:#222222;
+
+}
+
+select option{
+
+    background:#ffffff;
+
+    color:#222222;
+
+}
