@@ -80,6 +80,9 @@ country:country
 const data =
 await response.json();
 
+console.log(data);
+alert(JSON.stringify(data));
+  
 loading.style.display="none";
 
 if(data.success){
