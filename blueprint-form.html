@@ -596,10 +596,12 @@ body:formData
 }
 );
 
+console.log("HTTP Status:", response.status);
+
 const result = await response.json();
 
 console.log(result);
-
+  
 if (result.success) {
 
     window.location.href = "thank-you.html";
