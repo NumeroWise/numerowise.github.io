@@ -596,27 +596,22 @@ body:formData
 }
 );
 
-const result =
-await response.text();
+const result = await response.json();
 
 console.log(result);
 
-if(result.includes("SUCCESS")){
+if (result.success) {
 
-window.location.href =
-"thank-you.html";
+    window.location.href = "thank-you.html";
 
-}
-else{
+} else {
 
-alert(
-"Something went wrong.\n\nPlease try again."
-);
+    alert(result.message || "Something went wrong.");
 
-submitButton.disabled = false;
+    submitButton.disabled = false;
 
-submitButton.innerText =
-"Generate My Premium Blueprint";
+    submitButton.innerText =
+    "Generate My Premium Blueprint";
 
 }
 
