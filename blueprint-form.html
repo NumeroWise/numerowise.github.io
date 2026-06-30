@@ -178,6 +178,45 @@ caret-color:#111827 !important;
 }
 
 css
+
+.submit-btn{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+}
+
+.spinner{
+
+width:18px;
+
+height:18px;
+
+border:3px solid rgba(255,255,255,.35);
+
+border-top:3px solid #ffffff;
+
+border-radius:50%;
+
+animation:spin .8s linear infinite;
+
+display:none;
+
+}
+
+@keyframes spin{
+
+0%{transform:rotate(0deg);}
+
+100%{transform:rotate(360deg);}
+
+}
+  
 input::placeholder{
 
 color:#9ca3af !important;
@@ -508,7 +547,11 @@ required>
 type="submit"
 class="submit-btn">
 
+<span class="spinner"></span>
+
+<span class="btn-text">
 Generate My Premium Blueprint
+</span>
 
 </button>
 
@@ -541,7 +584,11 @@ const submitButton =
 document.querySelector(".submit-btn");
 
 submitButton.disabled = true;
-submitButton.innerText = "Submitting...";
+
+submitButton.querySelector(".spinner").style.display = "block";
+
+submitButton.querySelector(".btn-text").innerText =
+"Preparing Your Premium Blueprint...";
 
 const formData = new FormData();
 
@@ -612,9 +659,10 @@ if (result.success) {
 
     submitButton.disabled = false;
 
-    submitButton.innerText =
-    "Generate My Premium Blueprint";
+    submitButton.querySelector(".spinner").style.display = "none";
 
+submitButton.querySelector(".btn-text").innerText =
+"Generate My Premium Blueprint";
 }
 
 }
@@ -628,7 +676,9 @@ alert(
 
 submitButton.disabled = false;
 
-submitButton.innerText =
+submitButton.querySelector(".spinner").style.display = "none";
+
+submitButton.querySelector(".btn-text").innerText =
 "Generate My Premium Blueprint";
 
 }
