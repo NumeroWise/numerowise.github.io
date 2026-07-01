@@ -383,6 +383,10 @@ submitButton.innerText = "Submitting...";
 
 const data = {
 
+plan: plan,
+
+productCode: plan==="5" ? "AI101" : "AI051",
+
 fullName:
 document.getElementById("fullName").value,
 
@@ -404,11 +408,25 @@ document.getElementById("question1").value,
 question2:
 document.getElementById("question2").value,
 
+question3:
+document.getElementById("question3")
+? document.getElementById("question3").value
+: "",
+
+question4:
+document.getElementById("question4")
+? document.getElementById("question4").value
+: "",
+
+question5:
+document.getElementById("question5")
+? document.getElementById("question5").value
+: "",
+
 paymentId:
 document.getElementById("paymentId").value
 
 };
-
 try {
 
 const formData = new FormData();
@@ -420,8 +438,15 @@ formData.append("country", data.country);
 formData.append("language", data.language);
 formData.append("question1", data.question1);
 formData.append("question2", data.question2);
-formData.append("paymentId", data.paymentId);
 
+formData.append("question3", data.question3);
+formData.append("question4", data.question4);
+formData.append("question5", data.question5);
+
+formData.append("paymentId", data.paymentId);
+formData.append("plan", data.plan);
+formData.append("productCode", data.productCode);
+  
 const response = await fetch(
 SCRIPT_URL,
 {
