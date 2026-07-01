@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ask Numerology AI | NumeroWise</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Get personalized AI-powered numerology guidance from NumeroWise.">
+<title>
+Ask Numerology AI | NumeroWise
+</title>
+
+<meta name="description"
+content="Ask personalized AI powered numerology questions with NumeroWise.">
+
+<link rel="stylesheet"
+href="css/style.css">
 
 <style>
 
@@ -17,9 +26,8 @@ padding:0;
 box-sizing:border-box;
 }
 
-<body>
-<div id="header"></div>
-font-family:Arial, Helvetica, sans-serif;
+body{
+font-family:Arial,Helvetica,sans-serif;
 background:#f8fafc;
 color:#1f2937;
 line-height:1.6;
@@ -35,21 +43,23 @@ padding:20px;
 background:#ffffff;
 border-radius:16px;
 padding:35px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.logo{
-text-align:center;
-margin-bottom:10px;
-font-size:2rem;
-font-weight:700;
-color:#6d28d9;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .subtitle{
 text-align:center;
-color:#64748b;
-margin-bottom:30px;
+font-size:20px;
+font-weight:700;
+color:#111827;
+margin-bottom:10px;
+}
+
+.price{
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:#6d28d9;
+margin-bottom:25px;
 }
 
 .info-box{
@@ -62,15 +72,16 @@ margin-bottom:30px;
 
 .info-box h3{
 color:#4c1d95;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
 .info-box ul{
-padding-left:20px;
+padding-left:22px;
+line-height:1.9;
 }
 
 .form-group{
-margin-bottom:20px;
+margin-bottom:22px;
 }
 
 label{
@@ -79,19 +90,45 @@ font-weight:600;
 margin-bottom:8px;
 }
 
+.required{
+color:#dc2626;
+}
+
 input,
 select,
 textarea{
+
 width:100%;
+
 padding:14px;
-border:1px solid #d1d5db;
-border-radius:10px;
+
 font-size:15px;
+
+border:1px solid #d1d5db;
+
+border-radius:10px;
+
+background:#ffffff !important;
+
+color:#111827 !important;
+
+caret-color:#111827 !important;
+
 }
 
 textarea{
 resize:vertical;
-min-height:140px;
+min-height:130px;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#9ca3af !important;
+}
+
+select option{
+background:#ffffff;
+color:#111827;
 }
 
 input:focus,
@@ -102,6 +139,10 @@ border-color:#6d28d9;
 }
 
 .submit-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
 width:100%;
 background:#6d28d9;
 color:#fff;
@@ -111,47 +152,53 @@ font-size:18px;
 font-weight:700;
 border-radius:10px;
 cursor:pointer;
+transition:.25s;
 }
 
 .submit-btn:hover{
 background:#5b21b6;
 }
 
-.success-message{
-display:none;
-background:#dcfce7;
-color:#166534;
-padding:20px;
-border-radius:10px;
-margin-top:20px;
-font-weight:600;
+.submit-btn:disabled{
+opacity:.7;
+cursor:not-allowed;
 }
 
-.error-message{
+.spinner{
+width:18px;
+height:18px;
+border:3px solid rgba(255,255,255,.35);
+border-top:3px solid #ffffff;
+border-radius:50%;
+animation:spin .8s linear infinite;
 display:none;
-background:#fee2e2;
-color:#991b1b;
-padding:20px;
-border-radius:10px;
-margin-top:20px;
-font-weight:600;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
 }
 
 .footer-note{
 margin-top:25px;
+text-align:center;
 font-size:14px;
 color:#64748b;
-text-align:center;
-}
-
-.required{
-color:red;
+line-height:1.8;
 }
 
 @media(max-width:768px){
 
 .card{
-padding:20px;
+padding:22px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.price{
+font-size:26px;
 }
 
 }
@@ -162,62 +209,134 @@ padding:20px;
 
 <body>
 
+<div id="header"></div>
+
 <div class="container">
 
 <div class="card">
 
-<div class="logo">
-🔢 NumeroWise
-</div>
-
-<p
+<h1
 class="subtitle"
 id="packageTitle">
 
 Ask Numerology AI
 
-</p>
+</h1>
+
+<div
+class="price"
+id="packagePrice">
+
+₹51 Premium Report
+
+</div>
 
 <div class="info-box">
 
-<h3>Before You Submit</h3>
+<h3>
+
+Before You Submit
+
+</h3>
 
 <ul>
 
-<li>Please complete payment before filling this form.</li>
+<li>
+Please complete your payment before filling this form.
+</li>
 
-<li>Enter the correct Razorpay Payment ID.</li>
+<li>
+Enter the correct Razorpay Payment ID.
+</li>
 
-<li>Reports are available in English or Hindi.</li>
+<li>
+Reports are available in English and Hindi.
+</li>
 
-<li>Questions related to lottery, gambling, stock predictions, medical treatment or legal advice are not supported.</li>
+<li>
+Lottery, gambling, stock market prediction, legal advice and medical diagnosis questions are not supported.
+</li>
 
-<li>Your personalized report is usually delivered within a few minutes and may take up to 24 hours during high demand periods.</li>
+<li>
+Please write clear and specific questions for the best AI guidance.
+</li>
+
+<li>
+Your personalized AI report is usually delivered within a few minutes and may take up to 24 hours during peak demand.
+</li>
 
 </ul>
 
 </div>
 
-<form id="numerologyForm">
+<form id="askAIForm">
 
-<div class="form-group">
-<label>Full Name <span class="required">*</span></label>
-<input type="text" id="fullName" required>
+  <div class="form-group">
+
+<label>
+
+Full Name
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="text"
+id="fullName"
+placeholder="Enter your full name"
+required>
+
 </div>
 
 <div class="form-group">
-<label>Date of Birth <span class="required">*</span></label>
-<input type="date" id="dob" required>
+
+<label>
+
+Date of Birth
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="date"
+id="dob"
+required>
+
 </div>
 
 <div class="form-group">
-<label>E-mail Address <span class="required">*</span></label>
-<input type="email" id="email" required>
-</div>
-<div class="form-group">
-<label>Country <span class="required">*</span></label>
 
-<select id="country" required>
+<label>
+
+E-mail Address
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email address"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Country
+
+<span class="required">*</span>
+
+</label>
+
+<select
+id="country"
+required>
 
 <option value="">Select Country</option>
 
@@ -242,9 +361,17 @@ Ask Numerology AI
 
 <div class="form-group">
 
-<label>Preferred Language <span class="required">*</span></label>
+<label>
 
-<select id="language" required>
+Preferred Language
+
+<span class="required">*</span>
+
+</label>
+
+<select
+id="language"
+required>
 
 <option value="">Select Language</option>
 
@@ -259,8 +386,11 @@ Ask Numerology AI
 <div class="form-group">
 
 <label>
+
 Question 1
+
 <span class="required">*</span>
+
 </label>
 
 <textarea
@@ -273,8 +403,11 @@ required></textarea>
 <div class="form-group">
 
 <label>
+
 Question 2
+
 <span class="required">*</span>
+
 </label>
 
 <textarea
@@ -284,19 +417,23 @@ required></textarea>
 
 </div>
 
-<div id="extraQuestions"></div>  
+<!-- Dynamic Questions (3–5) -->
+<div id="extraQuestions"></div>
 
 <div class="form-group">
 
 <label>
+
 Razorpay Payment ID
+
 <span class="required">*</span>
+
 </label>
 
 <input
 type="text"
 id="paymentId"
-placeholder="Example: pay_QXxxxxxxxxxxxx"
+placeholder="Example : pay_Qxxxxxxxxxxxxx"
 required>
 
 </div>
@@ -305,35 +442,19 @@ required>
 type="submit"
 class="submit-btn">
 
-Submit & Generate Report
+<span class="spinner"></span>
+
+<span class="btn-text">
+
+Generate My AI Report
+
+</span>
 
 </button>
 
-<div
-id="successMessage"
-class="success-message">
-
-✅ Thank you.
-
-Your information has been submitted successfully.
-
-Please check your email for report delivery updates.
-
-</div>
-
-<div
-id="errorMessage"
-class="error-message">
-
-❌ Something went wrong.
-
-Please try again or contact support.
-
-</div>
-
 <p class="footer-note">
 
-By submitting this form you agree to the NumeroWise Disclaimer and Terms.
+By submitting this form you confirm that payment has already been completed and you agree to the NumeroWise Disclaimer, Privacy Policy and Terms of Service.
 
 </p>
 
@@ -347,180 +468,49 @@ By submitting this form you agree to the NumeroWise Disclaimer and Terms.
 
 <script>
 
-fetch('components/header.html')
-.then(response => response.text())
-.then(data => {
-
-document.getElementById('header').innerHTML = data;
-
-});
-
-fetch('components/footer.html')
-.then(response => response.text())
-.then(data => {
-
-document.getElementById('footer').innerHTML = data;
-
-});
-  
 const SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycby88ecc8R0FCASTp1EZW9BrWS2FqNGaTLbdpIwWbkp1nYHX3XynXy9r-M3wcBLfxr4b/exec";
+"https://script.google.com/macros/s/AKfycbzo7ud09rlXlVX2YCnT11HD_zRv-U8yyT3b4EgTm5CXaskf952DPAKAAGuYLBUQRk5ywQ/exec";
+
+// Header
+fetch("components/header.html")
+.then(r=>r.text())
+.then(data=>{
+document.getElementById("header").innerHTML=data;
+});
+
+// Footer
+fetch("components/footer.html")
+.then(r=>r.text())
+.then(data=>{
+document.getElementById("footer").innerHTML=data;
+});
+
+// Package Detection
 const params = new URLSearchParams(window.location.search);
 
 const plan = params.get("plan") || "2";
-  
-document
-.getElementById("numerologyForm")
-.addEventListener("submit", async function(e){
 
-e.preventDefault();
-
-const submitButton =
-document.querySelector(".submit-btn");
-
-submitButton.disabled = true;
-submitButton.innerText = "Submitting...";
-
-const data = {
-
-plan: plan,
-
-productCode: plan==="5" ? "AI101" : "AI051",
-
-fullName:
-document.getElementById("fullName").value,
-
-dob:
-document.getElementById("dob").value,
-
-email:
-document.getElementById("email").value,
-
-country:
-document.getElementById("country").value,
-
-language:
-document.getElementById("language").value,
-
-question1:
-document.getElementById("question1").value,
-
-question2:
-document.getElementById("question2").value,
-
-question3:
-document.getElementById("question3")
-? document.getElementById("question3").value
-: "",
-
-question4:
-document.getElementById("question4")
-? document.getElementById("question4").value
-: "",
-
-question5:
-document.getElementById("question5")
-? document.getElementById("question5").value
-: "",
-
-paymentId:
-document.getElementById("paymentId").value
-
-};
-try {
-
-const formData = new FormData();
-
-formData.append("fullName", data.fullName);
-formData.append("dob", data.dob);
-formData.append("email", data.email);
-formData.append("country", data.country);
-formData.append("language", data.language);
-formData.append("question1", data.question1);
-formData.append("question2", data.question2);
-
-formData.append("question3", data.question3);
-formData.append("question4", data.question4);
-formData.append("question5", data.question5);
-
-formData.append("paymentId", data.paymentId);
-formData.append("plan", data.plan);
-formData.append("productCode", data.productCode);
-  
-const response = await fetch(
-SCRIPT_URL,
-{
-method: "POST",
-body: formData
-}
-);
-
-const result = await response.text();
-
-console.log(result);
-
-if(result.includes("SUCCESS")){
-
-document
-.getElementById("successMessage")
-.style.display = "block";
-
-document
-.getElementById("errorMessage")
-.style.display = "none";
-
-document
-.getElementById("numerologyForm")
-.reset();
-
-}
-else{
-
-document
-.getElementById("errorMessage")
-.style.display = "block";
-
-document
-.getElementById("successMessage")
-.style.display = "none";
-
-}
-
-}
-catch(error){
-
-document
-.getElementById("errorMessage")
-.style.display = "block";
-
-document
-.getElementById("successMessage")
-.style.display = "none";
-
-console.error(error);
-
-}
-
-submitButton.disabled = false;
-submitButton.innerText =
-"Submit & Generate Report";
-
-});
-
-const packageTitle =
-document.getElementById("packageTitle");
+// Heading
 
 if(plan==="5"){
 
-packageTitle.innerText =
-"Ask Numerology AI – 5 Question Package";
+document.getElementById("packageTitle").innerText =
+"Ask Numerology AI";
+
+document.getElementById("packagePrice").innerText =
+"₹101 Premium Report";
 
 }else{
 
-packageTitle.innerText =
-"Ask Numerology AI – 2 Question Package";
+document.getElementById("packageTitle").innerText =
+"Ask Numerology AI";
+
+document.getElementById("packagePrice").innerText =
+"₹51 Premium Report";
 
 }
+
+// Dynamic Questions
 
 const extraQuestions =
 document.getElementById("extraQuestions");
@@ -532,8 +522,11 @@ extraQuestions.innerHTML = `
 <div class="form-group">
 
 <label>
+
 Question 3
+
 <span class="required">*</span>
+
 </label>
 
 <textarea
@@ -546,8 +539,11 @@ required></textarea>
 <div class="form-group">
 
 <label>
+
 Question 4
+
 <span class="required">*</span>
+
 </label>
 
 <textarea
@@ -560,8 +556,11 @@ required></textarea>
 <div class="form-group">
 
 <label>
+
 Question 5
+
 <span class="required">*</span>
+
 </label>
 
 <textarea
@@ -574,9 +573,158 @@ required></textarea>
 `;
 
 }
+
+// Submit
+
+document
+.getElementById("askAIForm")
+.addEventListener("submit", async function(e){
+
+e.preventDefault();
+
+const submitButton =
+document.querySelector(".submit-btn");
+
+submitButton.disabled = true;
+
+submitButton.querySelector(".spinner").style.display = "block";
+
+submitButton.querySelector(".btn-text").innerText =
+"Preparing Your AI Report...";
+
+const formData = new FormData();
+
+formData.append(
+"productCode",
+plan==="5" ? "AI101" : "AI051"
+);
+
+formData.append(
+"paymentAmount",
+plan==="5" ? "101" : "51"
+);
+
+formData.append(
+"plan",
+plan
+);
+
+formData.append(
+"fullName",
+document.getElementById("fullName").value
+);
+
+formData.append(
+"dob",
+document.getElementById("dob").value
+);
+
+formData.append(
+"email",
+document.getElementById("email").value
+);
+
+formData.append(
+"country",
+document.getElementById("country").value
+);
+
+formData.append(
+"language",
+document.getElementById("language").value
+);
+
+formData.append(
+"question1",
+document.getElementById("question1").value
+);
+
+formData.append(
+"question2",
+document.getElementById("question2").value
+);
+
+formData.append(
+"question3",
+document.getElementById("question3")
+? document.getElementById("question3").value
+: ""
+);
+
+formData.append(
+"question4",
+document.getElementById("question4")
+? document.getElementById("question4").value
+: ""
+);
+
+formData.append(
+"question5",
+document.getElementById("question5")
+? document.getElementById("question5").value
+: ""
+);
+
+formData.append(
+"paymentId",
+document.getElementById("paymentId").value
+);
+
+try{
+
+const response =
+await fetch(
+SCRIPT_URL,
+{
+method:"POST",
+body:formData
+}
+);
+
+const result =
+await response.json();
+
+if(result.success){
+
+window.location.href =
+"thank-you.html";
+
+}else{
+
+alert(
+result.message || "Something went wrong."
+);
+
+submitButton.disabled = false;
+
+submitButton.querySelector(".spinner").style.display = "none";
+
+submitButton.querySelector(".btn-text").innerText =
+"Generate My AI Report";
+
+}
+
+}
+catch(error){
+
+console.error(error);
+
+alert(
+"Unable to connect to server.\n\nPlease try again."
+);
+
+submitButton.disabled = false;
+
+submitButton.querySelector(".spinner").style.display = "none";
+
+submitButton.querySelector(".btn-text").innerText =
+"Generate My AI Report";
+
+}
+
+});
+
+
+
+
   
-</script>
-
-</body>
-</html>
-
