@@ -169,8 +169,12 @@ padding:20px;
 🔢 NumeroWise
 </div>
 
-<p class="subtitle">
-Ask Numerology AI – 2 Question Package
+<p
+class="subtitle"
+id="packageTitle">
+
+Ask Numerology AI
+
 </p>
 
 <div class="info-box">
@@ -340,7 +344,10 @@ By submitting this form you agree to the NumeroWise Disclaimer and Terms.
 
 const SCRIPT_URL =
 "https://script.google.com/macros/s/AKfycby88ecc8R0FCASTp1EZW9BrWS2FqNGaTLbdpIwWbkp1nYHX3XynXy9r-M3wcBLfxr4b/exec";
+const params = new URLSearchParams(window.location.search);
 
+const plan = params.get("plan") || "2";
+  
 document
 .getElementById("numerologyForm")
 .addEventListener("submit", async function(e){
@@ -454,6 +461,21 @@ submitButton.innerText =
 
 });
 
+const packageTitle =
+document.getElementById("packageTitle");
+
+if(plan==="5"){
+
+packageTitle.innerText =
+"Ask Numerology AI – 5 Question Package";
+
+}else{
+
+packageTitle.innerText =
+"Ask Numerology AI – 2 Question Package";
+
+}
+  
 </script>
 
 </body>
