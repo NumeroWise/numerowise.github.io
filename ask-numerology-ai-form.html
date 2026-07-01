@@ -283,6 +283,8 @@ required></textarea>
 
 </div>
 
+<div id="extraQuestions"></div>  
+
 <div class="form-group">
 
 <label>
@@ -473,6 +475,59 @@ packageTitle.innerText =
 
 packageTitle.innerText =
 "Ask Numerology AI – 2 Question Package";
+
+}
+
+const extraQuestions =
+document.getElementById("extraQuestions");
+
+if(plan==="5"){
+
+extraQuestions.innerHTML = `
+
+<div class="form-group">
+
+<label>
+Question 3
+<span class="required">*</span>
+</label>
+
+<textarea
+id="question3"
+placeholder="Enter your third question"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Question 4
+<span class="required">*</span>
+</label>
+
+<textarea
+id="question4"
+placeholder="Enter your fourth question"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Question 5
+<span class="required">*</span>
+</label>
+
+<textarea
+id="question5"
+placeholder="Enter your fifth question"
+required></textarea>
+
+</div>
+
+`;
 
 }
   
