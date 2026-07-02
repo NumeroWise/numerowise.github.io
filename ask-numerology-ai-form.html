@@ -237,9 +237,22 @@ Question 1
 
 <textarea
 id="question1"
+maxlength="250"  
 placeholder="Enter your first question"
 required></textarea>
 
+<p class="question-note">
+Please ask only <strong>ONE specific question</strong> in this box.
+</p>
+
+<div
+class="char-counter"
+id="counter1">
+
+0 / 250 characters
+
+</div>
+  
 </div>
 
 <div class="form-group">
@@ -254,9 +267,22 @@ Question 2
 
 <textarea
 id="question2"
+maxlength="250"  
 placeholder="Enter your second question"
 required></textarea>
 
+<p class="question-note">
+Please ask only <strong>ONE specific question</strong> in this box.
+</p>
+
+<div
+class="char-counter"
+id="counter2">
+
+0 / 250 characters
+
+</div>
+  
 </div>
 
 <div id="extraQuestions"></div>
@@ -574,6 +600,30 @@ line-height:1.8;
 
 }
 
+.question-note{
+
+margin-top:8px;
+
+font-size:13px;
+
+color:#6b7280;
+
+}
+
+.char-counter{
+
+margin-top:5px;
+
+text-align:right;
+
+font-size:12px;
+
+color:#6d28d9;
+
+font-weight:600;
+
+}
+  
 @media(max-width:768px){
 
 .card{
@@ -668,8 +718,21 @@ Question 3
 
 <textarea
 id="question3"
+maxlength="250"
 placeholder="Enter your third question"
 required></textarea>
+
+<p class="question-note">
+Please ask only <strong>ONE specific question</strong> in this box.
+</p>
+
+<div
+class="char-counter"
+id="counter2">
+
+0 / 250 characters
+
+</div>
 
 </div>
 
@@ -685,8 +748,21 @@ Question 4
 
 <textarea
 id="question4"
+maxlength="250"
 placeholder="Enter your fourth question"
 required></textarea>
+
+<p class="question-note">
+Please ask only <strong>ONE specific question</strong> in this box.
+</p>
+
+<div
+class="char-counter"
+id="counter2">
+
+0 / 250 characters
+
+</div>
 
 </div>
 
@@ -702,8 +778,21 @@ Question 5
 
 <textarea
 id="question5"
+maxlength="250"
 placeholder="Enter your fifth question"
 required></textarea>
+
+<p class="question-note">
+Please ask only <strong>ONE specific question</strong> in this box.
+</p>
+
+<div
+class="char-counter"
+id="counter2">
+
+0 / 250 characters
+
+</div>
 
 </div>
 
@@ -861,6 +950,64 @@ submitButton.querySelector(".btn-text").innerText=
 
 });
 
+/**
+ * ==========================================
+ * Live Character Counter
+ * ==========================================
+ */
+
+function setupCounter(textareaId, counterId){
+
+const textarea =
+document.getElementById(textareaId);
+
+const counter =
+document.getElementById(counterId);
+
+if(!textarea || !counter) return;
+
+function updateCounter(){
+
+counter.innerText =
+textarea.value.length +
+" / 250 characters";
+
+}
+
+textarea.addEventListener(
+"input",
+updateCounter
+);
+
+updateCounter();
+
+}
+
+setupCounter(
+"question1",
+"counter1"
+);
+
+setupCounter(
+"question2",
+"counter2"
+);
+
+setupCounter(
+"question3",
+"counter3"
+);
+
+setupCounter(
+"question4",
+"counter4"
+);
+
+setupCounter(
+"question5",
+"counter5"
+);
+  
 </script>
 
 </body>
