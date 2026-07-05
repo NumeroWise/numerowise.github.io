@@ -922,8 +922,12 @@ body:formData
 }
 );
 
-const result=
-await response.json();
+const responseText = await response.text();
+
+console.log("RAW RESPONSE:");
+console.log(responseText);
+
+const result = JSON.parse(responseText);
 
 if(result.success){
 
@@ -948,7 +952,8 @@ submitButton.querySelector(".btn-text").innerText=
 }
 catch(error){
 
-console.error(error);
+console.error("FULL ERROR:", error);
+alert(error);
 
 alert(
 "Unable to connect to server.\n\nPlease try again."
