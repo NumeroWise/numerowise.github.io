@@ -1,87 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Name Numerology Report | NumeroWise</title>
-<meta name="description" content="Premium AI Powered Name Numerology Report by NumeroWise.">
-<link rel="stylesheet" href="css/style.css">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Relationship Compatibility Report | NumeroWise
+</title>
+
+<meta
+name="description"
+content="Premium AI Powered Relationship Compatibility Report by NumeroWise.">
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#1f2937;line-height:1.6;}
-.container{max-width:900px;margin:40px auto;padding:20px;}
-.card{background:#fff;border-radius:16px;padding:35px;box-shadow:0 10px 30px rgba(0,0,0,.08);}
-.logo{text-align:center;font-size:2rem;font-weight:700;color:#6d28d9;margin-bottom:10px;}
-.subtitle{text-align:center;font-size:20px;font-weight:700;color:#111827;margin-bottom:10px;}
-.price{text-align:center;font-size:30px;font-weight:bold;color:#6d28d9;margin-bottom:25px;}
-.info-box{background:#f5f3ff;border-left:5px solid #6d28d9;padding:20px;border-radius:10px;margin-bottom:30px;}
-.info-box h3{color:#4c1d95;margin-bottom:12px;}
-.info-box ul{padding-left:22px;line-height:1.9;}
-.form-group{margin-bottom:22px;}
-label{display:block;font-weight:600;margin-bottom:8px;}
-.required{color:#dc2626;}
-input,select{width:100%;padding:14px;font-size:15px;border:1px solid #d1d5db;border-radius:10px;background:#fff;color:#111827;caret-color:#111827;}
-input::placeholder{color:#9ca3af;}
-select option{background:#fff;color:#111827;}
-input:focus,select:focus{outline:none;border-color:#6d28d9;}
-.submit-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#6d28d9;color:#fff;border:none;padding:16px;font-size:18px;font-weight:700;border-radius:10px;cursor:pointer;}
-.submit-btn:hover{background:#5b21b6;}
-.submit-btn:disabled{opacity:.7;cursor:not-allowed;}
-.spinner{width:18px;height:18px;border:3px solid rgba(255,255,255,.35);border-top:3px solid #fff;border-radius:50%;animation:spin .8s linear infinite;display:none;}
-@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
-.footer-note{margin-top:25px;text-align:center;font-size:14px;color:#64748b;line-height:1.8;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial,Helvetica,sans-serif;
+background:#f8fafc;
+color:#1f2937;
+line-height:1.6;
+
+}
+
+.container{
+
+max-width:950px;
+margin:40px auto;
+padding:20px;
+
+}
+
+.card{
+
+background:#ffffff;
+border-radius:16px;
+padding:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+text-align:center;
+font-size:2rem;
+font-weight:700;
+color:#6d28d9;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+text-align:center;
+font-size:30px;
+font-weight:700;
+color:#111827;
+margin-bottom:10px;
+
+}
+
+.price{
+
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:#6d28d9;
+margin-bottom:28px;
+
+}
+
+.info-box{
+
+background:#f5f3ff;
+border-left:5px solid #6d28d9;
+padding:20px;
+border-radius:10px;
+margin-bottom:30px;
+
+}
+
+.info-box h3{
+
+color:#4c1d95;
+margin-bottom:12px;
+
+}
+
+.info-box ul{
+
+padding-left:22px;
+line-height:1.9;
+
+}
+
+.section-title{
+
+margin-top:35px;
+margin-bottom:18px;
+padding-bottom:10px;
+border-bottom:2px solid #ede9fe;
+
+font-size:22px;
+font-weight:700;
+color:#4f46e5;
+
+}
+
+.form-group{
+
+margin-bottom:22px;
+
+}
+
+label{
+
+display:block;
+font-weight:600;
+margin-bottom:8px;
+
+}
+
+.required{
+
+color:#dc2626;
+
+}
+
+input,
+select{
+
+width:100%;
+padding:14px;
+font-size:15px;
+
+border:1px solid #d1d5db;
+border-radius:10px;
+
+background:#ffffff;
+color:#111827;
+
+caret-color:#111827;
+
+}
+
+input::placeholder{
+
+color:#9ca3af;
+
+}
+
+select option{
+
+background:#ffffff;
+color:#111827;
+
+}
+
+input:focus,
+select:focus{
+
+outline:none;
+border-color:#6d28d9;
+
+}
+
+.submit-btn{
+
+width:100%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+background:#6d28d9;
+color:#ffffff;
+
+border:none;
+
+padding:16px;
+
+font-size:18px;
+font-weight:700;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.submit-btn:hover{
+
+background:#5b21b6;
+
+}
+
+.submit-btn:disabled{
+
+opacity:.7;
+cursor:not-allowed;
+
+}
+
+.spinner{
+
+width:18px;
+height:18px;
+
+border:3px solid rgba(255,255,255,.35);
+border-top:3px solid #ffffff;
+
+border-radius:50%;
+
+display:none;
+
+animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+.footer-note{
+
+margin-top:25px;
+
+text-align:center;
+
+font-size:14px;
+line-height:1.8;
+
+color:#64748b;
+
+}
+
 </style>
+
 </head>
+
 <body>
+
 <div id="header"></div>
+
 <div class="container">
+
 <div class="card">
-<h1 class="subtitle">Name Numerology Report</h1>
-<div class="price">₹101 Premium Report</div>
-<div class="info-box">
-<h3>Before You Submit</h3>
-<ul>
-<li>Please complete your payment before filling this form.</li>
-<li>Enter the correct Razorpay Payment ID.</li>
-<li>Your report will be generated using AI together with classical Chaldean numerology principles.</li>
-<li>Reports are available in English and Hindi.</li>
-<li>Delivery usually takes a few minutes and may take up to 24 hours during peak demand.</li>
-<li>Please ensure that your Name, Date of Birth and Email Address are correct.</li>
-</ul>
+
+<div class="logo">
+🔢 NumeroWise
 </div>
-<form id="nameNumerologyForm">
-<div class="form-group"><label>Full Name <span class="required">*</span></label><input type="text" id="fullName" placeholder="Enter your full name" required></div>
-<div class="form-group"><label>Date of Birth <span class="required">*</span></label><input type="date" id="dob" required></div>
-<div class="form-group"><label>E-mail Address <span class="required">*</span></label><input type="email" id="email" placeholder="Enter your email address" required></div>
-<div class="form-group"><label>Country <span class="required">*</span></label><select id="country" required><option value="">Select Country</option><option>India</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Australia</option><option>United Arab Emirates</option><option>Singapore</option><option>New Zealand</option><option>South Africa</option><option>Germany</option><option>France</option><option>Netherlands</option><option>Malaysia</option><option>Other</option></select></div>
-<div class="form-group"><label>Preferred Language <span class="required">*</span></label><select id="language" required><option value="">Select Language</option><option value="English">English</option><option value="Hindi">Hindi</option></select></div>
-<div class="form-group"><label>Razorpay Payment ID <span class="required">*</span></label><input type="text" id="paymentId" placeholder="Example : pay_Qxxxxxxxxxxxxx" required></div>
-<button type="submit" class="submit-btn"><span class="spinner"></span><span class="btn-text">Generate My Name Numerology Report</span></button>
-<p class="footer-note">By submitting this form you confirm that payment has already been completed and you agree to the NumeroWise Disclaimer, Privacy Policy and Terms of Service.</p>
-</form></div></div>
+
+<h1 class="subtitle">
+Relationship Compatibility Report
+</h1>
+
+<div class="price">
+₹151 Premium Report
+</div>
+
+<div class="info-box">
+
+<h3>
+Before You Submit
+</h3>
+
+<ul>
+
+<li>Please complete your payment before filling this form.</li>
+
+<li>Enter the correct Razorpay Payment ID.</li>
+
+<li>
+This report compares the numerology profiles of both individuals using
+Classical Numerology principles.
+</li>
+
+<li>
+Please ensure that both names and dates of birth are entered correctly for
+the most accurate analysis.
+</li>
+
+<li>
+Reports are available in English and Hindi.
+</li>
+
+<li>
+Your personalized Relationship Compatibility Report is usually delivered
+within a few minutes and may take up to 24 hours during peak demand.
+</li>
+
+<li>
+Please verify your email address carefully, as your PDF report will be
+delivered to the email provided below.
+</li>
+
+</ul>
+
+</div>
+
+<form id="relationshipCompatibilityForm">
+
+<!-- ===================================================== -->
+<!-- PERSON 1 DETAILS -->
+<!-- ===================================================== -->
+
+<div class="section-title">
+Person 1 Details
+</div>
+
+<div class="form-group">
+
+<label>
+
+Person 1 Full Name
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="text"
+id="person1Name"
+placeholder="Enter Person 1 Full Name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Person 1 Date of Birth
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="date"
+id="person1Dob"
+required>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- PERSON 2 DETAILS -->
+<!-- ===================================================== -->
+
+<div class="section-title">
+Person 2 Details
+</div>
+
+<div class="form-group">
+
+<label>
+
+Person 2 Full Name
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="text"
+id="person2Name"
+placeholder="Enter Person 2 Full Name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Person 2 Date of Birth
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="date"
+id="person2Dob"
+required>
+
+</div>
+
+
+<!-- ===================================================== -->
+<!-- CONTACT INFORMATION -->
+<!-- ===================================================== -->
+
+<div class="section-title">
+Contact Information
+</div>
+
+<div class="form-group">
+
+<label>
+
+E-mail Address
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email address"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Country
+
+<span class="required">*</span>
+
+</label>
+
+<select
+id="country"
+required>
+
+<option value="">
+Select Country
+</option>
+
+<option>India</option>
+<option>United States</option>
+<option>United Kingdom</option>
+<option>Canada</option>
+<option>Australia</option>
+<option>United Arab Emirates</option>
+<option>Singapore</option>
+<option>New Zealand</option>
+<option>South Africa</option>
+<option>Germany</option>
+<option>France</option>
+<option>Netherlands</option>
+<option>Malaysia</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Preferred Language
+
+<span class="required">*</span>
+
+</label>
+
+<select
+id="language"
+required>
+
+<option value="">
+Select Language
+</option>
+
+<option value="English">
+English
+</option>
+
+<option value="Hindi">
+Hindi
+</option>
+
+</select>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- PAYMENT DETAILS -->
+<!-- ===================================================== -->
+
+<div class="section-title">
+Payment Details
+</div>
+
+<div class="form-group">
+
+<label>
+
+Razorpay Payment ID
+
+<span class="required">*</span>
+
+</label>
+
+<input
+type="text"
+id="paymentId"
+placeholder="Example : pay_Qxxxxxxxxxxxxx"
+required>
+
+</div>
+
+<button
+type="submit"
+class="submit-btn">
+
+<span class="spinner"></span>
+
+<span class="btn-text">
+Generate My Relationship Compatibility Report
+</span>
+
+</button>
+
+<p class="footer-note">
+
+By submitting this form you confirm that payment has already been completed
+and you agree to the NumeroWise Disclaimer, Privacy Policy and Terms of
+Service.
+
+</p>
+
+</form>
+
+</div>
+</div>
+
 <div id="footer"></div>
+
 <script>
-const SCRIPT_URL="https://script.google.com/macros/s/AKfycbzo7ud09rlXlVX2YCnT11HD_zRv-U8yyT3b4EgTm5CXaskf952DPAKAAGuYLBUQRk5ywQ/exec";
-document.getElementById("nameNumerologyForm").addEventListener("submit",async function(e){
+
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbzo7ud09rlXlVX2YCnT11HD_zRv-U8yyT3b4EgTm5CXaskf952DPAKAAGuYLBUQRk5ywQ/exec";
+
+
+document
+.getElementById("relationshipCompatibilityForm")
+.addEventListener("submit", async function(e){
+
 e.preventDefault();
-const b=document.querySelector(".submit-btn");
-b.disabled=true;
-b.querySelector(".spinner").style.display="block";
-b.querySelector(".btn-text").innerText="Preparing Your Name Numerology Report...";
-const f=new FormData();
-f.append("productCode","NAME101");
-f.append("paymentAmount","101");
-["fullName","dob","email","country","language","paymentId"].forEach(id=>f.append(id,document.getElementById(id).value));
+
+const button =
+document.querySelector(".submit-btn");
+
+button.disabled = true;
+
+button.querySelector(".spinner").style.display = "block";
+
+button.querySelector(".btn-text").innerText =
+"Preparing Your Relationship Compatibility Report...";
+
+
+const formData = new FormData();
+
+formData.append("productCode","REL151");
+formData.append("paymentAmount","151");
+
+formData.append(
+"person1Name",
+document.getElementById("person1Name").value
+);
+
+formData.append(
+"person1Dob",
+document.getElementById("person1Dob").value
+);
+
+formData.append(
+"person2Name",
+document.getElementById("person2Name").value
+);
+
+formData.append(
+"person2Dob",
+document.getElementById("person2Dob").value
+);
+
+formData.append(
+"email",
+document.getElementById("email").value
+);
+
+formData.append(
+"country",
+document.getElementById("country").value
+);
+
+formData.append(
+"language",
+document.getElementById("language").value
+);
+
+formData.append(
+"paymentId",
+document.getElementById("paymentId").value
+);
+
 try{
-const r=await fetch(SCRIPT_URL,{method:"POST",body:f});
-const result=await r.json();
-if(result.success){window.location.href="thank-you.html";}
-else{alert(result.message||"Something went wrong.");b.disabled=false;b.querySelector(".spinner").style.display="none";b.querySelector(".btn-text").innerText="Generate My Name Numerology Report";}
-}catch(err){
-alert("Unable to connect to server.\n\nPlease try again.");
-b.disabled=false;b.querySelector(".spinner").style.display="none";b.querySelector(".btn-text").innerText="Generate My Name Numerology Report";
-}});
-fetch("components/header.html").then(r=>r.text()).then(d=>header.innerHTML=d);
-fetch("components/footer.html").then(r=>r.text()).then(d=>footer.innerHTML=d);
+
+const response =
+await fetch(SCRIPT_URL,{
+
+method:"POST",
+body:formData
+
+});
+
+const result =
+await response.json();
+
+if(result.success){
+
+window.location.href =
+"thank-you.html";
+
+}else{
+
+alert(
+result.message ||
+"Something went wrong."
+);
+
+button.disabled = false;
+
+button.querySelector(".spinner").style.display = "none";
+
+button.querySelector(".btn-text").innerText =
+"Generate My Relationship Compatibility Report";
+
+}
+
+}catch(error){
+
+alert(
+"Unable to connect to server.\n\nPlease try again."
+);
+
+button.disabled = false;
+
+button.querySelector(".spinner").style.display = "none";
+
+button.querySelector(".btn-text").innerText =
+"Generate My Relationship Compatibility Report";
+
+}
+
+});
+
+
+fetch("components/header.html")
+.then(r => r.text())
+.then(html => {
+
+document.getElementById("header").innerHTML = html;
+
+});
+
+
+fetch("components/footer.html")
+.then(r => r.text())
+.then(html => {
+
+document.getElementById("footer").innerHTML = html;
+
+});
+
 </script>
-</body></html>
+
+</body>
+</html>
+
+
+
+
+  
