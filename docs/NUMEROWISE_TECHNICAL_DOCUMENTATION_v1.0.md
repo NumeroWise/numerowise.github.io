@@ -1,57 +1,50 @@
 # NumeroWise Technical Documentation v1.0
 
-## Project Overview
+Project Overview
 
-### Project Name
+Project Name
+NumeroWise
 
-**NumeroWise**
+Version
+Version 1.1 (Stable)
 
-### Version
-
-**Version 1.0 (Stable)**
-
-### Project Type
-
+Project Type
 AI-Powered Numerology Web Application
 
-### Development Status
-
+Development Status
 Production Stable
 
----
-
-# Introduction
+Introduction
 
 NumeroWise is an AI-powered numerology platform designed to provide accurate, personalized, and easy-to-understand numerology reports using modern Artificial Intelligence.
 
 The platform combines traditional numerology principles with Google's Gemini AI to generate highly detailed personalized reports in PDF format.
 
----
-
-# Primary Objective
+Primary Objective
 
 The primary objective of NumeroWise is to make professional-quality numerology guidance available through an automated, secure, and user-friendly online platform.
 
 Users can:
 
-* Calculate their numerology profile
-* Generate complete Numerology Blueprints
-* Ask personalized numerology questions
-* Receive professionally formatted PDF reports
-* Receive reports directly via email
+• Calculate their numerology profile
+• Generate complete Numerology Blueprints
+• Generate specialized premium numerology reports
+• Ask personalized numerology questions
+• Receive professionally formatted PDF reports
+• Receive reports directly via email
 
----
+Current Products
 
-# Current Products
+At Version 1.1, NumeroWise includes the following products:
 
-At Version 1.0, NumeroWise includes the following products:
-
-| Product                         | Product Code | Status           |
-| ------------------------------- | ------------ | ---------------- |
-| Premium Numerology Blueprint    | BLUE501      | Production Ready |
-| Ask Numerology AI (2 Questions) | AI051        | Production Ready |
-| Ask Numerology AI (5 Questions) | AI101        | Production Ready |
-
+| Product | Product Code | Status |
+|---------|--------------|--------|
+| Premium Numerology Blueprint | BLUE501 | Production Ready |
+| Ask Numerology AI (2 Questions) | AI051 | Production Ready |
+| Ask Numerology AI (5 Questions) | AI101 | Production Ready |
+| Name Numerology Report | NAME101 | Production Ready |
+| Relationship Compatibility Report | REL151 | Production Ready |
+| Business Success Report | BUS201 | Production Ready |
 ---
 
 # Core Technologies
@@ -268,17 +261,34 @@ Examples:
 
 These pages are SEO-focused and designed for long-term organic traffic.
 
+├── premium/
+│   ├── blueprint-form.html
+│   ├── namenumerology-form.html
+│   ├── relationship-form.html
+│   └── business-success-form.html
+│
+
 ---
 
 ## AI Pages
 
-Current AI pages include:
+├── ask-numerology-ai.html
+├── ask-numerology-ai-form.html
+│
+├── thank-you.html
+│
+
+Current AI and Premium Product pages include:
 
 * Ask Numerology AI
-* AI Forms
+* AI Question Forms
+* Premium Blueprint Form
+* Name Numerology Form
+* Relationship Compatibility Form
+* Business Success Form
 * Thank You Page
 
-Future AI products will follow the same modular page structure.
+All premium products follow a common modular workflow consisting of dedicated forms, centralized request routing, AI report generation, PDF creation, email delivery and payment confirmation pages.
 
 ---
 
@@ -293,7 +303,8 @@ Purpose:
 * Project architecture
 * Maintenance notes
 * Future roadmap
-
+* Product-specific technical documentation
+* 
 ---
 
 ## assets/
@@ -333,13 +344,14 @@ NumeroWise Apps Script
 ├── CommonConfig.gs
 ├── Config.gs
 │
-├── Blueprint (BLUE501)
+├──Blueprint (BLUE501)
 │   ├── WebApp.gs
 │   ├── Code.gs
+│   ├── GeminiService.gs
 │   ├── PDFService.gs
 │   ├── EmailService.gs
 │   ├── SheetService.gs
-│   └── PromptService.gs
+│   └── pdf-template.html
 │
 ├── AI051 (Ask Numerology AI – 2 Questions)
 │   ├── ConfigAI051.gs
@@ -359,36 +371,71 @@ NumeroWise Apps Script
 │   ├── SheetServiceAI101.gs
 │   └── PromptServiceAI101.gs
 │
-├── Utilities
-│   ├── GeminiService.gs
+├── NAME101 (Name Numerology Report)
+│   ├── WebAppName101.gs
+│   ├── CodeName101.gs
+│   ├── GeminiServiceName101.gs
+│   ├── PdfServiceName101.gs
+│   ├── EmailServiceName101.gs
+│   ├── SheetServiceName101.gs
+│   └── pdf-template-name101.html
+│
+├── REL151 (Relationship Compatibility Report)
+│   ├── WebAppREL151.gs
+│   ├── CodeREL151.gs
+│   ├── GeminiServiceREL151.gs
+│   ├── PdfServiceREL151.gs
+│   ├── EmailServiceREL151.gs
+│   ├── SheetServiceREL151.gs
+│   └── pdf-template-rel151.html
+│
+├── BUS201 (Business Success Report)
+│   ├── WebAppBUS201.gs
+│   ├── CodeBUS201.gs
+│   ├── GeminiServiceBUS201.gs
+│   ├── PdfServiceBUS201.gs
+│   ├── EmailServiceBUS201.gs
+│   ├── SheetServiceBUS201.gs
+│   └── pdf-template-bus201.html
+│
+├── Shared Utilities
+│   ├── CommonConfig.gs
+│   ├── Router.gs
 │   ├── DateUtils.gs
 │   ├── Validation.gs
-│   └── Helpers.gs
+│   ├── Helpers.gs
+│   └── Common Functions
 │
 └── Future Products
-    ├── AI201
-    ├── AI501
-    ├── AI1001
-    └── ...
+    ├── Career Numerology Report
+    ├── Wealth Prediction Report
+    ├── Baby Name Numerology
+    ├── Business Name Numerology
+    └── Additional AI Products
 
 # Part 4 — Product Codes
 
 ## Current Product Catalogue
 
-| Product Name                    | Product Code | Category    | Status           |
-| ------------------------------- | ------------ | ----------- | ---------------- |
-| Premium Numerology Blueprint    | BLUE501      | Core Report | Production Ready |
-| Ask Numerology AI (2 Questions) | AI051        | AI Report   | Production Ready |
-| Ask Numerology AI (5 Questions) | AI101        | AI Report   | Production Ready |
-
+| Product Name                             | Product Code | Category                | Status           |
+| ---------------------------------------- | ------------ | ----------------------- | ---------------- |
+| Premium Numerology Blueprint             | BLUE501      | Core Report             | Production Ready |
+| Ask Numerology AI (2 Questions)          | AI051        | AI Consultation         | Production Ready |
+| Ask Numerology AI (5 Questions)          | AI101        | AI Consultation         | Production Ready |
+| Name Numerology Report                   | NAME101      | Premium Report          | Production Ready |
+| Relationship Compatibility Report        | REL151       | Premium Report          | Production Ready |
+| Business Success Report                  | BUS201       | Premium Report          | Production Ready |
 ---
 
 ## Product Code Naming Convention
 
-| Prefix | Meaning                         |
-| ------ | ------------------------------- |
-| BLUE   | Premium Blueprint Reports       |
-| AI     | Artificial Intelligence Reports |
+| Prefix | Meaning                              |
+| -------| ------------------------------------ |
+| BLUE   | Complete Numerology Blueprint        |
+| AI     | Ask Numerology AI Reports            |
+| NAME   | Name Numerology Reports              |
+| REL    | Relationship Compatibility Reports   |
+| BUS    | Business Success Reports             |
 
 ---
 
@@ -423,13 +470,46 @@ NumeroWise Apps Script
 
 ---
 
+### NAME101
+
+* Product Name: Name Numerology Report
+* Category: Premium Personalized Report
+* Primary Analysis: Name Vibration & Expression Number
+* Delivery Method: PDF + Email
+* AI Powered: Yes
+
+---
+
+### REL151
+
+* Product Name: Relationship Compatibility Report
+* Category: Premium Compatibility Report
+* Primary Analysis: Two-Person Numerology Compatibility
+* Delivery Method: PDF + Email
+* AI Powered: Yes
+
+---
+
+### BUS201
+
+* Product Name: Business Success Report
+* Category: Premium Business Report
+* Primary Analysis: Personal & Business Numerology
+* Delivery Method: PDF + Email
+* AI Powered: Yes
+
+---
+
 ## Reserved Product Codes
 
-| Product Code | Reserved For               | Status   |
-| ------------ | -------------------------- | -------- |
-| AI201        | Future AI Product          | Reserved |
-| AI501        | Future Premium AI Product  | Reserved |
-| AI1001       | Future Advanced AI Product | Reserved |
+| Product Code | Reserved For                    | Status   |
+| ------------ | ------------------------------- | -------- |
+| NAME201      | Advanced Name Report            | Reserved |
+| REL301       | Advanced Compatibility Report   | Reserved |
+| BUS301       | Advanced Business Report        | Reserved |
+| AI201        | Future AI Consultation          | Reserved |
+| AI501        | Advanced AI Product             | Reserved |
+| AI1001       | Enterprise AI Product           | Reserved |
 
 ---
 
@@ -437,7 +517,7 @@ NumeroWise Apps Script
 
 * Every product must have a unique Product Code.
 * Product Codes are never reused.
-* Configuration files, Sheets, Email Services, PDF Services, and Prompt Services must use the corresponding Product Code.
+* Configuration files, WebApp handlers, Core Engine, Gemini Services, Sheet Services, Email Services, PDF Services and HTML Templates must use the corresponding    Product Code.
 * Google Sheets must maintain separate tabs for each product whenever required.
 * Future products must follow the same modular naming convention.
 
@@ -486,15 +566,11 @@ Request Validation
 
 ↓
 
-Google Gemini API
+Numerology Calculations
 
 ↓
 
-AI Report Generation
-
-↓
-
-Life Path Calculation
+Gemini AI Report Generation
 
 ↓
 
@@ -502,7 +578,7 @@ Google Sheets Entry
 
 ↓
 
-Premium PDF Generation
+PDF Generation
 
 ↓
 
@@ -542,11 +618,7 @@ Code.gs
 
 ↓
 
-PromptService.gs
-
-↓
-
-Gemini API
+GeminiService.gs
 
 ↓
 
@@ -554,7 +626,7 @@ SheetService.gs
 
 ↓
 
-PDFService.gs
+PdfService.gs
 
 ↓
 
@@ -563,9 +635,8 @@ EmailService.gs
 ↓
 
 User Email
-```
 
----
+```
 
 ## AI051 Processing Flow
 
@@ -651,7 +722,120 @@ EmailServiceAI101.gs
 ↓
 
 User Email
+
 ```
+
+## NAME101 Processing Flow
+
+Name Numerology Form
+
+↓
+
+Router.gs
+
+↓
+
+WebAppName101.gs
+
+↓
+
+CodeName101.gs
+
+↓
+
+GeminiServiceName101.gs
+
+↓
+
+SheetServiceName101.gs
+
+↓
+
+PdfServiceName101.gs
+
+↓
+
+EmailServiceName101.gs
+
+↓
+
+User Email
+
+---
+
+## REL151 Processing Flow
+
+Relationship Compatibility Form
+
+↓
+
+Router.gs
+
+↓
+
+WebAppREL151.gs
+
+↓
+
+CodeREL151.gs
+
+↓
+
+GeminiServiceREL151.gs
+
+↓
+
+SheetServiceREL151.gs
+
+↓
+
+PdfServiceREL151.gs
+
+↓
+
+EmailServiceREL151.gs
+
+↓
+
+User Email
+
+---
+
+## BUS201 Processing Flow
+
+Business Success Form
+
+↓
+
+Router.gs
+
+↓
+
+WebAppBUS201.gs
+
+↓
+
+CodeBUS201.gs
+
+↓
+
+GeminiServiceBUS201.gs
+
+↓
+
+SheetServiceBUS201.gs
+
+↓
+
+PdfServiceBUS201.gs
+
+↓
+
+EmailServiceBUS201.gs
+
+↓
+
+User Email
 
 ---
 
@@ -670,11 +854,11 @@ Identify Product
 
 ↓
 
-Generate AI Prompt
+Prepare Product-specific Prompt
 
 ↓
 
-Call Gemini API
+Generate Gemini AI Report
 
 ↓
 
@@ -744,6 +928,20 @@ Update Sheet Status
 
 Return Failure Response
 
+──────────────
+
+Google Sheets Error
+
+↓
+
+Log Failure
+
+↓
+
+Return Failure Response
+
+──────────────
+
 # Part 6 — Google Sheets Structure
 
 ## Spreadsheet Overview
@@ -756,35 +954,32 @@ Each AI product maintains its own dedicated worksheet.
 
 ## Current Worksheets
 
-| Sheet Name | Product                         | Status |
-| ---------- | ------------------------------- | ------ |
-| Blueprint  | BLUE501                         | Active |
-| AI051      | Ask Numerology AI (2 Questions) | Active |
-| AI101      | Ask Numerology AI (5 Questions) | Active |
+| Sheet Name      | Product                                  | Status |
+| --------------- | ---------------------------------------- | ------ |
+| BLUE501_Orders  | Premium Numerology Blueprint             | Active |
+| AI051_Orders    | Ask Numerology AI (2 Questions)          | Active |
+| AI101_Orders    | Ask Numerology AI (5 Questions)          | Active |
+| NAME101_Orders  | Name Numerology Report                   | Active |
+| REL151_Orders   | Relationship Compatibility Report        | Active |
+| BUS201_Orders   | Business Success Report                  | Active |
 
 ---
 
 ## Standard Sheet Columns
 
-| Column | Field            |
-| ------ | ---------------- |
-| A      | Timestamp        |
-| B      | Order ID         |
-| C      | Product Code     |
-| D      | Payment Amount   |
-| E      | Payment ID       |
-| F      | Full Name        |
-| G      | Email Address    |
-| H      | Date of Birth    |
-| I      | Country          |
-| J      | Language         |
-| K      | Life Path Number |
-| L      | Report Status    |
-| M      | Email Status     |
-| N      | Gemini Status    |
-| O      | Retry Count      |
-| P      | AI Report        |
-| Q      | Remarks          |
+## Common Sheet Structure
+
+All worksheets begin with the following common fields:
+
+| Column | Field          |
+| ------ | -------------- |
+| A      | Timestamp      |
+| B      | Order ID       |
+| C      | Product Code   |
+| D      | Payment Amount |
+| E      | Payment ID     |
+
+The remaining columns are product-specific depending on the information required for each report.
 
 ---
 
@@ -810,11 +1005,11 @@ Each AI product maintains its own dedicated worksheet.
 
 ## Gemini Status Values
 
-| Status  | Meaning              |
-| ------- | -------------------- |
-| Pending | API not called       |
-| Success | AI response received |
-| Failed  | Gemini API error     |
+| Status    | Meaning              |
+| ----------| -------------------- |
+| Pending   | API not called       |
+| Completed | AI response received |
+| Failed    | Gemini API error     |
 
 ---
 
@@ -822,12 +1017,11 @@ Each AI product maintains its own dedicated worksheet.
 
 Used for future automatic retry mechanism.
 
-| Value | Meaning       |
-| ----- | ------------- |
-| 0     | No retry      |
-| 1     | First Retry   |
-| 2     | Second Retry  |
-| 3     | Maximum Retry |
+| Status    | Meaning                      |
+| ----------| ---------------------------- |
+| Pending   | API not called               |
+| Completed | AI report generated          |
+| Failed    | Gemini API request failed    |
 
 ---
 
@@ -851,6 +1045,20 @@ AI051-000001
 AI101-000001
 ```
 
+### NAME101
+
+NAME101-000001
+
+
+### REL151
+
+REL151-000001
+
+
+### BUS201
+
+BUS201-000001
+
 ---
 
 ## Data Flow
@@ -860,15 +1068,15 @@ User Submission
 
 ↓
 
-Sheet Entry
+Request Validation
 
 ↓
 
-Gemini Processing
+Google Sheets Entry
 
 ↓
 
-Report Generation
+Gemini Report Generation
 
 ↓
 
@@ -881,8 +1089,11 @@ Email Delivery
 ↓
 
 Status Update
-```
 
+↓
+
+Order Completed
+```
 ---
 
 ## Future Expansion
@@ -891,9 +1102,11 @@ Each new product should have:
 
 * Separate worksheet
 * Independent Order ID sequence
-* Same standard column structure
+* Product-specific data columns
 * Independent report history
 * Independent processing status
+* Dedicated Sheet Service
+
 
 # Part 7 — Gemini AI Integration
 
@@ -916,7 +1129,15 @@ User Request
 
 ↓
 
-Prompt Generation
+Request Validation
+
+↓
+
+Numerology Calculations
+
+↓
+
+Generate Product-specific Prompt
 
 ↓
 
@@ -938,17 +1159,17 @@ PDF Generation
 
 Email Delivery
 ```
-
 ---
 
-## Prompt Services
-
-| Product | Prompt File           |
-| ------- | --------------------- |
-| BLUE501 | PromptService.gs      |
-| AI051   | PromptServiceAI051.gs |
-| AI101   | PromptServiceAI101.gs |
-
+## Gemini Service Files
+```
+| Product | Gemini Service File        |
+| ------- | -------------------------- |
+| BLUE501 | GeminiService.gs           |
+| NAME101 | GeminiServiceName101.gs    |
+| REL151  | GeminiServiceREL151.gs     |
+| BUS201  | GeminiServiceBUS201.gs     |
+```
 ---
 
 ## Configuration Files
@@ -959,6 +1180,9 @@ Email Delivery
 | BLUE501 | Config.gs          |
 | AI051   | ConfigAI051.gs     |
 | AI101   | ConfigAI101.gs     |
+| NAME101 | ConfigName101.gs   |
+| REL151  | ConfigREL151.gs    |
+| BUS201  | ConfigBUS201.gs    |
 
 ---
 
@@ -977,11 +1201,11 @@ Email Delivery
 ## Gemini Processing Sequence
 
 ```text
-Generate Prompt
+Generate Product Prompt
 
 ↓
 
-Create Request Payload
+Create JSON Payload
 
 ↓
 
@@ -989,17 +1213,16 @@ Call Gemini API
 
 ↓
 
-Receive Response
+Receive JSON Response
 
 ↓
 
-Extract AI Text
+Extract Generated Report
 
 ↓
 
-Generate Final Report
+Return Final Report
 ```
-
 ---
 
 ## AI Prompt Structure
@@ -1009,7 +1232,7 @@ System Instructions
 
 ↓
 
-Numerology Rules
+Product-specific Instructions
 
 ↓
 
@@ -1017,7 +1240,7 @@ User Information
 
 ↓
 
-Product Instructions
+Numerology Calculations
 
 ↓
 
@@ -1025,7 +1248,11 @@ Language Instructions
 
 ↓
 
-Output Formatting Rules
+Formatting Rules
+
+↓
+
+Final AI Prompt
 ```
 
 ---
@@ -1041,24 +1268,28 @@ Output Formatting Rules
 
 ## Error Handling
 
-| Error Type      | Action                  |
-| --------------- | ----------------------- |
-| Invalid API Key | Stop Processing         |
-| Gemini Timeout  | Return Failure          |
-| High Demand     | Return Friendly Message |
-| Empty Response  | Return Failure          |
-| Invalid JSON    | Return Failure          |
+| Error Type          | Action                                  |
+| ------------------- | --------------------------------------- |
+| Invalid API Key     | Stop Processing                         |
+| Gemini Timeout      | Return Failure                          |
+| Service Unavailable | Return Failure                          |
+| Empty Response      | Return Failure                          |
+| Invalid JSON        | Return Failure                          |
 
 ---
 
 ## Current Gemini Features
 
 * Personalized Report Generation
-* Life Path Analysis
-* Numerology Interpretation
+* Life Path Number Analysis
+* Expression Number Analysis
+* Business Name Number Analysis
+* Relationship Compatibility Analysis
 * AI Question Answering
 * English Report Generation
 * Hindi Report Generation
+* Product-specific Prompt Generation
+* PDF-ready Report Formatting
 
 ---
 
@@ -1070,6 +1301,10 @@ Output Formatting Rules
 * Streaming Responses
 * Performance Monitoring
 * AI Usage Analytics
+* Multi-language Expansion
+* Modular Prompt Templates
+* AI Quality Monitoring
+  
 
 # Part 8 — Deployment & Production Process
 
@@ -1218,14 +1453,19 @@ Production Verification
 | BLUE501 | Verify      |
 | AI051   | Verify      |
 | AI101   | Verify      |
+| NAME101 | Verify      |
+| REL151  | Verify      |
+| BUS201  | Verify      |
 
 ---
 
 ## Production Verification
 
 * Form Submitted Successfully
+* Input Validation Passed
 * Google Sheet Updated
 * Gemini Response Received
+* AI Report Generated
 * PDF Generated
 * Email Delivered
 * Thank You Page Displayed
@@ -1242,20 +1482,24 @@ Production Verification
 
 ## Version Management
 
-Every production deployment must use:
+Every production deployment must include:
 
+* Code Review
+* Successful End-to-End Testing
 * New Apps Script Version
 * New GitHub Commit
 * Production Verification
-
+* Backup Before Major Changes
 ---
 
 ## Deployment Rules
 
 * Never deploy untested code.
-* Always create a new deployment version after backend changes.
+* Always create a new Apps Script deployment version after backend changes.
 * Verify all active products after deployment.
+* Confirm Google Sheets, PDF, Email and Gemini API are working correctly.
 * Keep GitHub and Apps Script in sync.
+* Create project backups before major updates.
 * Maintain production stability before starting new feature development.
 
 # Part 9 — Coding Standards & Development Guidelines
@@ -1302,30 +1546,96 @@ CommonConfig.gs
 
 Config.gs
 
+ConfigAI051.gs
+
+ConfigAI101.gs
+
+ConfigName101.gs
+
+ConfigREL151.gs
+
+ConfigBUS201.gs
+
 WebApp.gs
+
+WebAppAI051.gs
+
+WebAppAI101.gs
+
+WebAppName101.gs
+
+WebAppREL151.gs
+
+WebAppBUS201.gs
 
 Code.gs
 
-PromptService.gs
+CodeAI051.gs
+
+CodeAI101.gs
+
+CodeName101.gs
+
+CodeREL151.gs
+
+CodeBUS201.gs
+
+GeminiService.gs
+
+GeminiServiceName101.gs
+
+GeminiServiceREL151.gs
+
+GeminiServiceBUS201.gs
 
 PDFService.gs
 
+PDFServiceAI051.gs
+
+PDFServiceAI101.gs
+
+PdfServiceName101.gs
+
+PdfServiceREL151.gs
+
+PdfServiceBUS201.gs
+
 EmailService.gs
 
+EmailServiceAI051.gs
+
+EmailServiceAI101.gs
+
+EmailServiceName101.gs
+
+EmailServiceREL151.gs
+
+EmailServiceBUS201.gs
+
 SheetService.gs
+
+SheetServiceAI051.gs
+
+SheetServiceAI101.gs
+
+SheetServiceName101.gs
+
+SheetServiceREL151.gs
+
+SheetServiceBUS201.gs
 ```
 
----
-
 ## Product Naming Standard
-
-| Product    | Prefix |
-| ---------- | ------ |
-| Blueprint  | BLUE   |
-| AI Reports | AI     |
-
+```
+| Product                     | Prefix |
+| --------------------------- | ------ |
+| Premium Blueprint           | BLUE   |
+| Ask Numerology AI           | AI     |
+| Name Numerology             | NAME   |
+| Relationship Compatibility  | REL    |
+| Business Success            | BUS    |
 ---
-
+```
 ## Function Naming
 
 Functions must use **camelCase**.
@@ -1333,17 +1643,27 @@ Functions must use **camelCase**.
 Examples:
 
 ```text id="fjp3bj"
-processAI101Request()
+processBUS201Request()
 
-processAI101Report()
+processREL151Request()
 
-generatePremiumPDF()
+processName101Request()
 
-sendAI101Email()
+generateRelationshipReport()
 
-updateAI101ReportStatus()
+generateBUS201ReportEngine()
 
-calculateLifePath()
+generateName101Report()
+
+sendBUS201Email()
+
+sendREL151Email()
+
+sendName101Email()
+
+calculateLifePathNumber()
+
+calculateExpressionNumber()
 
 getGeminiApiKey()
 ```
@@ -1381,11 +1701,15 @@ Examples:
 ```text id="5mn1rh"
 GEMINI_MODEL
 
-AI101_SHEET_NAME
-
-BLUEPRINT_SHEET_NAME
-
 SCRIPT_URL
+
+BLUE501_SHEET_NAME
+
+NAME101_SHEET_NAME
+
+REL151_SHEET_NAME
+
+BUS201_SHEET_NAME
 ```
 
 ---
@@ -1401,7 +1725,7 @@ WebApp
 
 Code
 
-PromptService
+GeminiService
 
 PDFService
 
@@ -1472,19 +1796,19 @@ Every future product must follow the existing architecture.
 Example:
 
 ```text id="rvj2wf"
-ConfigAI201.gs
+ConfigXXX.gs
 
-WebAppAI201.gs
+WebAppXXX.gs
 
-CodeAI201.gs
+CodeXXX.gs
 
-PromptServiceAI201.gs
+GeminiServiceXXX.gs
 
-PDFServiceAI201.gs
+PDFServiceXXX.gs
 
-EmailServiceAI201.gs
+EmailServiceXXX.gs
 
-SheetServiceAI201.gs
+SheetServiceXXX.gs
 ```
 
 No future product should break compatibility with existing production modules.
