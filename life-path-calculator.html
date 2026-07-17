@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Life Path Calculator | NumeroWise</title>
 
-<meta name="description" content="Calculate your Life Path Number and discover your life purpose, strengths, talents, and destiny through numerology.">
+<meta name="description" content="Calculate your Life Path Number and discover your life purpose, strengths, talents and destiny through numerology.">
+
+<meta name="keywords" content="Life Path Calculator, Life Path Number, Numerology Calculator, Free Numerology, AI Numerology">
+
+<meta name="author" content="NumeroWise">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://numerowise.github.io/life-path-calculator.html">
+
+<meta name="theme-color" content="#1976D2">
+
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="NumeroWise">
+
+<meta property="og:title" content="Life Path Calculator | NumeroWise">
+
+<meta property="og:description" content="Calculate your Life Path Number instantly and discover your life purpose through numerology.">
+
+<meta property="og:url" content="https://numerowise.github.io/life-path-calculator.html">
+
+<meta property="og:image" content="https://numerowise.github.io/assets/images/og-image.jpg">
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Life Path Calculator | NumeroWise">
+
+<meta name="twitter:description" content="Free AI-powered Life Path Number Calculator.">
+
+<meta name="twitter:image" content="https://numerowise.github.io/assets/images/og-image.jpg">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -18,6 +59,12 @@
 <div id="header"></div>
 
 <div class="container">
+
+<nav style="margin-bottom:20px;font-size:14px;">
+<a href="index.html">Home</a>
+&nbsp;>&nbsp;
+Life Path Calculator
+</nav>
 
 <h1>Life Path Calculator</h1>
 
@@ -56,8 +103,164 @@ onclick="goDetail()">
 id="summary"
 class="result-summary">
 </div>
-  
+
+<div class="related-links">
+
+<h3>Learn More</h3>
+
+<p>
+
+<a href="what-is-life-path-number.html">
+What is Life Path Number?
+</a>
+
+</p>
+
+<p>
+
+<a href="life-path-number-1.html">1</a> |
+
+<a href="life-path-number-2.html">2</a> |
+
+<a href="life-path-number-3.html">3</a> |
+
+<a href="life-path-number-4.html">4</a> |
+
+<a href="life-path-number-5.html">5</a> |
+
+<a href="life-path-number-6.html">6</a> |
+
+<a href="life-path-number-7.html">7</a> |
+
+<a href="life-path-number-8.html">8</a> |
+
+<a href="life-path-number-9.html">9</a>
+
+</p>
+
 </div>
+
+</div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- RELATED CALCULATORS -->
+<!-- ========================================= -->
+
+<div class="card">
+
+<h2>Related Numerology Calculators</h2>
+
+<p>
+Explore more free AI-powered numerology calculators to understand your personality, destiny, career, relationships and financial potential.
+</p>
+
+<div style="margin-top:20px;line-height:2;">
+
+<a href="destiny-calculator.html">Destiny Number Calculator</a><br>
+
+<a href="soul-urge-calculator.html">Soul Urge Number Calculator</a><br>
+
+<a href="personality-calculator.html">Personality Number Calculator</a><br>
+
+<a href="birthday-calculator.html">Birthday Number Calculator</a><br>
+
+<a href="personal-year-calculator.html">Personal Year Calculator</a>
+
+</div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- PREMIUM REPORT -->
+<!-- ========================================= -->
+
+<div class="card">
+
+<h2>Unlock Your Complete Numerology Blueprint</h2>
+
+<p>
+
+Your Life Path Number is only one part of your numerology profile.
+
+Get a complete AI-powered Numerology Blueprint including:
+
+</p>
+
+<ul style="text-align:left;max-width:600px;margin:auto;line-height:2;">
+
+<li>Life Purpose</li>
+
+<li>Career Guidance</li>
+
+<li>Relationships</li>
+
+<li>Money & Wealth Analysis</li>
+
+<li>Strengths & Weaknesses</li>
+
+<li>Lucky Numbers</li>
+
+<li>Personal Year Forecast</li>
+
+<li>Action Plan for Success</li>
+
+</ul>
+
+<br>
+
+<button onclick="window.location.href='complete-numerology-blueprint.html'">
+
+View Premium Report
+
+</button>
+
+</div>
+
+<!-- ========================================= -->
+<!-- FAQ -->
+<!-- ========================================= -->
+
+<div class="card">
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is a Life Path Number?</h3>
+
+<p>
+
+A Life Path Number is one of the most important numbers in numerology. It represents your life purpose, natural abilities and challenges.
+
+</p>
+
+<h3>How is the Life Path Number calculated?</h3>
+
+<p>
+
+It is calculated using your complete date of birth by reducing the numbers to a single digit.
+
+</p>
+
+<h3>Can my Life Path Number change?</h3>
+
+<p>
+
+No. Your Life Path Number remains the same throughout your life because it is based on your birth date.
+
+</p>
+
+<h3>Where can I learn more?</h3>
+
+<p>
+
+<a href="what-is-life-path-number.html">
+
+Read the complete Life Path Number Guide
+
+</a>
+
+</p>
 
 </div>
 
@@ -121,7 +324,8 @@ function calculate(){
 let name =
 document
 .getElementById("name")
-.value;
+.value
+.trim();
 
 let dob =
 document
@@ -130,9 +334,7 @@ document
 
 if(!name || !dob){
 
-alert(
-"Please enter both Name and Date of Birth"
-);
+alert("Please enter both Name and Date of Birth");
 
 return;
 
@@ -148,8 +350,9 @@ finalNumber;
 
 document
 .getElementById("summary")
-.innerText =
-"Your Life Path Number reveals your core life direction. CLICK Life Path Number to Know More...";
+.innerHTML =
+
+'Your <b>Life Path Number</b> reveals your life purpose, strengths and natural talents.<br><br><b>Click on your Life Path Number above to read the complete interpretation.</b>';
 
 document
 .getElementById("resultBox")
@@ -173,21 +376,28 @@ finalNumber +
 
 }
 
-/* HEADER + FOOTER */
+/* HEADER */
 
 fetch('components/header.html')
 .then(response => response.text())
 .then(data => {
+
 document.getElementById('header').innerHTML = data;
+
 });
+
+/* FOOTER */
 
 fetch('components/footer.html')
 .then(response => response.text())
 .then(data => {
+
 document.getElementById('footer').innerHTML = data;
+
 });
 
 </script>
 
 </body>
-</html>
+
+</html>  
