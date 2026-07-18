@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Destiny Number Calculator | NumeroWise</title>
 
-<meta name="description" content="Calculate your Destiny Number using your full birth name and discover your life direction according to numerology.">
+<meta name="description" content="Calculate your Destiny Number using your full birth name and discover your life purpose, talents and destiny through numerology.">
+
+<meta name="keywords" content="Destiny Number Calculator, Destiny Number, Numerology Calculator, Free Numerology, AI Numerology">
+
+<meta name="author" content="NumeroWise">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://numerowise.github.io/destiny-calculator.html">
+
+<meta name="theme-color" content="#1976D2">
+
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+<!-- Open Graph -->
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="NumeroWise">
+
+<meta property="og:title" content="Destiny Number Calculator | NumeroWise">
+
+<meta property="og:description" content="Calculate your Destiny Number instantly and discover your life direction through numerology.">
+
+<meta property="og:url" content="https://numerowise.github.io/destiny-calculator.html">
+
+<meta property="og:image" content="https://numerowise.github.io/assets/images/og-image.jpg">
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Destiny Number Calculator | NumeroWise">
+
+<meta name="twitter:description" content="Free AI-powered Destiny Number Calculator.">
+
+<meta name="twitter:image" content="https://numerowise.github.io/assets/images/og-image.jpg">
 
 <link rel="stylesheet" href="css/style.css">
 
 </head>
-
 <body>
 
 <div id="header"></div>
@@ -27,12 +69,10 @@ Discover your life direction through your full birth name.
 
 <div class="card">
 
-<label>Full Birth Name</label>
-
 <input
 type="text"
 id="fullName"
-placeholder="Enter your full birth name">
+placeholder="Enter Full Birth Name">
 
 <button onclick="calculateDestiny()">
 Calculate Destiny Number
@@ -40,7 +80,9 @@ Calculate Destiny Number
 
 <div class="result" id="resultBox">
 
-<h2>Your Destiny Number Is</h2>
+<div class="label">
+Your Destiny Number
+</div>
 
 <div
 class="number"
@@ -48,9 +90,22 @@ id="destinyNumber"
 onclick="openDestinyPage()">
 </div>
 
-<div class="result-summary">
-Click the number to read your detailed report.
+<div
+id="summary"
+class="result-summary">
 </div>
+
+<div class="related-links">
+
+<h3>Learn More</h3>
+
+<p>
+
+<a href="what-is-destiny-number.html">
+What is Destiny Number?
+</a>
+
+</p>
 
 </div>
 
@@ -117,6 +172,12 @@ destinyResult = reduceNumber(total);
 document.getElementById("destinyNumber")
 .innerHTML = destinyResult;
 
+document
+.getElementById("summary")
+.innerHTML =
+
+'Your <b>Destiny Number</b> reveals your natural talents, life direction and hidden potential.<br><br><b>Click on your Destiny Number above to read the complete interpretation.</b>';
+  
 document.getElementById("resultBox")
 .style.display = "block";
 
