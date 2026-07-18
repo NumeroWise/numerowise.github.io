@@ -433,3 +433,48 @@ select option{
     color:#222222;
 
 }
+
+/* Language Selector */
+
+.language-box{
+    text-align:center;
+    margin:25px 0;
+}
+
+.language-box select{
+    padding:10px 16px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* Guide Pages */
+
+.content{
+    line-height:1.9;
+}
+
+.content p{
+    margin:18px 0;
+}
+
+.content h2{
+    margin-top:35px;
+    margin-bottom:18px;
+}
+
+.content ul{
+    margin:20px 0;
+    padding-left:25px;
+}
+
+.content li{
+    margin-bottom:12px;
+}
+
+.content{
+    max-width:850px;
+    margin:0 auto;
+    line-height:1.9;
+    font-size:17px;
+}
