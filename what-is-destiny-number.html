@@ -385,4 +385,208 @@
         </div>
     </div>
 
-  
+      <!-- ========================================= -->
+    <!-- COMMON GUIDE BLOCK -->
+    <!-- ========================================= -->
+
+    <!-- Explore More Calculators -->
+
+    <div class="card">
+
+        <h2>Explore More Numerology Calculators</h2>
+
+        <p>
+            Discover more free numerology calculators to understand different aspects of your life.
+        </p>
+
+        <div style="
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:20px;
+            margin-top:20px;
+            text-align:left;
+            line-height:2;
+        ">
+
+            <div>
+
+                <p><a href="life-path-calculator.html">Life Path Calculator</a></p>
+
+                <p><a href="destiny-calculator.html">Destiny Number Calculator</a></p>
+
+                <p><a href="soul-urge-calculator.html">Soul Urge Number Calculator</a></p>
+
+                <p><a href="personality-calculator.html">Personality Number Calculator</a></p>
+
+                <p><a href="birthday-calculator.html">Birthday Number Calculator</a></p>
+
+                <p><a href="personal-year-calculator.html">Personal Year Calculator</a></p>
+
+                <p><a href="career-number-calculator.html">Career Number Calculator</a></p>
+
+            </div>
+
+            <div>
+
+                <p><a href="wealth-prediction-calculator.html">Wealth Prediction Calculator</a></p>
+
+                <p><a href="business-success-calculator.html">Business Success Calculator</a></p>
+
+                <p><a href="job-vs-business-calculator.html">Job vs Business Calculator</a></p>
+
+                <p><a href="financial-blockage-calculator.html">Financial Blockage Calculator</a></p>
+
+                <p><a href="relationship-compatibility-calculator.html">Relationship Compatibility Calculator</a></p>
+
+                <p><a href="name-numerology-calculator.html">Name Numerology Calculator</a></p>
+
+                <p><a href="baby-name-numerology-calculator.html">Baby Name Numerology Calculator</a></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- PREMIUM REPORTS -->
+    <!-- ========================================= -->
+
+    <div class="card">
+
+        <h2>Unlock Your Complete AI Numerology Blueprint</h2>
+
+        <p>
+            Every number reveals only one part of your numerology profile.
+            Discover your complete personality, destiny, career, relationships,
+            wealth potential, strengths, weaknesses, lucky numbers and much more
+            with our AI-powered premium reports.
+        </p>
+
+        <ul style="text-align:left;max-width:600px;margin:20px auto;line-height:2;">
+
+            <li>Life Purpose Analysis</li>
+            <li>Career Guidance</li>
+            <li>Relationship Compatibility</li>
+            <li>Money & Wealth Analysis</li>
+            <li>Strengths & Weaknesses</li>
+            <li>Lucky Numbers & Lucky Colors</li>
+            <li>Personal Year Forecast</li>
+            <li>Personalized Success Action Plan</li>
+
+        </ul>
+
+        <p style="text-align:center;margin-top:25px;">
+
+            <a href="premium-reports.html"
+               style="
+                    display:inline-block;
+                    padding:12px 28px;
+                    background:#FFD700;
+                    color:#000;
+                    text-decoration:none;
+                    font-weight:bold;
+                    border-radius:8px;
+               ">
+
+                Explore Premium Reports →
+
+            </a>
+
+        </p>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- FAQ -->
+    <!-- ========================================= -->
+
+    <div class="card">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What is a Destiny Number?</h3>
+
+        <p>
+            A Destiny Number, also called an Expression Number, is calculated from your full birth name and reveals your natural talents, abilities, strengths and life purpose.
+        </p>
+
+        <h3>How is a Destiny Number calculated?</h3>
+
+        <p>
+            It is calculated by assigning numerical values to the letters of your full birth name using the Pythagorean numerology system and reducing the total to a single digit or a Master Number.
+        </p>
+
+        <h3>Can my Destiny Number change?</h3>
+
+        <p>
+            No. Your Destiny Number is based on your birth name. It remains the same unless you intentionally use a different name for numerological analysis.
+        </p>
+
+        <h3>What are Master Destiny Numbers?</h3>
+
+        <p>
+            Master Numbers 11, 22 and 33 represent higher spiritual potential, greater responsibilities and unique life missions in numerology.
+        </p>
+
+        <h3>Where can I calculate my Destiny Number?</h3>
+
+        <p>
+            Use our free
+            <a href="destiny-calculator.html">Destiny Number Calculator</a>
+            for instant results.
+        </p>
+
+    </div>
+
+</div>
+
+<div id="footer"></div>
+
+    <script>
+
+const languageSelector = document.getElementById("language");
+const englishContent = document.getElementById("englishContent");
+const hindiContent = document.getElementById("hindiContent");
+const pageTitle = document.getElementById("pageTitle");
+
+languageSelector.addEventListener("change", function () {
+
+    if (this.value === "hi") {
+
+        pageTitle.innerText = "डेस्टिनी नंबर क्या है?";
+
+        englishContent.style.display = "none";
+        hindiContent.style.display = "block";
+
+    } else {
+
+        pageTitle.innerText = "What Is a Destiny Number?";
+
+        englishContent.style.display = "block";
+        hindiContent.style.display = "none";
+
+    }
+
+});
+
+/* HEADER */
+
+fetch("components/header.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+
+/* FOOTER */
+
+fetch("components/footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+
+</script>
+
+</body>
+</html>
