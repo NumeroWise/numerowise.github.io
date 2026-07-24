@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+
+  <url>
+    <loc>https://numerowise.github.io/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Core Pages -->
+
+  <url>
+    <loc>https://numerowise.github.io/about.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/contact.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/privacy.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/disclaimer.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/guides.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/premium-reports.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/ask-numerology-ai.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/complete-numerology-blueprint.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Main Calculators -->
+
+  <url>
+    <loc>https://numerowise.github.io/life-path-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/destiny-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/personal-year-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/birthday-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/personality-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/soul-urge-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/name-numerology-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/baby-name-numerology-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/business-name-numerology-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/career-number-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/business-success-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/wealth-prediction-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/financial-blockage-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/job-vs-business-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://numerowise.github.io/relationship-compatibility-calculator.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+    <!-- ====================================================== -->
+  <!-- Life Path Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/life-path-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/life-path-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Destiny Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/destiny-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/destiny-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Personal Year Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/personal-year-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personal-year-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Birthday Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/birthday-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/birthday-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Personality Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/personality-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/personality-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Soul Urge Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/soul-urge-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/soul-urge-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+    <!-- ====================================================== -->
+  <!-- Name Numerology Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/name-numerology-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://numerowise.github.io/name-numerology-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Baby Name Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/baby-name-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/baby-name-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Business Name Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/business-name-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-name-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Career Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/career-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/career-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Wealth Prediction Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/wealth-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/wealth-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+    <!-- ====================================================== -->
+  <!-- Financial Blockage Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/financial-blockage-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/financial-blockage-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Business Success Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/business-success-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/business-success-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Job vs Business Numbers -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/job-vs-business-number-1.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-2.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-3.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-4.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-5.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-6.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-7.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-8.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://numerowise.github.io/job-vs-business-number-9.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- ====================================================== -->
+  <!-- Relationship Compatibility -->
+  <!-- ====================================================== -->
+
+  <url>
+    <loc>https://numerowise.github.io/relationship-compatibility-number-1.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ====================================================== -->
+  <!-- What Is... Pages -->
+  <!-- ====================================================== -->
+
+  <url><loc>https://numerowise.github.io/what-is-life-path-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-personal-year-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-destiny-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-birthday-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-personality-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-soul-urge-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-name-numerology.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-baby-name-numerology.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-business-name-numerology.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-career-number.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-wealth-prediction.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-financial-blockage.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-business-success-numerology.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-job-vs-business-guidance.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://numerowise.github.io/what-is-relationship-compatibility.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+</urlset>
